@@ -1,0 +1,3674 @@
+#line 1 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+#line 6 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+#pragma warning(disable:4008)
+#line 7 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+#line 1 "/Engine/Public/Platform.ush"
+#line 9 "/Engine/Public/Platform.ush"
+#line 1 "FP16Math.ush"
+#line 10 "/Engine/Public/Platform.ush"
+#line 43 "/Engine/Public/Platform.ush"
+#line 1 "ShaderVersion.ush"
+#line 44 "/Engine/Public/Platform.ush"
+#line 595 "/Engine/Public/Platform.ush"
+float min3( float a, float b, float c )
+{
+	return min( a, min( b, c ) );
+}
+
+float max3( float a, float b, float c )
+{
+	return max( a, max( b, c ) );
+}
+
+float2 min3( float2 a, float2 b, float2 c )
+{
+	return float2(
+		min3( a.x, b.x, c.x ),
+		min3( a.y, b.y, c.y )
+	);
+}
+
+float2 max3( float2 a, float2 b, float2 c )
+{
+	return float2(
+		max3( a.x, b.x, c.x ),
+		max3( a.y, b.y, c.y )
+	);
+}
+
+float3 max3( float3 a, float3 b, float3 c )
+{
+	return float3(
+		max3( a.x, b.x, c.x ),
+		max3( a.y, b.y, c.y ),
+		max3( a.z, b.z, c.z )
+	);
+}
+
+float3 min3( float3 a, float3 b, float3 c )
+{
+	return float3(
+		min3( a.x, b.x, c.x ),
+		min3( a.y, b.y, c.y ),
+		min3( a.z, b.z, c.z )
+	);
+}
+
+float4 min3( float4 a, float4 b, float4 c )
+{
+	return float4(
+		min3( a.x, b.x, c.x ),
+		min3( a.y, b.y, c.y ),
+		min3( a.z, b.z, c.z ),
+		min3( a.w, b.w, c.w )
+	);
+}
+
+float4 max3( float4 a, float4 b, float4 c )
+{
+	return float4(
+		max3( a.x, b.x, c.x ),
+		max3( a.y, b.y, c.y ),
+		max3( a.z, b.z, c.z ),
+		max3( a.w, b.w, c.w )
+	);
+}
+
+
+
+
+float UnpackByte0(uint v) { return float(v & 0xff); }
+float UnpackByte1(uint v) { return float((v >> 8) & 0xff); }
+float UnpackByte2(uint v) { return float((v >> 16) & 0xff); }
+float UnpackByte3(uint v) { return float(v >> 24); }
+#line 8 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+
+
+
+
+
+
+	const static float PI = 3.1415926535897932f;
+
+	const static float TWO_PI = 3.1415926535897932f*2.0f;
+#line 18 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+#line 1 "/Engine/Private/Definitions.usf"
+#line 19 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+
+
+float4 ModuloPrecise(float4 x, float4 y){ return x - y * trunc(x/y); }
+float3 ModuloPrecise(float3 x, float3 y){ return x - y * trunc(x/y); }
+float2 ModuloPrecise(float2 x, float2 y){ return x - y * trunc(x/y);}
+float ModuloPrecise(float x, float y){ return x - y * trunc(x/y); }
+int ModuloPrecise(int x, int y){ return x - y * (x/y); }
+int Modulo(int x, int y){ return x - y * (x/y); }
+
+
+
+float4 Reciprocal(float4 x){ return 1.0f/x;}
+float3 Reciprocal(float3 x){ return 1.0f/x; }
+float2 Reciprocal(float2 x){ return 1.0f/x;}
+float Reciprocal(float x){ return 1.0f/x; }
+
+
+
+bool NiagaraAll(bool b) { return b; }
+bool NiagaraAny(bool b) { return b; }
+
+
+
+
+
+
+
+
+
+bool NiagaraAll(bool2 b) { return b.x && b.y; }
+bool NiagaraAll(bool3 b) { return b.x && b.y && b.z; }
+bool NiagaraAll(bool4 b) { return b.x && b.y && b.z && b.w; }
+bool NiagaraAny(bool2 b) { return b.x || b.y; }
+bool NiagaraAny(bool3 b) { return b.x || b.y || b.z; }
+bool NiagaraAny(bool4 b) { return b.x || b.y || b.z || b.w; }
+#line 193 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+float4 rand4(int Seed1, int Seed2, int Seed3, int Seed4)
+{
+	int4 v = int4(Seed4, Seed1, Seed2, Seed3) * 1664525 + 1013904223;
+
+	v.x += v.y*v.w;
+	v.y += v.z*v.x;
+	v.z += v.x*v.y;
+	v.w += v.y*v.z;
+	v.x += v.y*v.w;
+	v.y += v.z*v.x;
+	v.z += v.x*v.y;
+	v.w += v.y*v.z;
+
+
+
+
+
+
+	return float4((v >> 8) & 0x00ffffff) / 16777216.0;
+
+}
+
+
+
+
+
+
+
+float3 rand3(int Seed1, int Seed2, int Seed3, int Seed4)
+{
+	int3 v = int3(Seed1, Seed2, Seed4 | (Seed3 << 16)) * 1664525 + 1013904223;
+
+	v.x += v.y*v.z;
+	v.y += v.z*v.x;
+	v.z += v.x*v.y;
+	v.x += v.y*v.z;
+	v.y += v.z*v.x;
+	v.z += v.x*v.y;
+
+	return float3((v >> 8) & 0x00ffffff) / 16777216.0;
+}
+
+
+static int RandomCounterDeterministic = 0;
+
+
+float rand(float x, int Seed1, int Seed2, int Seed3)
+{
+	RandomCounterDeterministic += 1;
+	return rand3(Seed1, Seed2, Seed3, RandomCounterDeterministic).x * x;
+}
+
+
+float2 rand(float2 x, int Seed1, int Seed2, int Seed3)
+{
+	RandomCounterDeterministic += 1;
+	return rand3(Seed1, Seed2, Seed3, RandomCounterDeterministic).xy * x;
+}
+
+
+float3 rand(float3 x, int Seed1, int Seed2, int Seed3)
+{
+	RandomCounterDeterministic += 1;
+	return rand3(Seed1, Seed2, Seed3, RandomCounterDeterministic).xyz * x;
+}
+
+
+float4 rand(float4 x, int Seed1, int Seed2, int Seed3)
+{
+	RandomCounterDeterministic += 1;
+	return rand4(Seed1, Seed2, Seed3, RandomCounterDeterministic).xyzw * x;
+}
+
+
+int rand(int x, int Seed1, int Seed2, int Seed3)
+{
+
+
+	RandomCounterDeterministic += 1;
+	return int(rand3(Seed1, Seed2, Seed3, RandomCounterDeterministic).x * (x+1));
+}
+#line 323 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+	float rand(float x);
+
+	float2 rand(float2 x)
+	{
+		return float2(rand(x.x), rand(x.y));
+	}
+
+	float3 rand(float3 x)
+	{
+		return float3(rand(x.x), rand(x.y), rand(x.z));
+	}
+
+	float4 rand(float4 x)
+	{
+		return float4(rand(x.x), rand(x.y), rand(x.z), rand(x.w));
+	}
+
+	int rand(int x);
+
+
+
+float rand_float(float x)
+{
+	return rand(x.x);
+}
+
+float2 rand_float(float2 x)
+{
+	return float2(rand_float(x.x), rand_float(x.y));
+}
+
+float3 rand_float(float3 x)
+{
+	return float3(rand_float(x.x), rand_float(x.y), rand_float(x.z));
+}
+
+float4 rand_float(float4 x)
+{
+	return float4(rand_float(x.x), rand_float(x.y), rand_float(x.z), rand_float(x.w));
+}
+
+int rand_int(int x)
+{
+
+
+
+	return rand_float(x.x);
+}
+
+
+float rand_float(float x, int Seed1, int Seed2, int Seed3)
+{
+	return rand(x.x, Seed1, Seed2, Seed3);
+}
+
+float2 rand_float(float2 x, int Seed1, int Seed2, int Seed3)
+{
+	return rand(x, Seed1, Seed2, Seed3);
+}
+
+float3 rand_float(float3 x, int Seed1, int Seed2, int Seed3)
+{
+	return rand(x, Seed1, Seed2, Seed3);
+}
+
+float4 rand_float(float4 x, int Seed1, int Seed2, int Seed3)
+{
+	return rand(x, Seed1, Seed2, Seed3);
+}
+
+int rand_int(int x, int Seed1, int Seed2, int Seed3)
+{
+
+
+	return rand(x.x-1, Seed1, Seed2, Seed3);
+}
+#line 405 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+	float noise(float x);
+	float noise(float2 x);
+	float noise(float3 x);
+
+
+
+	float4 Modulo(float4 x, float4 y);
+	float3 Modulo(float3 x, float3 y);
+	float2 Modulo(float2 x, float2 y);
+	float Modulo(float x, float y);
+
+
+	int ExecIndex();
+
+
+
+	int AcquireIndex(int DataSetID, bool DoAcquire);
+
+	void AcquireID(int DataSetID, out int IDIndex, out int IDAcquireTag);
+	void UpdateID(int DataSetID, int IDIndex, int InstanceIndex);
+
+	float InputDataFloat(int DataSetIndex, int RegisterIdx);
+	int InputDataInt(int DataSetIndex, int RegisterIdx);
+	bool InputDataBool(int DataSetIndex, int RegisterIdx);
+
+	float InputDataNoadvanceFloat(int DataSetIndex, int RegisterIdx);
+	int InputDataNoadvanceInt(int DataSetIndex, int RegisterIdx);
+	bool InputDataNoadvanceBool(int DataSetIndex, int RegisterIdx);
+
+	void OutputDataFloat(int DataSetIndex, int RegisterIndex, int InstanceIndex, float Value);
+	void OutputDataInt(int DataSetIndex, int RegisterIndex, int InstanceIndex, int Value);
+	void OutputDataBool(int DataSetIndex, int RegisterIndex, int InstanceIndex, bool Value);
+#line 683 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+	int OutputIndex(const int DataSetID, const bool bStageKillsParticles, const bool bIsValid)
+	{
+#line 698 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+			return AcquireIndex(DataSetID, bIsValid);
+	}
+#line 702 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+#line 1 "/Engine/Generated/NiagaraEmitterInstance.ush"
+
+
+
+
+struct NiagaraSpawnInfo
+{
+	int Count;
+	float InterpStartDt;
+	float IntervalDt;
+	int SpawnGroup;
+};
+
+struct NiagaraID
+{
+	int Index;
+	int AcquireTag;
+};
+
+cbuffer FNiagaraGlobalParameters
+{
+	float Engine_DeltaTime;
+	float Engine_InverseDeltaTime;
+	float Engine_Time;
+	float Engine_RealTime;
+}
+
+cbuffer FNiagaraSystemParameters
+{
+}
+
+cbuffer FNiagaraOwnerParameters
+{
+}
+
+cbuffer FNiagaraEmitterParameters
+{
+}
+
+cbuffer FNiagaraExternalParameters
+{
+	float Constants_SystemState_LoopDelay;
+	float Constants_SystemState_LoopDuration;
+	float Constants_Shockwave_EmitterState_LoopDuration;
+	float Constants_Shockwave_EmitterState_LoopDelay;
+	float Constants_Shockwave_EmitterState_MinDistance;
+	float Constants_Shockwave_EmitterState_MaxDistance;
+	float Constants_Shockwave_EmitterState_VisibilityCullDelay;
+	float Constants_Shockwave_SpawnBurst_Instantaneous_SpawnTime;
+	int Constants_Shockwave_SpawnBurst_Instantaneous_SpawnGroup;
+	float Constants_Shockwave_SpawnBurst_Instantaneous_SpawnProbability;
+	int Constants_Shockwave_SpawnBurst_Instantaneous_SpawnCount;
+	float Constants_LIGHT_EmitterState_LoopDuration;
+	float Constants_LIGHT_EmitterState_LoopDelay;
+	float Constants_LIGHT_EmitterState_MinDistance;
+	float Constants_LIGHT_EmitterState_MaxDistance;
+	float Constants_LIGHT_EmitterState_VisibilityCullDelay;
+	float Constants_LIGHT_SpawnBurst_Instantaneous_SpawnTime;
+	int Constants_LIGHT_SpawnBurst_Instantaneous_SpawnGroup;
+	float Constants_LIGHT_SpawnBurst_Instantaneous_SpawnProbability;
+	int Constants_LIGHT_SpawnBurst_Instantaneous_SpawnCount;
+	float Constants_Fire_Smoke_EmitterState_LoopDuration;
+	float Constants_Fire_Smoke_EmitterState_LoopDelay;
+	float Constants_Fire_Smoke_EmitterState_MinDistance;
+	float Constants_Fire_Smoke_EmitterState_MaxDistance;
+	float Constants_Fire_Smoke_EmitterState_VisibilityCullDelay;
+	float Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnTime;
+	int Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnGroup;
+	float Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnProbability;
+	int Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnCount;
+	float Constants_Fire_EmitterState_LoopDuration;
+	float Constants_Fire_EmitterState_LoopDelay;
+	float Constants_Fire_EmitterState_MinDistance;
+	float Constants_Fire_EmitterState_MaxDistance;
+	float Constants_Fire_EmitterState_VisibilityCullDelay;
+	float Constants_Fire_SpawnBurst_Instantaneous_SpawnTime;
+	int Constants_Fire_SpawnBurst_Instantaneous_SpawnGroup;
+	float Constants_Fire_SpawnBurst_Instantaneous_SpawnProbability;
+	int Constants_Fire_SpawnBurst_Instantaneous_SpawnCount;
+	float Constants_Smoke_EmitterState_LoopDuration;
+	float Constants_Smoke_EmitterState_LoopDelay;
+	float Constants_Smoke_EmitterState_MinDistance;
+	float Constants_Smoke_EmitterState_MaxDistance;
+	float Constants_Smoke_EmitterState_VisibilityCullDelay;
+	float Constants_Smoke_SpawnBurst_Instantaneous_SpawnTime;
+	int Constants_Smoke_SpawnBurst_Instantaneous_SpawnGroup;
+	float Constants_Smoke_SpawnBurst_Instantaneous_SpawnProbability;
+	int Constants_Smoke_SpawnBurst_Instantaneous_SpawnCount;
+	int Emitter_RandomSeed;
+}
+
+struct FParamMap0_Vector2DFromFloat001
+{
+	float Value;
+};
+
+struct FParamMap0_Vector2DFromFloat
+{
+	float Value;
+};
+
+struct FParamMap0_User
+{
+	float Scale;
+	float variance;
+};
+
+struct FParamMap0_UniformRangedVector
+{
+	bool FixedRandomSeed;
+	float3 Maximum;
+	float3 Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedInt
+{
+	bool FixedRandomSeed;
+	int Maximum;
+	int Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat005
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat004
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat003
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat002
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat001
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_UniformRangedFloat
+{
+	bool FixedRandomSeed;
+	float Maximum;
+	float Minimum;
+	bool OverrideRandomness;
+	bool OverrideSeed;
+	int RandomnessMode;
+	int RandomSeed;
+};
+
+struct FParamMap0_Transient
+{
+	float PhysicsDeltaTime;
+	float PhysicsDrag;
+	float3 PhysicsForce;
+	float PhysicsRotationalDrag;
+	int ScalabilityEmitterExecutionState;
+	float ScalabilityEmitterSpawnCountScale;
+	int ScalabilityExecutionState;
+	bool SpawningbCanEverSpawn;
+	float2 SpriteSizeScaleFactor;
+};
+
+struct FParamMap0_SystemState
+{
+	float LoopDelay;
+	float LoopDuration;
+};
+
+struct FParamMap0_System
+{
+	float Age;
+	bool bCompleteOnInactive;
+	float CurrentLoopDelay;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+};
+
+struct FParamMap0_SubUVAnimation
+{
+	float NumberOfFrames;
+	float RandomSubUVLookupIndex;
+	float SubUVLookupIndex;
+};
+
+struct FParamMap0_SpawnBurst_Instantaneous
+{
+	float Age;
+	int SpawnCount;
+	int SpawnGroup;
+	float SpawnProbability;
+	float SpawnTime;
+};
+
+struct FParamMap0_SolveForcesAndVelocity
+{
+	float AccelerationLimit;
+	float DeltaTime;
+	float3 Force;
+	float Mass;
+	float3 Position;
+	float3 PreviousVelocity;
+	float SpeedLimit;
+	float3 Velocity;
+	bool WritetoIntrinsicProperties;
+};
+
+struct FParamMap0_Smoke_SpawnBurst_Instantaneous
+{
+	NiagaraSpawnInfo SpawnBurst;
+};
+
+struct FParamMap0_Smoke_Scalability
+{
+	float DistanceFraction;
+};
+
+struct FParamMap0_Smoke
+{
+	float Age;
+	float AlphaScale;
+	float CurrentLoopDelay;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	bool LocalSpace;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+	FParamMap0_Smoke_Scalability Scalability;
+	FParamMap0_Smoke_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Shockwave_SpawnBurst_Instantaneous
+{
+	NiagaraSpawnInfo SpawnBurst;
+};
+
+struct FParamMap0_Shockwave_Scalability
+{
+	float DistanceFraction;
+};
+
+struct FParamMap0_Shockwave
+{
+	float Age;
+	float CurrentLoopDelay;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	bool LocalSpace;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+	FParamMap0_Shockwave_Scalability Scalability;
+	FParamMap0_Shockwave_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_ScaleSpriteSize
+{
+	float2 InitialSpriteSize;
+	float2 ScaleFactor;
+};
+
+struct FParamMap0_ReturnCameraProperty001
+{
+	float3 OriginPosition;
+};
+
+struct FParamMap0_ReturnCameraProperty
+{
+	float3 OriginPosition;
+};
+
+struct FParamMap0_ParticleState
+{
+	float DeltaTime;
+	float Lifetime;
+};
+
+struct FParamMap0_Particles_Initial
+{
+	float2 SpriteSize;
+};
+
+struct FParamMap0_Particles
+{
+	float Age;
+	float4 Color;
+	float4 DynamicMaterialParameter;
+	FParamMap0_Particles_Initial Initial;
+	float Lifetime;
+	float Mass;
+	float MaterialRandom;
+	float NormalizedAge;
+	float3 Position;
+	float3 PreviousVelocity;
+	float3 Scale;
+	float SpriteRotation;
+	float2 SpriteSize;
+	float SubImageIndex;
+	int UniqueID;
+	float3 Velocity;
+};
+
+struct FParamMap0_OUTPUT_VAR_SolveForcesAndVelocity
+{
+	float IncomingPhysicsDrag;
+	float3 IncomingPhysicsForce;
+	float3 Position;
+	float3 Velocity;
+};
+
+struct FParamMap0_OUTPUT_VAR_ParticleState
+{
+	bool FirstFrame;
+};
+
+struct FParamMap0_OUTPUT_VAR
+{
+	FParamMap0_OUTPUT_VAR_ParticleState ParticleState;
+	FParamMap0_OUTPUT_VAR_SolveForcesAndVelocity SolveForcesAndVelocity;
+};
+
+struct FParamMap0_Multiply_VectorByFloat002
+{
+	float FLOAT_VAR;
+	float3 VECTOR_VAR;
+};
+
+struct FParamMap0_Multiply_VectorByFloat001
+{
+	float FLOAT_VAR;
+	float3 VECTOR_VAR;
+};
+
+struct FParamMap0_Multiply_VectorByFloat
+{
+	float FLOAT_VAR;
+	float3 VECTOR_VAR;
+};
+
+struct FParamMap0_Multiply_Float003
+{
+	float A;
+	float B;
+};
+
+struct FParamMap0_Multiply_Float002
+{
+	float A;
+	float B;
+};
+
+struct FParamMap0_Multiply_Float001
+{
+	float A;
+	float B;
+};
+
+struct FParamMap0_Multiply_Float
+{
+	float A;
+	float B;
+};
+
+struct FParamMap0_MakeVector3_FromColor
+{
+	float4 Color;
+};
+
+struct FParamMap0_MakeLinearColorFromVectorAndFloat
+{
+	float FloatASC40AlphaASC41;
+	float3 VectorASC40RGBASC41;
+};
+
+struct FParamMap0_MakeFloatFromInt
+{
+	int INT_VAR;
+};
+
+struct FParamMap0_Local_SystemState
+{
+	bool LoopCountIncreased;
+};
+
+struct FParamMap0_Local_SolveForcesAndVelocity
+{
+	float DeltaTime;
+	float Mass;
+	float3 PhysicsForce;
+};
+
+struct FParamMap0_Local_EmitterState
+{
+	bool LoopCountIncreased;
+	bool NoActiveEmitterParticles;
+	int PreviousEmitterState;
+	bool ScalabilityKillOnComplete;
+	bool ScalabilityKillOnCompleteMin;
+};
+
+struct FParamMap0_Local
+{
+	FParamMap0_Local_EmitterState EmitterState;
+	FParamMap0_Local_SolveForcesAndVelocity SolveForcesAndVelocity;
+	FParamMap0_Local_SystemState SystemState;
+};
+
+struct FParamMap0_LIGHT_SpawnBurst_Instantaneous
+{
+	NiagaraSpawnInfo SpawnBurst;
+};
+
+struct FParamMap0_LIGHT_Scalability
+{
+	float DistanceFraction;
+};
+
+struct FParamMap0_LIGHT
+{
+	float Age;
+	float CurrentLoopDelay;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	bool LocalSpace;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+	FParamMap0_LIGHT_Scalability Scalability;
+	FParamMap0_LIGHT_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_InitializeParticle
+{
+	float4 Color;
+	float Lifetime;
+	float Mass;
+	float MaterialRandom;
+	float3 MeshScale;
+	float3 Position;
+	float SpriteRotation;
+	float2 SpriteSize;
+	bool WriteColor;
+	bool WriteLifetime;
+	bool WriteMass;
+	bool WriteMaterialRandom;
+	bool WritePosition;
+	bool WriteScale;
+	bool WriteSpriteRotation;
+	bool WriteSpriteSize;
+};
+
+struct FParamMap0_FloatFromCurve001
+{
+	float CurveIndex;
+	float ScaleCurve;
+};
+
+struct FParamMap0_FloatFromCurve
+{
+	float CurveIndex;
+	float ScaleCurve;
+};
+
+struct FParamMap0_Fire_SpawnBurst_Instantaneous
+{
+	NiagaraSpawnInfo SpawnBurst;
+};
+
+struct FParamMap0_Fire_Smoke_SpawnBurst_Instantaneous
+{
+	NiagaraSpawnInfo SpawnBurst;
+};
+
+struct FParamMap0_Fire_Smoke_Scalability
+{
+	float DistanceFraction;
+};
+
+struct FParamMap0_Fire_Smoke
+{
+	float Age;
+	float AlphaScale;
+	float CurrentLoopDelay;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	bool LocalSpace;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+	FParamMap0_Fire_Smoke_Scalability Scalability;
+	FParamMap0_Fire_Smoke_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Fire_Scalability
+{
+	float DistanceFraction;
+};
+
+struct FParamMap0_Fire
+{
+	float Age;
+	float CurrentLoopDelay;
+	float CurrentLoopDuration;
+	int ExecutionState;
+	int ExecutionStateSource;
+	bool LocalSpace;
+	int LoopCount;
+	float LoopedAge;
+	float NormalizedLoopAge;
+	FParamMap0_Fire_Scalability Scalability;
+	FParamMap0_Fire_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Engine_Smoke
+{
+	int NumParticles;
+	float SpawnCountScale;
+};
+
+struct FParamMap0_Engine_Shockwave
+{
+	int NumParticles;
+	float SpawnCountScale;
+};
+
+struct FParamMap0_Engine_Owner
+{
+	int ExecutionState;
+	float LODDistance;
+	float3 Position;
+	float4x4 SystemLocalToWorld;
+	float4x4 SystemLocalToWorldNoScale;
+	float4x4 SystemWorldToLocal;
+	float4x4 SystemWorldToLocalNoScale;
+	float TimeSinceRendered;
+};
+
+struct FParamMap0_Engine_LIGHT
+{
+	int NumParticles;
+	float SpawnCountScale;
+};
+
+struct FParamMap0_Engine_Fire_Smoke
+{
+	int NumParticles;
+	float SpawnCountScale;
+};
+
+struct FParamMap0_Engine_Fire
+{
+	int NumParticles;
+	float SpawnCountScale;
+};
+
+struct FParamMap0_Engine_Emitter
+{
+	int TotalSpawnedParticles;
+};
+
+struct FParamMap0_Engine
+{
+	float DeltaTime;
+	FParamMap0_Engine_Emitter Emitter;
+	FParamMap0_Engine_Fire Fire;
+	FParamMap0_Engine_Fire_Smoke Fire_Smoke;
+	float InverseDeltaTime;
+	FParamMap0_Engine_LIGHT LIGHT;
+	FParamMap0_Engine_Owner Owner;
+	float RealTime;
+	FParamMap0_Engine_Shockwave Shockwave;
+	FParamMap0_Engine_Smoke Smoke;
+	float Time;
+};
+
+struct FParamMap0_EmitterState
+{
+	bool bUseMaxDistance;
+	bool bUseMinDistance;
+	float LoopDelay;
+	float LoopDuration;
+	float MaxDistance;
+	int MaxDistanceResponse;
+	float MinDistance;
+	int MinDistanceResponse;
+	bool RecalculateDurationEachLoop;
+	bool ResetAgeOnAwaken;
+	float VisibilityCullDelay;
+	int VisibilityCullResponse;
+};
+
+struct FParamMap0_Emitter
+{
+	int RandomSeed;
+};
+
+struct FParamMap0_DynamicMaterialParameters
+{
+	float Index0Param1;
+	float Index0Param2;
+	float Index0Param3;
+	float Index0Param4;
+	bool Param0WriteEnabled;
+	bool Param1WriteEnabled;
+	bool Param2WriteEnabled;
+	bool Param3WriteEnabled;
+};
+
+struct FParamMap0_Drag
+{
+	float Drag;
+	float RotationalDrag;
+};
+
+struct FParamMap0_DataInstance
+{
+	bool Alive;
+};
+
+struct FParamMap0_Constants_SystemState
+{
+	float LoopDelay;
+	float LoopDuration;
+};
+
+struct FParamMap0_Constants_Smoke_SpawnBurst_Instantaneous
+{
+	int SpawnCount;
+	int SpawnGroup;
+	float SpawnProbability;
+	float SpawnTime;
+};
+
+struct FParamMap0_Constants_Smoke_EmitterState
+{
+	float LoopDelay;
+	float LoopDuration;
+	float MaxDistance;
+	float MinDistance;
+	float VisibilityCullDelay;
+};
+
+struct FParamMap0_Constants_Smoke
+{
+	FParamMap0_Constants_Smoke_EmitterState EmitterState;
+	FParamMap0_Constants_Smoke_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Constants_Shockwave_SpawnBurst_Instantaneous
+{
+	int SpawnCount;
+	int SpawnGroup;
+	float SpawnProbability;
+	float SpawnTime;
+};
+
+struct FParamMap0_Constants_Shockwave_EmitterState
+{
+	float LoopDelay;
+	float LoopDuration;
+	float MaxDistance;
+	float MinDistance;
+	float VisibilityCullDelay;
+};
+
+struct FParamMap0_Constants_Shockwave
+{
+	FParamMap0_Constants_Shockwave_EmitterState EmitterState;
+	FParamMap0_Constants_Shockwave_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Constants_LIGHT_SpawnBurst_Instantaneous
+{
+	int SpawnCount;
+	int SpawnGroup;
+	float SpawnProbability;
+	float SpawnTime;
+};
+
+struct FParamMap0_Constants_LIGHT_EmitterState
+{
+	float LoopDelay;
+	float LoopDuration;
+	float MaxDistance;
+	float MinDistance;
+	float VisibilityCullDelay;
+};
+
+struct FParamMap0_Constants_LIGHT
+{
+	FParamMap0_Constants_LIGHT_EmitterState EmitterState;
+	FParamMap0_Constants_LIGHT_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Constants_Fire_SpawnBurst_Instantaneous
+{
+	int SpawnCount;
+	int SpawnGroup;
+	float SpawnProbability;
+	float SpawnTime;
+};
+
+struct FParamMap0_Constants_Fire_Smoke_SpawnBurst_Instantaneous
+{
+	int SpawnCount;
+	int SpawnGroup;
+	float SpawnProbability;
+	float SpawnTime;
+};
+
+struct FParamMap0_Constants_Fire_Smoke_EmitterState
+{
+	float LoopDelay;
+	float LoopDuration;
+	float MaxDistance;
+	float MinDistance;
+	float VisibilityCullDelay;
+};
+
+struct FParamMap0_Constants_Fire_Smoke
+{
+	FParamMap0_Constants_Fire_Smoke_EmitterState EmitterState;
+	FParamMap0_Constants_Fire_Smoke_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Constants_Fire_EmitterState
+{
+	float LoopDelay;
+	float LoopDuration;
+	float MaxDistance;
+	float MinDistance;
+	float VisibilityCullDelay;
+};
+
+struct FParamMap0_Constants_Fire
+{
+	FParamMap0_Constants_Fire_EmitterState EmitterState;
+	FParamMap0_Constants_Fire_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+};
+
+struct FParamMap0_Constants
+{
+	FParamMap0_Constants_Fire Fire;
+	FParamMap0_Constants_Fire_Smoke Fire_Smoke;
+	FParamMap0_Constants_LIGHT LIGHT;
+	FParamMap0_Constants_Shockwave Shockwave;
+	FParamMap0_Constants_Smoke Smoke;
+	FParamMap0_Constants_SystemState SystemState;
+};
+
+struct FParamMap0_Color
+{
+	float4 Color;
+	float ScaleAlpha;
+	float3 ScaleColor;
+};
+
+struct FParamMap0_AddVelocity
+{
+	int CoordinateSpace;
+	float3 ScaleAddedVelocity;
+	float3 Velocity;
+};
+
+struct FParamMap0
+{
+	FParamMap0_AddVelocity AddVelocity;
+	FParamMap0_Color Color;
+	FParamMap0_Constants Constants;
+	FParamMap0_DataInstance DataInstance;
+	FParamMap0_Drag Drag;
+	FParamMap0_DynamicMaterialParameters DynamicMaterialParameters;
+	FParamMap0_Emitter Emitter;
+	FParamMap0_EmitterState EmitterState;
+	FParamMap0_Engine Engine;
+	FParamMap0_Fire Fire;
+	FParamMap0_Fire_Smoke Fire_Smoke;
+	FParamMap0_FloatFromCurve FloatFromCurve;
+	FParamMap0_FloatFromCurve001 FloatFromCurve001;
+	FParamMap0_InitializeParticle InitializeParticle;
+	FParamMap0_LIGHT LIGHT;
+	FParamMap0_Local Local;
+	FParamMap0_MakeFloatFromInt MakeFloatFromInt;
+	FParamMap0_MakeLinearColorFromVectorAndFloat MakeLinearColorFromVectorAndFloat;
+	FParamMap0_MakeVector3_FromColor MakeVector3_FromColor;
+	FParamMap0_Multiply_Float Multiply_Float;
+	FParamMap0_Multiply_Float001 Multiply_Float001;
+	FParamMap0_Multiply_Float002 Multiply_Float002;
+	FParamMap0_Multiply_Float003 Multiply_Float003;
+	FParamMap0_Multiply_VectorByFloat Multiply_VectorByFloat;
+	FParamMap0_Multiply_VectorByFloat001 Multiply_VectorByFloat001;
+	FParamMap0_Multiply_VectorByFloat002 Multiply_VectorByFloat002;
+	FParamMap0_OUTPUT_VAR OUTPUT_VAR;
+	FParamMap0_Particles Particles;
+	FParamMap0_ParticleState ParticleState;
+	FParamMap0_ReturnCameraProperty ReturnCameraProperty;
+	FParamMap0_ReturnCameraProperty001 ReturnCameraProperty001;
+	FParamMap0_ScaleSpriteSize ScaleSpriteSize;
+	FParamMap0_Shockwave Shockwave;
+	FParamMap0_Smoke Smoke;
+	FParamMap0_SolveForcesAndVelocity SolveForcesAndVelocity;
+	FParamMap0_SpawnBurst_Instantaneous SpawnBurst_Instantaneous;
+	FParamMap0_SubUVAnimation SubUVAnimation;
+	FParamMap0_System System;
+	FParamMap0_SystemState SystemState;
+	FParamMap0_Transient Transient;
+	FParamMap0_UniformRangedFloat UniformRangedFloat;
+	FParamMap0_UniformRangedFloat001 UniformRangedFloat001;
+	FParamMap0_UniformRangedFloat002 UniformRangedFloat002;
+	FParamMap0_UniformRangedFloat003 UniformRangedFloat003;
+	FParamMap0_UniformRangedFloat004 UniformRangedFloat004;
+	FParamMap0_UniformRangedFloat005 UniformRangedFloat005;
+	FParamMap0_UniformRangedInt UniformRangedInt;
+	FParamMap0_UniformRangedVector UniformRangedVector;
+	FParamMap0_User User;
+	FParamMap0_Vector2DFromFloat Vector2DFromFloat;
+	FParamMap0_Vector2DFromFloat001 Vector2DFromFloat001;
+};
+
+struct FSimulationContext
+{
+	FParamMap0 Map;
+};
+
+static float HackSpawnInterp = 1.0;
+void SystemState_SystemChangeState002_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void SystemState_SystemChangeState_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void SystemState_SystemChangeState001_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void SystemState_Func_(inout FSimulationContext Context);
+void EmitterState_EmitterChangeState002_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState001_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState006_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState005_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState004_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_Shockwave_Func_(inout FSimulationContext Context);
+void SpawnBurst_Instantaneous_Shockwave_Func_(inout FSimulationContext Context);
+void Shockwave_Func_(inout FSimulationContext Context);
+void EmitterState_EmitterChangeState002_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState001_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState006_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState005_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState004_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_LIGHT_Func_(inout FSimulationContext Context);
+void SpawnBurst_Instantaneous_LIGHT_Func_(inout FSimulationContext Context);
+void LIGHT_Func_(inout FSimulationContext Context);
+void EmitterState_EmitterChangeState002_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState001_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState006_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState005_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState004_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_Fire_Smoke_Func_(inout FSimulationContext Context);
+void SpawnBurst_Instantaneous_Fire_Smoke_Func_(inout FSimulationContext Context);
+void Fire_Smoke_Func_(inout FSimulationContext Context);
+void EmitterState_EmitterChangeState002_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState001_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState006_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState005_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState004_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_Fire_Func_(inout FSimulationContext Context);
+void SpawnBurst_Instantaneous_Fire_Func_(inout FSimulationContext Context);
+void Fire_Func_(inout FSimulationContext Context);
+void EmitterState_EmitterChangeState002_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState001_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState006_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState005_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_EmitterChangeState004_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context);
+void EmitterState_Smoke_Func_(inout FSimulationContext Context);
+void SpawnBurst_Instantaneous_Smoke_Func_(inout FSimulationContext Context);
+void Smoke_Func_(inout FSimulationContext Context);
+float GetSpawnInterpolation();
+void SystemState_SystemChangeState002_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	bool Result6 = NiagaraAll(Context.Map.System.ExecutionStateSource <= In_NewStateSource);
+	bool Result7 = In_Condition && Result6;
+	int ENiagaraExecutionState_IfResult;
+	int ENiagaraExecutionStateSource_IfResult;
+	if(Result7)
+	{
+	ENiagaraExecutionState_IfResult = In_NewState;
+	ENiagaraExecutionStateSource_IfResult = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult = Context.Map.System.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult = Context.Map.System.ExecutionStateSource;
+	}
+	Context.Map.System.ExecutionState = ENiagaraExecutionState_IfResult;
+	Context.Map.System.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult;
+}
+
+void SystemState_SystemChangeState_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	bool Result8 = NiagaraAll(Context.Map.System.ExecutionStateSource <= In_NewStateSource);
+	bool Result9 = In_Condition && Result8;
+	int ENiagaraExecutionState_IfResult1;
+	int ENiagaraExecutionStateSource_IfResult1;
+	if(Result9)
+	{
+	ENiagaraExecutionState_IfResult1 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult1 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult1 = Context.Map.System.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult1 = Context.Map.System.ExecutionStateSource;
+	}
+	Context.Map.System.ExecutionState = ENiagaraExecutionState_IfResult1;
+	Context.Map.System.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult1;
+}
+
+void SystemState_SystemChangeState001_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	bool Result11 = NiagaraAll(Context.Map.System.ExecutionStateSource <= In_NewStateSource);
+	bool Result12 = In_Condition && Result11;
+	int ENiagaraExecutionState_IfResult2;
+	int ENiagaraExecutionStateSource_IfResult2;
+	if(Result12)
+	{
+	ENiagaraExecutionState_IfResult2 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult2 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult2 = Context.Map.System.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult2 = Context.Map.System.ExecutionStateSource;
+	}
+	Context.Map.System.ExecutionState = ENiagaraExecutionState_IfResult2;
+	Context.Map.System.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult2;
+}
+
+void SystemState_Func_(inout FSimulationContext Context)
+{
+	float Constant2 = 0;
+	bool Result = NiagaraAll(Context.Map.System.Age == Constant2);
+	float Constant3 = 0.016667;
+	float Result1 = max(Context.Map.Constants.SystemState.LoopDuration, Constant3);
+	float Duration_IfResult;
+	if(Result)
+	{
+	Duration_IfResult = Result1;
+	}
+	else
+	{
+	Duration_IfResult = Context.Map.System.CurrentLoopDuration;
+	}
+	float Constant4 = 0;
+	Context.Map.System.CurrentLoopDuration = Duration_IfResult;
+	Context.Map.SystemState.LoopDelay = Constant4;
+	float Result2 = Context.Map.System.Age + Context.Map.Engine.DeltaTime;
+	float Result3 = Context.Map.Engine.DeltaTime + Context.Map.System.LoopedAge;
+	bool Result4 = NiagaraAll(Result3 >= Context.Map.System.CurrentLoopDuration);
+	int Constant5 = 0;
+	Context.Map.System.Age = Result2;
+	Context.Map.System.LoopedAge = Result3;
+	Context.Map.Local.SystemState.LoopCountIncreased = Result4;
+	Context.Map.System.LoopCount = Constant5;
+	float Constant6 = 0;
+	float Duration_IfResult1;
+	float LoopedAge_IfResult;
+	if(Context.Map.Local.SystemState.LoopCountIncreased)
+	{
+	Duration_IfResult1 = Context.Map.Constants.SystemState.LoopDuration;
+	LoopedAge_IfResult = Constant6;
+	}
+	else
+	{
+	Duration_IfResult1 = Context.Map.System.CurrentLoopDuration;
+	LoopedAge_IfResult = Context.Map.System.LoopedAge;
+	}
+	Context.Map.System.CurrentLoopDuration = Duration_IfResult1;
+	Context.Map.System.LoopedAge = LoopedAge_IfResult;
+	float Result5 = Context.Map.System.LoopedAge / Context.Map.System.CurrentLoopDuration;
+	Context.Map.System.NormalizedLoopAge = Result5;
+	bool Constant7 = true;
+	int Constant8 = 0;
+	SystemState_SystemChangeState002_Func_(Context.Map.Transient.ScalabilityExecutionState, Constant7, Constant8, Context);
+	int Constant9 = 1;
+	int Constant10 = 1;
+	SystemState_SystemChangeState002_Func_(Constant9, Context.Map.Local.SystemState.LoopCountIncreased, Constant10, Context);
+	int Constant11 = 3;
+	bool Constant12 = false;
+	int Constant13 = 3;
+	SystemState_SystemChangeState_Func_(Constant11, Constant12, Constant13, Context);
+	bool Constant14 = true;
+	Context.Map.System.bCompleteOnInactive = Constant14;
+	int Constant15 = 0;
+	bool Result10 = NiagaraAll(Context.Map.Engine.Owner.ExecutionState != Constant15);
+	int Constant16 = 2;
+	SystemState_SystemChangeState001_Func_(Context.Map.Engine.Owner.ExecutionState, Result10, Constant16, Context);
+}
+
+void EmitterState_EmitterChangeState002_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant36 = 3;
+	bool Result29 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant36);
+	int Constant37 = 4;
+	bool Result30 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant37);
+	bool Result31 = Result29 && Result30;
+	bool Result32 = In_Condition && Result31;
+	bool Result33 = NiagaraAll(Context.Map.Shockwave.ExecutionStateSource <= In_NewStateSource);
+	bool Result34 = Result32 && Result33;
+	int ENiagaraExecutionState_IfResult6;
+	int ENiagaraExecutionStateSource_IfResult3;
+	if(Result34)
+	{
+	ENiagaraExecutionState_IfResult6 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult3 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult6 = Context.Map.Shockwave.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult3 = Context.Map.Shockwave.ExecutionStateSource;
+	}
+	Context.Map.Shockwave.ExecutionState = ENiagaraExecutionState_IfResult6;
+	Context.Map.Shockwave.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult3;
+}
+
+void EmitterState_EmitterChangeState001_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant42 = 3;
+	bool Result38 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant42);
+	int Constant43 = 4;
+	bool Result39 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant43);
+	bool Result40 = Result38 && Result39;
+	bool Result41 = In_Condition && Result40;
+	bool Result42 = NiagaraAll(Context.Map.Shockwave.ExecutionStateSource <= In_NewStateSource);
+	bool Result43 = Result41 && Result42;
+	int ENiagaraExecutionState_IfResult8;
+	int ENiagaraExecutionStateSource_IfResult4;
+	if(Result43)
+	{
+	ENiagaraExecutionState_IfResult8 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult4 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult8 = Context.Map.Shockwave.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult4 = Context.Map.Shockwave.ExecutionStateSource;
+	}
+	Context.Map.Shockwave.ExecutionState = ENiagaraExecutionState_IfResult8;
+	Context.Map.Shockwave.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult4;
+}
+
+void EmitterState_EmitterChangeState006_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant48 = 3;
+	bool Result47 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant48);
+	int Constant49 = 4;
+	bool Result48 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant49);
+	bool Result49 = Result47 && Result48;
+	bool Result50 = In_Condition && Result49;
+	bool Result51 = NiagaraAll(Context.Map.Shockwave.ExecutionStateSource <= In_NewStateSource);
+	bool Result52 = Result50 && Result51;
+	int ENiagaraExecutionState_IfResult9;
+	int ENiagaraExecutionStateSource_IfResult5;
+	if(Result52)
+	{
+	ENiagaraExecutionState_IfResult9 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult5 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult9 = Context.Map.Shockwave.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult5 = Context.Map.Shockwave.ExecutionStateSource;
+	}
+	Context.Map.Shockwave.ExecutionState = ENiagaraExecutionState_IfResult9;
+	Context.Map.Shockwave.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult5;
+}
+
+void EmitterState_EmitterChangeState005_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant54 = 3;
+	bool Result56 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant54);
+	int Constant55 = 4;
+	bool Result57 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant55);
+	bool Result58 = Result56 && Result57;
+	bool Result59 = In_Condition && Result58;
+	bool Result60 = NiagaraAll(Context.Map.Shockwave.ExecutionStateSource <= In_NewStateSource);
+	bool Result61 = Result59 && Result60;
+	int ENiagaraExecutionState_IfResult10;
+	int ENiagaraExecutionStateSource_IfResult6;
+	if(Result61)
+	{
+	ENiagaraExecutionState_IfResult10 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult6 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult10 = Context.Map.Shockwave.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult6 = Context.Map.Shockwave.ExecutionStateSource;
+	}
+	Context.Map.Shockwave.ExecutionState = ENiagaraExecutionState_IfResult10;
+	Context.Map.Shockwave.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult6;
+}
+
+void EmitterState_EmitterChangeState004_Shockwave_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant60 = 3;
+	bool Result66 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant60);
+	int Constant61 = 4;
+	bool Result67 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant61);
+	bool Result68 = Result66 && Result67;
+	bool Result69 = In_Condition && Result68;
+	bool Result70 = NiagaraAll(Context.Map.Shockwave.ExecutionStateSource <= In_NewStateSource);
+	bool Result71 = Result69 && Result70;
+	int ENiagaraExecutionState_IfResult11;
+	int ENiagaraExecutionStateSource_IfResult7;
+	if(Result71)
+	{
+	ENiagaraExecutionState_IfResult11 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult7 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult11 = Context.Map.Shockwave.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult7 = Context.Map.Shockwave.ExecutionStateSource;
+	}
+	Context.Map.Shockwave.ExecutionState = ENiagaraExecutionState_IfResult11;
+	Context.Map.Shockwave.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult7;
+}
+
+void EmitterState_Shockwave_Func_(inout FSimulationContext Context)
+{
+	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.Shockwave.ExecutionState;
+	bool Constant19 = false;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Constant19;
+	Context.Map.Shockwave.Age = Context.Map.System.Age;
+	Context.Map.Shockwave.LoopedAge = Context.Map.System.LoopedAge;
+	Context.Map.Shockwave.NormalizedLoopAge = Context.Map.System.NormalizedLoopAge;
+	Context.Map.Shockwave.LoopCount = Context.Map.System.LoopCount;
+	Context.Map.Shockwave.CurrentLoopDelay = Context.Map.System.CurrentLoopDelay;
+	Context.Map.Shockwave.CurrentLoopDuration = Context.Map.System.CurrentLoopDuration;
+	Context.Map.EmitterState.LoopDuration = Context.Map.Constants.Shockwave.EmitterState.LoopDuration;
+	Context.Map.EmitterState.LoopDelay = Context.Map.Constants.Shockwave.EmitterState.LoopDelay;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Context.Map.EmitterState.RecalculateDurationEachLoop;
+	float Constant20 = 0;
+	float float_IfResult;
+	if(Context.Map.EmitterState.bUseMinDistance)
+	{
+	float_IfResult = Context.Map.Constants.Shockwave.EmitterState.MinDistance;
+	}
+	else
+	{
+	float_IfResult = Constant20;
+	}
+	float Result13 = Context.Map.Engine.Owner.LODDistance - float_IfResult;
+	float Constant21 = 1e+12;
+	float float_IfResult1;
+	if(Context.Map.EmitterState.bUseMaxDistance)
+	{
+	float_IfResult1 = Context.Map.Constants.Shockwave.EmitterState.MaxDistance;
+	}
+	else
+	{
+	float_IfResult1 = Constant21;
+	}
+	float Result14 = float_IfResult1 - float_IfResult;
+	float Result15 = Result13 / Result14;
+	Context.Map.Shockwave.Scalability.DistanceFraction = Result15;
+	int Constant22 = 0;
+	Context.Map.Transient.ScalabilityEmitterExecutionState = Constant22;
+	int Constant23 = 0;
+	Context.Map.EmitterState.MinDistanceResponse = Constant23;
+	float Constant24 = 0;
+	bool Result16 = NiagaraAll(Context.Map.Shockwave.Scalability.DistanceFraction < Constant24);
+	bool Result17 = Result16 && Context.Map.EmitterState.bUseMinDistance;
+	int Constant25 = 3;
+	int Result18 = min(Context.Map.EmitterState.MinDistanceResponse, Constant25);
+	int ExecutionState;
+	ExecutionState = Result18;
+	int ENiagaraExecutionState_IfResult3;
+	if(Result17)
+	{
+	ENiagaraExecutionState_IfResult3 = ExecutionState;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult3 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant26 = 4;
+	bool Result19 = NiagaraAll(Context.Map.EmitterState.MinDistanceResponse == Constant26);
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult3;
+	Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin = Result19;
+	int Constant27 = 1;
+	Context.Map.EmitterState.MaxDistanceResponse = Constant27;
+	float Constant28 = 1;
+	bool Result20 = NiagaraAll(Context.Map.Shockwave.Scalability.DistanceFraction > Constant28);
+	bool Result21 = Result20 && Context.Map.EmitterState.bUseMaxDistance;
+	int Constant29 = 3;
+	int Result22 = min(Context.Map.EmitterState.MaxDistanceResponse, Constant29);
+	int ExecutionState1;
+	ExecutionState1 = Result22;
+	int ENiagaraExecutionState_IfResult4;
+	if(Result21)
+	{
+	ENiagaraExecutionState_IfResult4 = ExecutionState1;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult4 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant30 = 4;
+	bool Result23 = NiagaraAll(Context.Map.EmitterState.MaxDistanceResponse == Constant30);
+	bool Result24 = Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin || Result23;
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult4;
+	Context.Map.Local.EmitterState.ScalabilityKillOnComplete = Result24;
+	int Constant31 = 0;
+	bool Result25 = NiagaraAll(Context.Map.Engine.Shockwave.NumParticles == Constant31);
+	Context.Map.Local.EmitterState.NoActiveEmitterParticles = Result25;
+	int Constant32 = 1;
+	Context.Map.EmitterState.VisibilityCullResponse = Constant32;
+	bool Result26 = NiagaraAll(Context.Map.Engine.Owner.TimeSinceRendered > Context.Map.Constants.Shockwave.EmitterState.VisibilityCullDelay);
+	int Constant33 = 3;
+	int Result27 = min(Context.Map.EmitterState.VisibilityCullResponse, Constant33);
+	int ExecutionState2;
+	ExecutionState2 = Result27;
+	int ENiagaraExecutionState_IfResult5;
+	if(Result26)
+	{
+	ENiagaraExecutionState_IfResult5 = ExecutionState2;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult5 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult5;
+	float Constant34 = 1;
+	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant34;
+	int Constant35 = 0;
+	bool Result28 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant35);
+	EmitterState_EmitterChangeState002_Shockwave_Func_(Context.Map.System.ExecutionState, Result28, Context.Map.System.ExecutionStateSource, Context);
+	int Constant38 = 3;
+	bool Result35 = NiagaraAll(Context.Map.Transient.ScalabilityEmitterExecutionState == Constant38);
+	bool Result36 = !Context.Map.Local.EmitterState.NoActiveEmitterParticles;
+	bool Result37 = Result35 && Context.Map.Local.EmitterState.ScalabilityKillOnComplete && Result36;
+	int Constant39 = 1;
+	int ENiagaraExecutionState_IfResult7;
+	if(Result37)
+	{
+	ENiagaraExecutionState_IfResult7 = Constant39;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult7 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	bool Constant40 = true;
+	int Constant41 = 0;
+	EmitterState_EmitterChangeState001_Shockwave_Func_(ENiagaraExecutionState_IfResult7, Constant40, Constant41, Context);
+	int Constant44 = 1;
+	int Constant45 = 0;
+	bool Result44 = NiagaraAll(Context.Map.System.ExecutionState != Constant45);
+	int Constant46 = 0;
+	bool Result45 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant46);
+	bool Result46 = Result44 && Result45;
+	int Constant47 = 1;
+	EmitterState_EmitterChangeState006_Shockwave_Func_(Constant44, Result46, Constant47, Context);
+	int Constant50 = 1;
+	int Constant51 = 0;
+	bool Result53 = NiagaraAll(Context.Map.System.ExecutionState != Constant51);
+	int Constant52 = 2;
+	bool Result54 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant52);
+	bool Result55 = Result53 && Result54;
+	int Constant53 = 1;
+	EmitterState_EmitterChangeState005_Shockwave_Func_(Constant50, Result55, Constant53, Context);
+	int Constant56 = 3;
+	int Constant57 = 0;
+	bool Result62 = NiagaraAll(Context.Map.Shockwave.ExecutionState != Constant57);
+	bool Result63 = Context.Map.Local.EmitterState.NoActiveEmitterParticles && Result62;
+	int Constant58 = 0;
+	bool Result64 = NiagaraAll(Context.Map.Shockwave.ExecutionStateSource != Constant58);
+	bool Result65 = Result63 && Result64;
+	bool bool_IfResult;
+	if(Context.Map.System.bCompleteOnInactive)
+	{
+	bool_IfResult = Result65;
+	}
+	else
+	{
+	bool_IfResult = Result62;
+	}
+	int Constant59 = 3;
+	EmitterState_EmitterChangeState004_Shockwave_Func_(Constant56, bool_IfResult, Constant59, Context);
+	bool Constant62 = false;
+	Context.Map.EmitterState.ResetAgeOnAwaken = Constant62;
+	int Constant63 = 0;
+	bool Result72 = NiagaraAll(Context.Map.Local.EmitterState.PreviousEmitterState != Constant63);
+	int Constant64 = 0;
+	bool Result73 = NiagaraAll(Context.Map.Shockwave.ExecutionState == Constant64);
+	int Constant65 = 0;
+	bool Result74 = NiagaraAll(Context.Map.Shockwave.ExecutionStateSource == Constant65);
+	bool Result75 = Context.Map.EmitterState.ResetAgeOnAwaken && Result72 && Result73 && Result74;
+	float Constant66 = 0;
+	float Constant67 = 0;
+	bool Constant68 = false;
+	int Constant69 = 0;
+	float Constant70 = 0;
+	bool Constant71 = false;
+	Context.Map.Local.EmitterState.LoopCountIncreased = Constant71;
+	float Age_IfResult;
+	float LoopedAge_IfResult1;
+	bool LoopCountIncreased_IfResult;
+	int LoopCount_IfResult;
+	float NormalizedLoopAge_IfResult;
+	if(Result75)
+	{
+	Age_IfResult = Constant66;
+	LoopedAge_IfResult1 = Constant67;
+	LoopCountIncreased_IfResult = Constant68;
+	LoopCount_IfResult = Constant69;
+	NormalizedLoopAge_IfResult = Constant70;
+	}
+	else
+	{
+	Age_IfResult = Context.Map.Shockwave.Age;
+	LoopedAge_IfResult1 = Context.Map.Shockwave.LoopedAge;
+	LoopCountIncreased_IfResult = Context.Map.Local.EmitterState.LoopCountIncreased;
+	LoopCount_IfResult = Context.Map.Shockwave.LoopCount;
+	NormalizedLoopAge_IfResult = Context.Map.Shockwave.NormalizedLoopAge;
+	}
+	Context.Map.Shockwave.Age = Age_IfResult;
+	Context.Map.Shockwave.LoopedAge = LoopedAge_IfResult1;
+	Context.Map.Local.EmitterState.LoopCountIncreased = LoopCountIncreased_IfResult;
+	Context.Map.Shockwave.LoopCount = LoopCount_IfResult;
+	Context.Map.Shockwave.NormalizedLoopAge = NormalizedLoopAge_IfResult;
+}
+
+void SpawnBurst_Instantaneous_Shockwave_Func_(inout FSimulationContext Context)
+{
+	Context.Map.SpawnBurst_Instantaneous.Age = Context.Map.Shockwave.LoopedAge;
+	float Result76 = Context.Map.SpawnBurst_Instantaneous.Age - Context.Map.Engine.DeltaTime;
+	float Result77 = Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnTime - Result76;
+	float Constant72 = 0;
+	float Output1;
+	Output1 = Constant72;
+	bool Result78 = NiagaraAll(Result77 >= Output1);
+	float Result79 = Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnTime - Context.Map.SpawnBurst_Instantaneous.Age;
+	bool Result80 = NiagaraAll(Result79 < Output1);
+	bool Result81 = Result78 && Result80;
+	int Constant73 = 0;
+	bool Result82 = NiagaraAll(Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnCount == Constant73);
+	float Constant74 = 0;
+	float Result83 = Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnCount * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.Shockwave.SpawnCountScale;
+	float Constant75 = 1;
+	float Result84 = max(Result83, Constant75);
+	float float_IfResult2;
+	if(Result82)
+	{
+	float_IfResult2 = Constant74;
+	}
+	else
+	{
+	float_IfResult2 = Result84;
+	}
+	float Constant76 = 0;
+	NiagaraSpawnInfo Output11;
+	Output11.Count = float_IfResult2;
+	Output11.InterpStartDt = Result77;
+	Output11.IntervalDt = Constant76;
+	Output11.SpawnGroup = Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnGroup;
+	int Constant77 = 0;
+	float Constant78 = 0;
+	float Constant79 = 0;
+	NiagaraSpawnInfo Output12;
+	Output12.Count = Constant77;
+	Output12.InterpStartDt = Constant78;
+	Output12.SpawnGroup = Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnGroup;
+	Output12.IntervalDt = Constant79;
+	NiagaraSpawnInfo SpawnInfo_IfResult;
+	if(Result81)
+	{
+	SpawnInfo_IfResult = Output11;
+	}
+	else
+	{
+	SpawnInfo_IfResult = Output12;
+	}
+	Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst = SpawnInfo_IfResult;
+	bool Constant80 = false;
+	Context.Map.Transient.SpawningbCanEverSpawn = Constant80;
+	bool Result85 = NiagaraAll(Context.Map.Shockwave.LoopedAge <= Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnTime);
+	bool Result86 = Context.Map.Transient.SpawningbCanEverSpawn || Result85;
+	Context.Map.Transient.SpawningbCanEverSpawn = Result86;
+}
+
+void Shockwave_Func_(inout FSimulationContext Context)
+{
+	bool Constant17 = true;
+	bool Constant18 = true;
+	Context.Map.EmitterState.bUseMaxDistance = Constant17;
+	Context.Map.EmitterState.bUseMinDistance = Constant18;
+	EnterStatScope(3 );
+	EmitterState_Shockwave_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(4 );
+	SpawnBurst_Instantaneous_Shockwave_Func_(Context);
+	ExitStatScope( );
+}
+
+void EmitterState_EmitterChangeState002_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant99 = 3;
+	bool Result103 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant99);
+	int Constant100 = 4;
+	bool Result104 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant100);
+	bool Result105 = Result103 && Result104;
+	bool Result106 = In_Condition && Result105;
+	bool Result107 = NiagaraAll(Context.Map.LIGHT.ExecutionStateSource <= In_NewStateSource);
+	bool Result108 = Result106 && Result107;
+	int ENiagaraExecutionState_IfResult15;
+	int ENiagaraExecutionStateSource_IfResult8;
+	if(Result108)
+	{
+	ENiagaraExecutionState_IfResult15 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult8 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult15 = Context.Map.LIGHT.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult8 = Context.Map.LIGHT.ExecutionStateSource;
+	}
+	Context.Map.LIGHT.ExecutionState = ENiagaraExecutionState_IfResult15;
+	Context.Map.LIGHT.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult8;
+}
+
+void EmitterState_EmitterChangeState001_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant105 = 3;
+	bool Result112 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant105);
+	int Constant106 = 4;
+	bool Result113 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant106);
+	bool Result114 = Result112 && Result113;
+	bool Result115 = In_Condition && Result114;
+	bool Result116 = NiagaraAll(Context.Map.LIGHT.ExecutionStateSource <= In_NewStateSource);
+	bool Result117 = Result115 && Result116;
+	int ENiagaraExecutionState_IfResult17;
+	int ENiagaraExecutionStateSource_IfResult9;
+	if(Result117)
+	{
+	ENiagaraExecutionState_IfResult17 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult9 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult17 = Context.Map.LIGHT.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult9 = Context.Map.LIGHT.ExecutionStateSource;
+	}
+	Context.Map.LIGHT.ExecutionState = ENiagaraExecutionState_IfResult17;
+	Context.Map.LIGHT.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult9;
+}
+
+void EmitterState_EmitterChangeState006_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant111 = 3;
+	bool Result121 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant111);
+	int Constant112 = 4;
+	bool Result122 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant112);
+	bool Result123 = Result121 && Result122;
+	bool Result124 = In_Condition && Result123;
+	bool Result125 = NiagaraAll(Context.Map.LIGHT.ExecutionStateSource <= In_NewStateSource);
+	bool Result126 = Result124 && Result125;
+	int ENiagaraExecutionState_IfResult18;
+	int ENiagaraExecutionStateSource_IfResult10;
+	if(Result126)
+	{
+	ENiagaraExecutionState_IfResult18 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult10 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult18 = Context.Map.LIGHT.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult10 = Context.Map.LIGHT.ExecutionStateSource;
+	}
+	Context.Map.LIGHT.ExecutionState = ENiagaraExecutionState_IfResult18;
+	Context.Map.LIGHT.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult10;
+}
+
+void EmitterState_EmitterChangeState005_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant117 = 3;
+	bool Result130 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant117);
+	int Constant118 = 4;
+	bool Result131 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant118);
+	bool Result132 = Result130 && Result131;
+	bool Result133 = In_Condition && Result132;
+	bool Result134 = NiagaraAll(Context.Map.LIGHT.ExecutionStateSource <= In_NewStateSource);
+	bool Result135 = Result133 && Result134;
+	int ENiagaraExecutionState_IfResult19;
+	int ENiagaraExecutionStateSource_IfResult11;
+	if(Result135)
+	{
+	ENiagaraExecutionState_IfResult19 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult11 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult19 = Context.Map.LIGHT.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult11 = Context.Map.LIGHT.ExecutionStateSource;
+	}
+	Context.Map.LIGHT.ExecutionState = ENiagaraExecutionState_IfResult19;
+	Context.Map.LIGHT.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult11;
+}
+
+void EmitterState_EmitterChangeState004_LIGHT_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant123 = 3;
+	bool Result140 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant123);
+	int Constant124 = 4;
+	bool Result141 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant124);
+	bool Result142 = Result140 && Result141;
+	bool Result143 = In_Condition && Result142;
+	bool Result144 = NiagaraAll(Context.Map.LIGHT.ExecutionStateSource <= In_NewStateSource);
+	bool Result145 = Result143 && Result144;
+	int ENiagaraExecutionState_IfResult20;
+	int ENiagaraExecutionStateSource_IfResult12;
+	if(Result145)
+	{
+	ENiagaraExecutionState_IfResult20 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult12 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult20 = Context.Map.LIGHT.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult12 = Context.Map.LIGHT.ExecutionStateSource;
+	}
+	Context.Map.LIGHT.ExecutionState = ENiagaraExecutionState_IfResult20;
+	Context.Map.LIGHT.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult12;
+}
+
+void EmitterState_LIGHT_Func_(inout FSimulationContext Context)
+{
+	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.LIGHT.ExecutionState;
+	bool Constant83 = false;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Constant83;
+	Context.Map.LIGHT.Age = Context.Map.System.Age;
+	Context.Map.LIGHT.LoopedAge = Context.Map.System.LoopedAge;
+	Context.Map.LIGHT.NormalizedLoopAge = Context.Map.System.NormalizedLoopAge;
+	Context.Map.LIGHT.LoopCount = Context.Map.System.LoopCount;
+	Context.Map.LIGHT.CurrentLoopDelay = Context.Map.System.CurrentLoopDelay;
+	Context.Map.LIGHT.CurrentLoopDuration = Context.Map.System.CurrentLoopDuration;
+	Context.Map.EmitterState.LoopDuration = Context.Map.Constants.LIGHT.EmitterState.LoopDuration;
+	Context.Map.EmitterState.LoopDelay = Context.Map.Constants.LIGHT.EmitterState.LoopDelay;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Context.Map.EmitterState.RecalculateDurationEachLoop;
+	float Constant84 = 0;
+	float float_IfResult3;
+	if(Context.Map.EmitterState.bUseMinDistance)
+	{
+	float_IfResult3 = Context.Map.Constants.LIGHT.EmitterState.MinDistance;
+	}
+	else
+	{
+	float_IfResult3 = Constant84;
+	}
+	float Result87 = Context.Map.Engine.Owner.LODDistance - float_IfResult3;
+	float Constant85 = 1e+12;
+	float float_IfResult4;
+	if(Context.Map.EmitterState.bUseMaxDistance)
+	{
+	float_IfResult4 = Context.Map.Constants.LIGHT.EmitterState.MaxDistance;
+	}
+	else
+	{
+	float_IfResult4 = Constant85;
+	}
+	float Result88 = float_IfResult4 - float_IfResult3;
+	float Result89 = Result87 / Result88;
+	Context.Map.LIGHT.Scalability.DistanceFraction = Result89;
+	int Constant86 = 0;
+	Context.Map.EmitterState.MinDistanceResponse = Constant86;
+	float Constant87 = 0;
+	bool Result90 = NiagaraAll(Context.Map.LIGHT.Scalability.DistanceFraction < Constant87);
+	bool Result91 = Result90 && Context.Map.EmitterState.bUseMinDistance;
+	int Constant88 = 3;
+	int Result92 = min(Context.Map.EmitterState.MinDistanceResponse, Constant88);
+	int ExecutionState3;
+	ExecutionState3 = Result92;
+	int ENiagaraExecutionState_IfResult12;
+	if(Result91)
+	{
+	ENiagaraExecutionState_IfResult12 = ExecutionState3;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult12 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant89 = 4;
+	bool Result93 = NiagaraAll(Context.Map.EmitterState.MinDistanceResponse == Constant89);
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult12;
+	Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin = Result93;
+	int Constant90 = 1;
+	Context.Map.EmitterState.MaxDistanceResponse = Constant90;
+	float Constant91 = 1;
+	bool Result94 = NiagaraAll(Context.Map.LIGHT.Scalability.DistanceFraction > Constant91);
+	bool Result95 = Result94 && Context.Map.EmitterState.bUseMaxDistance;
+	int Constant92 = 3;
+	int Result96 = min(Context.Map.EmitterState.MaxDistanceResponse, Constant92);
+	int ExecutionState4;
+	ExecutionState4 = Result96;
+	int ENiagaraExecutionState_IfResult13;
+	if(Result95)
+	{
+	ENiagaraExecutionState_IfResult13 = ExecutionState4;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult13 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant93 = 4;
+	bool Result97 = NiagaraAll(Context.Map.EmitterState.MaxDistanceResponse == Constant93);
+	bool Result98 = Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin || Result97;
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult13;
+	Context.Map.Local.EmitterState.ScalabilityKillOnComplete = Result98;
+	int Constant94 = 0;
+	bool Result99 = NiagaraAll(Context.Map.Engine.LIGHT.NumParticles == Constant94);
+	Context.Map.Local.EmitterState.NoActiveEmitterParticles = Result99;
+	int Constant95 = 1;
+	Context.Map.EmitterState.VisibilityCullResponse = Constant95;
+	bool Result100 = NiagaraAll(Context.Map.Engine.Owner.TimeSinceRendered > Context.Map.Constants.LIGHT.EmitterState.VisibilityCullDelay);
+	int Constant96 = 3;
+	int Result101 = min(Context.Map.EmitterState.VisibilityCullResponse, Constant96);
+	int ExecutionState5;
+	ExecutionState5 = Result101;
+	int ENiagaraExecutionState_IfResult14;
+	if(Result100)
+	{
+	ENiagaraExecutionState_IfResult14 = ExecutionState5;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult14 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult14;
+	float Constant97 = 1;
+	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant97;
+	int Constant98 = 0;
+	bool Result102 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant98);
+	EmitterState_EmitterChangeState002_LIGHT_Func_(Context.Map.System.ExecutionState, Result102, Context.Map.System.ExecutionStateSource, Context);
+	int Constant101 = 3;
+	bool Result109 = NiagaraAll(Context.Map.Transient.ScalabilityEmitterExecutionState == Constant101);
+	bool Result110 = !Context.Map.Local.EmitterState.NoActiveEmitterParticles;
+	bool Result111 = Result109 && Context.Map.Local.EmitterState.ScalabilityKillOnComplete && Result110;
+	int Constant102 = 1;
+	int ENiagaraExecutionState_IfResult16;
+	if(Result111)
+	{
+	ENiagaraExecutionState_IfResult16 = Constant102;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult16 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	bool Constant103 = true;
+	int Constant104 = 0;
+	EmitterState_EmitterChangeState001_LIGHT_Func_(ENiagaraExecutionState_IfResult16, Constant103, Constant104, Context);
+	int Constant107 = 1;
+	int Constant108 = 0;
+	bool Result118 = NiagaraAll(Context.Map.System.ExecutionState != Constant108);
+	int Constant109 = 0;
+	bool Result119 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant109);
+	bool Result120 = Result118 && Result119;
+	int Constant110 = 1;
+	EmitterState_EmitterChangeState006_LIGHT_Func_(Constant107, Result120, Constant110, Context);
+	int Constant113 = 1;
+	int Constant114 = 0;
+	bool Result127 = NiagaraAll(Context.Map.System.ExecutionState != Constant114);
+	int Constant115 = 2;
+	bool Result128 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant115);
+	bool Result129 = Result127 && Result128;
+	int Constant116 = 1;
+	EmitterState_EmitterChangeState005_LIGHT_Func_(Constant113, Result129, Constant116, Context);
+	int Constant119 = 3;
+	int Constant120 = 0;
+	bool Result136 = NiagaraAll(Context.Map.LIGHT.ExecutionState != Constant120);
+	bool Result137 = Context.Map.Local.EmitterState.NoActiveEmitterParticles && Result136;
+	int Constant121 = 0;
+	bool Result138 = NiagaraAll(Context.Map.LIGHT.ExecutionStateSource != Constant121);
+	bool Result139 = Result137 && Result138;
+	bool bool_IfResult1;
+	if(Context.Map.System.bCompleteOnInactive)
+	{
+	bool_IfResult1 = Result139;
+	}
+	else
+	{
+	bool_IfResult1 = Result136;
+	}
+	int Constant122 = 3;
+	EmitterState_EmitterChangeState004_LIGHT_Func_(Constant119, bool_IfResult1, Constant122, Context);
+	bool Constant125 = false;
+	Context.Map.EmitterState.ResetAgeOnAwaken = Constant125;
+	int Constant126 = 0;
+	bool Result146 = NiagaraAll(Context.Map.Local.EmitterState.PreviousEmitterState != Constant126);
+	int Constant127 = 0;
+	bool Result147 = NiagaraAll(Context.Map.LIGHT.ExecutionState == Constant127);
+	int Constant128 = 0;
+	bool Result148 = NiagaraAll(Context.Map.LIGHT.ExecutionStateSource == Constant128);
+	bool Result149 = Context.Map.EmitterState.ResetAgeOnAwaken && Result146 && Result147 && Result148;
+	float Constant129 = 0;
+	float Constant130 = 0;
+	bool Constant131 = false;
+	int Constant132 = 0;
+	float Constant133 = 0;
+	float Age_IfResult1;
+	float LoopedAge_IfResult2;
+	bool LoopCountIncreased_IfResult1;
+	int LoopCount_IfResult1;
+	float NormalizedLoopAge_IfResult1;
+	if(Result149)
+	{
+	Age_IfResult1 = Constant129;
+	LoopedAge_IfResult2 = Constant130;
+	LoopCountIncreased_IfResult1 = Constant131;
+	LoopCount_IfResult1 = Constant132;
+	NormalizedLoopAge_IfResult1 = Constant133;
+	}
+	else
+	{
+	Age_IfResult1 = Context.Map.LIGHT.Age;
+	LoopedAge_IfResult2 = Context.Map.LIGHT.LoopedAge;
+	LoopCountIncreased_IfResult1 = Context.Map.Local.EmitterState.LoopCountIncreased;
+	LoopCount_IfResult1 = Context.Map.LIGHT.LoopCount;
+	NormalizedLoopAge_IfResult1 = Context.Map.LIGHT.NormalizedLoopAge;
+	}
+	Context.Map.LIGHT.Age = Age_IfResult1;
+	Context.Map.LIGHT.LoopedAge = LoopedAge_IfResult2;
+	Context.Map.Local.EmitterState.LoopCountIncreased = LoopCountIncreased_IfResult1;
+	Context.Map.LIGHT.LoopCount = LoopCount_IfResult1;
+	Context.Map.LIGHT.NormalizedLoopAge = NormalizedLoopAge_IfResult1;
+}
+
+void SpawnBurst_Instantaneous_LIGHT_Func_(inout FSimulationContext Context)
+{
+	Context.Map.SpawnBurst_Instantaneous.Age = Context.Map.LIGHT.LoopedAge;
+	float Result150 = Context.Map.SpawnBurst_Instantaneous.Age - Context.Map.Engine.DeltaTime;
+	float Result151 = Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnTime - Result150;
+	float Constant134 = 0;
+	float Output13;
+	Output13 = Constant134;
+	bool Result152 = NiagaraAll(Result151 >= Output13);
+	float Result153 = Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnTime - Context.Map.SpawnBurst_Instantaneous.Age;
+	bool Result154 = NiagaraAll(Result153 < Output13);
+	bool Result155 = Result152 && Result154;
+	int Constant135 = 0;
+	bool Result156 = NiagaraAll(Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnCount == Constant135);
+	float Constant136 = 0;
+	float Result157 = Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnCount * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.LIGHT.SpawnCountScale;
+	float Constant137 = 1;
+	float Result158 = max(Result157, Constant137);
+	float float_IfResult5;
+	if(Result156)
+	{
+	float_IfResult5 = Constant136;
+	}
+	else
+	{
+	float_IfResult5 = Result158;
+	}
+	float Constant138 = 0;
+	NiagaraSpawnInfo Output14;
+	Output14.Count = float_IfResult5;
+	Output14.InterpStartDt = Result151;
+	Output14.IntervalDt = Constant138;
+	Output14.SpawnGroup = Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnGroup;
+	int Constant139 = 0;
+	float Constant140 = 0;
+	float Constant141 = 0;
+	NiagaraSpawnInfo Output15;
+	Output15.Count = Constant139;
+	Output15.InterpStartDt = Constant140;
+	Output15.SpawnGroup = Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnGroup;
+	Output15.IntervalDt = Constant141;
+	NiagaraSpawnInfo SpawnInfo_IfResult1;
+	if(Result155)
+	{
+	SpawnInfo_IfResult1 = Output14;
+	}
+	else
+	{
+	SpawnInfo_IfResult1 = Output15;
+	}
+	Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst = SpawnInfo_IfResult1;
+	bool Result159 = NiagaraAll(Context.Map.LIGHT.LoopedAge <= Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnTime);
+	bool Result160 = Context.Map.Transient.SpawningbCanEverSpawn || Result159;
+	Context.Map.Transient.SpawningbCanEverSpawn = Result160;
+}
+
+void LIGHT_Func_(inout FSimulationContext Context)
+{
+	bool Constant81 = true;
+	bool Constant82 = true;
+	Context.Map.EmitterState.bUseMinDistance = Constant81;
+	Context.Map.EmitterState.bUseMaxDistance = Constant82;
+	EnterStatScope(6 );
+	EmitterState_LIGHT_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(7 );
+	SpawnBurst_Instantaneous_LIGHT_Func_(Context);
+	ExitStatScope( );
+}
+
+void EmitterState_EmitterChangeState002_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant160 = 3;
+	bool Result177 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant160);
+	int Constant161 = 4;
+	bool Result178 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant161);
+	bool Result179 = Result177 && Result178;
+	bool Result180 = In_Condition && Result179;
+	bool Result181 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result182 = Result180 && Result181;
+	int ENiagaraExecutionState_IfResult24;
+	int ENiagaraExecutionStateSource_IfResult13;
+	if(Result182)
+	{
+	ENiagaraExecutionState_IfResult24 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult13 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult24 = Context.Map.Fire_Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult13 = Context.Map.Fire_Smoke.ExecutionStateSource;
+	}
+	Context.Map.Fire_Smoke.ExecutionState = ENiagaraExecutionState_IfResult24;
+	Context.Map.Fire_Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult13;
+}
+
+void EmitterState_EmitterChangeState001_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant166 = 3;
+	bool Result186 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant166);
+	int Constant167 = 4;
+	bool Result187 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant167);
+	bool Result188 = Result186 && Result187;
+	bool Result189 = In_Condition && Result188;
+	bool Result190 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result191 = Result189 && Result190;
+	int ENiagaraExecutionState_IfResult26;
+	int ENiagaraExecutionStateSource_IfResult14;
+	if(Result191)
+	{
+	ENiagaraExecutionState_IfResult26 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult14 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult26 = Context.Map.Fire_Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult14 = Context.Map.Fire_Smoke.ExecutionStateSource;
+	}
+	Context.Map.Fire_Smoke.ExecutionState = ENiagaraExecutionState_IfResult26;
+	Context.Map.Fire_Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult14;
+}
+
+void EmitterState_EmitterChangeState006_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant172 = 3;
+	bool Result195 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant172);
+	int Constant173 = 4;
+	bool Result196 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant173);
+	bool Result197 = Result195 && Result196;
+	bool Result198 = In_Condition && Result197;
+	bool Result199 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result200 = Result198 && Result199;
+	int ENiagaraExecutionState_IfResult27;
+	int ENiagaraExecutionStateSource_IfResult15;
+	if(Result200)
+	{
+	ENiagaraExecutionState_IfResult27 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult15 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult27 = Context.Map.Fire_Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult15 = Context.Map.Fire_Smoke.ExecutionStateSource;
+	}
+	Context.Map.Fire_Smoke.ExecutionState = ENiagaraExecutionState_IfResult27;
+	Context.Map.Fire_Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult15;
+}
+
+void EmitterState_EmitterChangeState005_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant178 = 3;
+	bool Result204 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant178);
+	int Constant179 = 4;
+	bool Result205 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant179);
+	bool Result206 = Result204 && Result205;
+	bool Result207 = In_Condition && Result206;
+	bool Result208 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result209 = Result207 && Result208;
+	int ENiagaraExecutionState_IfResult28;
+	int ENiagaraExecutionStateSource_IfResult16;
+	if(Result209)
+	{
+	ENiagaraExecutionState_IfResult28 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult16 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult28 = Context.Map.Fire_Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult16 = Context.Map.Fire_Smoke.ExecutionStateSource;
+	}
+	Context.Map.Fire_Smoke.ExecutionState = ENiagaraExecutionState_IfResult28;
+	Context.Map.Fire_Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult16;
+}
+
+void EmitterState_EmitterChangeState004_Fire_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant184 = 3;
+	bool Result214 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant184);
+	int Constant185 = 4;
+	bool Result215 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant185);
+	bool Result216 = Result214 && Result215;
+	bool Result217 = In_Condition && Result216;
+	bool Result218 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result219 = Result217 && Result218;
+	int ENiagaraExecutionState_IfResult29;
+	int ENiagaraExecutionStateSource_IfResult17;
+	if(Result219)
+	{
+	ENiagaraExecutionState_IfResult29 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult17 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult29 = Context.Map.Fire_Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult17 = Context.Map.Fire_Smoke.ExecutionStateSource;
+	}
+	Context.Map.Fire_Smoke.ExecutionState = ENiagaraExecutionState_IfResult29;
+	Context.Map.Fire_Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult17;
+}
+
+void EmitterState_Fire_Smoke_Func_(inout FSimulationContext Context)
+{
+	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.Fire_Smoke.ExecutionState;
+	bool Constant144 = false;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Constant144;
+	Context.Map.Fire_Smoke.Age = Context.Map.System.Age;
+	Context.Map.Fire_Smoke.LoopedAge = Context.Map.System.LoopedAge;
+	Context.Map.Fire_Smoke.NormalizedLoopAge = Context.Map.System.NormalizedLoopAge;
+	Context.Map.Fire_Smoke.LoopCount = Context.Map.System.LoopCount;
+	Context.Map.Fire_Smoke.CurrentLoopDelay = Context.Map.System.CurrentLoopDelay;
+	Context.Map.Fire_Smoke.CurrentLoopDuration = Context.Map.System.CurrentLoopDuration;
+	Context.Map.EmitterState.LoopDuration = Context.Map.Constants.Fire_Smoke.EmitterState.LoopDuration;
+	Context.Map.EmitterState.LoopDelay = Context.Map.Constants.Fire_Smoke.EmitterState.LoopDelay;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Context.Map.EmitterState.RecalculateDurationEachLoop;
+	float Constant145 = 0;
+	float float_IfResult6;
+	if(Context.Map.EmitterState.bUseMinDistance)
+	{
+	float_IfResult6 = Context.Map.Constants.Fire_Smoke.EmitterState.MinDistance;
+	}
+	else
+	{
+	float_IfResult6 = Constant145;
+	}
+	float Result161 = Context.Map.Engine.Owner.LODDistance - float_IfResult6;
+	float Constant146 = 1e+12;
+	float float_IfResult7;
+	if(Context.Map.EmitterState.bUseMaxDistance)
+	{
+	float_IfResult7 = Context.Map.Constants.Fire_Smoke.EmitterState.MaxDistance;
+	}
+	else
+	{
+	float_IfResult7 = Constant146;
+	}
+	float Result162 = float_IfResult7 - float_IfResult6;
+	float Result163 = Result161 / Result162;
+	Context.Map.Fire_Smoke.Scalability.DistanceFraction = Result163;
+	int Constant147 = 0;
+	Context.Map.EmitterState.MinDistanceResponse = Constant147;
+	float Constant148 = 0;
+	bool Result164 = NiagaraAll(Context.Map.Fire_Smoke.Scalability.DistanceFraction < Constant148);
+	bool Result165 = Result164 && Context.Map.EmitterState.bUseMinDistance;
+	int Constant149 = 3;
+	int Result166 = min(Context.Map.EmitterState.MinDistanceResponse, Constant149);
+	int ExecutionState6;
+	ExecutionState6 = Result166;
+	int ENiagaraExecutionState_IfResult21;
+	if(Result165)
+	{
+	ENiagaraExecutionState_IfResult21 = ExecutionState6;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult21 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant150 = 4;
+	bool Result167 = NiagaraAll(Context.Map.EmitterState.MinDistanceResponse == Constant150);
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult21;
+	Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin = Result167;
+	int Constant151 = 1;
+	Context.Map.EmitterState.MaxDistanceResponse = Constant151;
+	float Constant152 = 1;
+	bool Result168 = NiagaraAll(Context.Map.Fire_Smoke.Scalability.DistanceFraction > Constant152);
+	bool Result169 = Result168 && Context.Map.EmitterState.bUseMaxDistance;
+	int Constant153 = 3;
+	int Result170 = min(Context.Map.EmitterState.MaxDistanceResponse, Constant153);
+	int ExecutionState7;
+	ExecutionState7 = Result170;
+	int ENiagaraExecutionState_IfResult22;
+	if(Result169)
+	{
+	ENiagaraExecutionState_IfResult22 = ExecutionState7;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult22 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant154 = 4;
+	bool Result171 = NiagaraAll(Context.Map.EmitterState.MaxDistanceResponse == Constant154);
+	bool Result172 = Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin || Result171;
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult22;
+	Context.Map.Local.EmitterState.ScalabilityKillOnComplete = Result172;
+	int Constant155 = 0;
+	bool Result173 = NiagaraAll(Context.Map.Engine.Fire_Smoke.NumParticles == Constant155);
+	Context.Map.Local.EmitterState.NoActiveEmitterParticles = Result173;
+	int Constant156 = 1;
+	Context.Map.EmitterState.VisibilityCullResponse = Constant156;
+	bool Result174 = NiagaraAll(Context.Map.Engine.Owner.TimeSinceRendered > Context.Map.Constants.Fire_Smoke.EmitterState.VisibilityCullDelay);
+	int Constant157 = 3;
+	int Result175 = min(Context.Map.EmitterState.VisibilityCullResponse, Constant157);
+	int ExecutionState8;
+	ExecutionState8 = Result175;
+	int ENiagaraExecutionState_IfResult23;
+	if(Result174)
+	{
+	ENiagaraExecutionState_IfResult23 = ExecutionState8;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult23 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult23;
+	float Constant158 = 1;
+	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant158;
+	int Constant159 = 0;
+	bool Result176 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant159);
+	EmitterState_EmitterChangeState002_Fire_Smoke_Func_(Context.Map.System.ExecutionState, Result176, Context.Map.System.ExecutionStateSource, Context);
+	int Constant162 = 3;
+	bool Result183 = NiagaraAll(Context.Map.Transient.ScalabilityEmitterExecutionState == Constant162);
+	bool Result184 = !Context.Map.Local.EmitterState.NoActiveEmitterParticles;
+	bool Result185 = Result183 && Context.Map.Local.EmitterState.ScalabilityKillOnComplete && Result184;
+	int Constant163 = 1;
+	int ENiagaraExecutionState_IfResult25;
+	if(Result185)
+	{
+	ENiagaraExecutionState_IfResult25 = Constant163;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult25 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	bool Constant164 = true;
+	int Constant165 = 0;
+	EmitterState_EmitterChangeState001_Fire_Smoke_Func_(ENiagaraExecutionState_IfResult25, Constant164, Constant165, Context);
+	int Constant168 = 1;
+	int Constant169 = 0;
+	bool Result192 = NiagaraAll(Context.Map.System.ExecutionState != Constant169);
+	int Constant170 = 0;
+	bool Result193 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant170);
+	bool Result194 = Result192 && Result193;
+	int Constant171 = 1;
+	EmitterState_EmitterChangeState006_Fire_Smoke_Func_(Constant168, Result194, Constant171, Context);
+	int Constant174 = 1;
+	int Constant175 = 0;
+	bool Result201 = NiagaraAll(Context.Map.System.ExecutionState != Constant175);
+	int Constant176 = 2;
+	bool Result202 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant176);
+	bool Result203 = Result201 && Result202;
+	int Constant177 = 1;
+	EmitterState_EmitterChangeState005_Fire_Smoke_Func_(Constant174, Result203, Constant177, Context);
+	int Constant180 = 3;
+	int Constant181 = 0;
+	bool Result210 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState != Constant181);
+	bool Result211 = Context.Map.Local.EmitterState.NoActiveEmitterParticles && Result210;
+	int Constant182 = 0;
+	bool Result212 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionStateSource != Constant182);
+	bool Result213 = Result211 && Result212;
+	bool bool_IfResult2;
+	if(Context.Map.System.bCompleteOnInactive)
+	{
+	bool_IfResult2 = Result213;
+	}
+	else
+	{
+	bool_IfResult2 = Result210;
+	}
+	int Constant183 = 3;
+	EmitterState_EmitterChangeState004_Fire_Smoke_Func_(Constant180, bool_IfResult2, Constant183, Context);
+	bool Constant186 = false;
+	Context.Map.EmitterState.ResetAgeOnAwaken = Constant186;
+	int Constant187 = 0;
+	bool Result220 = NiagaraAll(Context.Map.Local.EmitterState.PreviousEmitterState != Constant187);
+	int Constant188 = 0;
+	bool Result221 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionState == Constant188);
+	int Constant189 = 0;
+	bool Result222 = NiagaraAll(Context.Map.Fire_Smoke.ExecutionStateSource == Constant189);
+	bool Result223 = Context.Map.EmitterState.ResetAgeOnAwaken && Result220 && Result221 && Result222;
+	float Constant190 = 0;
+	float Constant191 = 0;
+	bool Constant192 = false;
+	int Constant193 = 0;
+	float Constant194 = 0;
+	float Age_IfResult2;
+	float LoopedAge_IfResult3;
+	bool LoopCountIncreased_IfResult2;
+	int LoopCount_IfResult2;
+	float NormalizedLoopAge_IfResult2;
+	if(Result223)
+	{
+	Age_IfResult2 = Constant190;
+	LoopedAge_IfResult3 = Constant191;
+	LoopCountIncreased_IfResult2 = Constant192;
+	LoopCount_IfResult2 = Constant193;
+	NormalizedLoopAge_IfResult2 = Constant194;
+	}
+	else
+	{
+	Age_IfResult2 = Context.Map.Fire_Smoke.Age;
+	LoopedAge_IfResult3 = Context.Map.Fire_Smoke.LoopedAge;
+	LoopCountIncreased_IfResult2 = Context.Map.Local.EmitterState.LoopCountIncreased;
+	LoopCount_IfResult2 = Context.Map.Fire_Smoke.LoopCount;
+	NormalizedLoopAge_IfResult2 = Context.Map.Fire_Smoke.NormalizedLoopAge;
+	}
+	Context.Map.Fire_Smoke.Age = Age_IfResult2;
+	Context.Map.Fire_Smoke.LoopedAge = LoopedAge_IfResult3;
+	Context.Map.Local.EmitterState.LoopCountIncreased = LoopCountIncreased_IfResult2;
+	Context.Map.Fire_Smoke.LoopCount = LoopCount_IfResult2;
+	Context.Map.Fire_Smoke.NormalizedLoopAge = NormalizedLoopAge_IfResult2;
+}
+
+void SpawnBurst_Instantaneous_Fire_Smoke_Func_(inout FSimulationContext Context)
+{
+	Context.Map.SpawnBurst_Instantaneous.Age = Context.Map.Fire_Smoke.LoopedAge;
+	float Result224 = Context.Map.SpawnBurst_Instantaneous.Age - Context.Map.Engine.DeltaTime;
+	float Result225 = Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnTime - Result224;
+	float Constant195 = 0;
+	float Output16;
+	Output16 = Constant195;
+	bool Result226 = NiagaraAll(Result225 >= Output16);
+	float Result227 = Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnTime - Context.Map.SpawnBurst_Instantaneous.Age;
+	bool Result228 = NiagaraAll(Result227 < Output16);
+	bool Result229 = Result226 && Result228;
+	int Constant196 = 0;
+	bool Result230 = NiagaraAll(Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnCount == Constant196);
+	float Constant197 = 0;
+	float Result231 = Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnCount * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.Fire_Smoke.SpawnCountScale;
+	float Constant198 = 1;
+	float Result232 = max(Result231, Constant198);
+	float float_IfResult8;
+	if(Result230)
+	{
+	float_IfResult8 = Constant197;
+	}
+	else
+	{
+	float_IfResult8 = Result232;
+	}
+	float Constant199 = 0;
+	NiagaraSpawnInfo Output17;
+	Output17.Count = float_IfResult8;
+	Output17.InterpStartDt = Result225;
+	Output17.IntervalDt = Constant199;
+	Output17.SpawnGroup = Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnGroup;
+	int Constant200 = 0;
+	float Constant201 = 0;
+	float Constant202 = 0;
+	NiagaraSpawnInfo Output18;
+	Output18.Count = Constant200;
+	Output18.InterpStartDt = Constant201;
+	Output18.SpawnGroup = Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnGroup;
+	Output18.IntervalDt = Constant202;
+	NiagaraSpawnInfo SpawnInfo_IfResult2;
+	if(Result229)
+	{
+	SpawnInfo_IfResult2 = Output17;
+	}
+	else
+	{
+	SpawnInfo_IfResult2 = Output18;
+	}
+	Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst = SpawnInfo_IfResult2;
+	bool Result233 = NiagaraAll(Context.Map.Fire_Smoke.LoopedAge <= Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnTime);
+	bool Result234 = Context.Map.Transient.SpawningbCanEverSpawn || Result233;
+	Context.Map.Transient.SpawningbCanEverSpawn = Result234;
+}
+
+void Fire_Smoke_Func_(inout FSimulationContext Context)
+{
+	bool Constant142 = true;
+	bool Constant143 = true;
+	Context.Map.EmitterState.bUseMinDistance = Constant142;
+	Context.Map.EmitterState.bUseMaxDistance = Constant143;
+	EnterStatScope(9 );
+	EmitterState_Fire_Smoke_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(10 );
+	SpawnBurst_Instantaneous_Fire_Smoke_Func_(Context);
+	ExitStatScope( );
+}
+
+void EmitterState_EmitterChangeState002_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant221 = 3;
+	bool Result251 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant221);
+	int Constant222 = 4;
+	bool Result252 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant222);
+	bool Result253 = Result251 && Result252;
+	bool Result254 = In_Condition && Result253;
+	bool Result255 = NiagaraAll(Context.Map.Fire.ExecutionStateSource <= In_NewStateSource);
+	bool Result256 = Result254 && Result255;
+	int ENiagaraExecutionState_IfResult33;
+	int ENiagaraExecutionStateSource_IfResult18;
+	if(Result256)
+	{
+	ENiagaraExecutionState_IfResult33 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult18 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult33 = Context.Map.Fire.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult18 = Context.Map.Fire.ExecutionStateSource;
+	}
+	Context.Map.Fire.ExecutionState = ENiagaraExecutionState_IfResult33;
+	Context.Map.Fire.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult18;
+}
+
+void EmitterState_EmitterChangeState001_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant227 = 3;
+	bool Result260 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant227);
+	int Constant228 = 4;
+	bool Result261 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant228);
+	bool Result262 = Result260 && Result261;
+	bool Result263 = In_Condition && Result262;
+	bool Result264 = NiagaraAll(Context.Map.Fire.ExecutionStateSource <= In_NewStateSource);
+	bool Result265 = Result263 && Result264;
+	int ENiagaraExecutionState_IfResult35;
+	int ENiagaraExecutionStateSource_IfResult19;
+	if(Result265)
+	{
+	ENiagaraExecutionState_IfResult35 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult19 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult35 = Context.Map.Fire.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult19 = Context.Map.Fire.ExecutionStateSource;
+	}
+	Context.Map.Fire.ExecutionState = ENiagaraExecutionState_IfResult35;
+	Context.Map.Fire.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult19;
+}
+
+void EmitterState_EmitterChangeState006_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant233 = 3;
+	bool Result269 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant233);
+	int Constant234 = 4;
+	bool Result270 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant234);
+	bool Result271 = Result269 && Result270;
+	bool Result272 = In_Condition && Result271;
+	bool Result273 = NiagaraAll(Context.Map.Fire.ExecutionStateSource <= In_NewStateSource);
+	bool Result274 = Result272 && Result273;
+	int ENiagaraExecutionState_IfResult36;
+	int ENiagaraExecutionStateSource_IfResult20;
+	if(Result274)
+	{
+	ENiagaraExecutionState_IfResult36 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult20 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult36 = Context.Map.Fire.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult20 = Context.Map.Fire.ExecutionStateSource;
+	}
+	Context.Map.Fire.ExecutionState = ENiagaraExecutionState_IfResult36;
+	Context.Map.Fire.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult20;
+}
+
+void EmitterState_EmitterChangeState005_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant239 = 3;
+	bool Result278 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant239);
+	int Constant240 = 4;
+	bool Result279 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant240);
+	bool Result280 = Result278 && Result279;
+	bool Result281 = In_Condition && Result280;
+	bool Result282 = NiagaraAll(Context.Map.Fire.ExecutionStateSource <= In_NewStateSource);
+	bool Result283 = Result281 && Result282;
+	int ENiagaraExecutionState_IfResult37;
+	int ENiagaraExecutionStateSource_IfResult21;
+	if(Result283)
+	{
+	ENiagaraExecutionState_IfResult37 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult21 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult37 = Context.Map.Fire.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult21 = Context.Map.Fire.ExecutionStateSource;
+	}
+	Context.Map.Fire.ExecutionState = ENiagaraExecutionState_IfResult37;
+	Context.Map.Fire.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult21;
+}
+
+void EmitterState_EmitterChangeState004_Fire_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant245 = 3;
+	bool Result288 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant245);
+	int Constant246 = 4;
+	bool Result289 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant246);
+	bool Result290 = Result288 && Result289;
+	bool Result291 = In_Condition && Result290;
+	bool Result292 = NiagaraAll(Context.Map.Fire.ExecutionStateSource <= In_NewStateSource);
+	bool Result293 = Result291 && Result292;
+	int ENiagaraExecutionState_IfResult38;
+	int ENiagaraExecutionStateSource_IfResult22;
+	if(Result293)
+	{
+	ENiagaraExecutionState_IfResult38 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult22 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult38 = Context.Map.Fire.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult22 = Context.Map.Fire.ExecutionStateSource;
+	}
+	Context.Map.Fire.ExecutionState = ENiagaraExecutionState_IfResult38;
+	Context.Map.Fire.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult22;
+}
+
+void EmitterState_Fire_Func_(inout FSimulationContext Context)
+{
+	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.Fire.ExecutionState;
+	bool Constant205 = false;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Constant205;
+	Context.Map.Fire.Age = Context.Map.System.Age;
+	Context.Map.Fire.LoopedAge = Context.Map.System.LoopedAge;
+	Context.Map.Fire.NormalizedLoopAge = Context.Map.System.NormalizedLoopAge;
+	Context.Map.Fire.LoopCount = Context.Map.System.LoopCount;
+	Context.Map.Fire.CurrentLoopDelay = Context.Map.System.CurrentLoopDelay;
+	Context.Map.Fire.CurrentLoopDuration = Context.Map.System.CurrentLoopDuration;
+	Context.Map.EmitterState.LoopDuration = Context.Map.Constants.Fire.EmitterState.LoopDuration;
+	Context.Map.EmitterState.LoopDelay = Context.Map.Constants.Fire.EmitterState.LoopDelay;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Context.Map.EmitterState.RecalculateDurationEachLoop;
+	float Constant206 = 0;
+	float float_IfResult9;
+	if(Context.Map.EmitterState.bUseMinDistance)
+	{
+	float_IfResult9 = Context.Map.Constants.Fire.EmitterState.MinDistance;
+	}
+	else
+	{
+	float_IfResult9 = Constant206;
+	}
+	float Result235 = Context.Map.Engine.Owner.LODDistance - float_IfResult9;
+	float Constant207 = 1e+12;
+	float float_IfResult10;
+	if(Context.Map.EmitterState.bUseMaxDistance)
+	{
+	float_IfResult10 = Context.Map.Constants.Fire.EmitterState.MaxDistance;
+	}
+	else
+	{
+	float_IfResult10 = Constant207;
+	}
+	float Result236 = float_IfResult10 - float_IfResult9;
+	float Result237 = Result235 / Result236;
+	Context.Map.Fire.Scalability.DistanceFraction = Result237;
+	int Constant208 = 0;
+	Context.Map.EmitterState.MinDistanceResponse = Constant208;
+	float Constant209 = 0;
+	bool Result238 = NiagaraAll(Context.Map.Fire.Scalability.DistanceFraction < Constant209);
+	bool Result239 = Result238 && Context.Map.EmitterState.bUseMinDistance;
+	int Constant210 = 3;
+	int Result240 = min(Context.Map.EmitterState.MinDistanceResponse, Constant210);
+	int ExecutionState9;
+	ExecutionState9 = Result240;
+	int ENiagaraExecutionState_IfResult30;
+	if(Result239)
+	{
+	ENiagaraExecutionState_IfResult30 = ExecutionState9;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult30 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant211 = 4;
+	bool Result241 = NiagaraAll(Context.Map.EmitterState.MinDistanceResponse == Constant211);
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult30;
+	Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin = Result241;
+	int Constant212 = 1;
+	Context.Map.EmitterState.MaxDistanceResponse = Constant212;
+	float Constant213 = 1;
+	bool Result242 = NiagaraAll(Context.Map.Fire.Scalability.DistanceFraction > Constant213);
+	bool Result243 = Result242 && Context.Map.EmitterState.bUseMaxDistance;
+	int Constant214 = 3;
+	int Result244 = min(Context.Map.EmitterState.MaxDistanceResponse, Constant214);
+	int ExecutionState10;
+	ExecutionState10 = Result244;
+	int ENiagaraExecutionState_IfResult31;
+	if(Result243)
+	{
+	ENiagaraExecutionState_IfResult31 = ExecutionState10;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult31 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant215 = 4;
+	bool Result245 = NiagaraAll(Context.Map.EmitterState.MaxDistanceResponse == Constant215);
+	bool Result246 = Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin || Result245;
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult31;
+	Context.Map.Local.EmitterState.ScalabilityKillOnComplete = Result246;
+	int Constant216 = 0;
+	bool Result247 = NiagaraAll(Context.Map.Engine.Fire.NumParticles == Constant216);
+	Context.Map.Local.EmitterState.NoActiveEmitterParticles = Result247;
+	int Constant217 = 1;
+	Context.Map.EmitterState.VisibilityCullResponse = Constant217;
+	bool Result248 = NiagaraAll(Context.Map.Engine.Owner.TimeSinceRendered > Context.Map.Constants.Fire.EmitterState.VisibilityCullDelay);
+	int Constant218 = 3;
+	int Result249 = min(Context.Map.EmitterState.VisibilityCullResponse, Constant218);
+	int ExecutionState11;
+	ExecutionState11 = Result249;
+	int ENiagaraExecutionState_IfResult32;
+	if(Result248)
+	{
+	ENiagaraExecutionState_IfResult32 = ExecutionState11;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult32 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult32;
+	float Constant219 = 1;
+	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant219;
+	int Constant220 = 0;
+	bool Result250 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant220);
+	EmitterState_EmitterChangeState002_Fire_Func_(Context.Map.System.ExecutionState, Result250, Context.Map.System.ExecutionStateSource, Context);
+	int Constant223 = 3;
+	bool Result257 = NiagaraAll(Context.Map.Transient.ScalabilityEmitterExecutionState == Constant223);
+	bool Result258 = !Context.Map.Local.EmitterState.NoActiveEmitterParticles;
+	bool Result259 = Result257 && Context.Map.Local.EmitterState.ScalabilityKillOnComplete && Result258;
+	int Constant224 = 1;
+	int ENiagaraExecutionState_IfResult34;
+	if(Result259)
+	{
+	ENiagaraExecutionState_IfResult34 = Constant224;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult34 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	bool Constant225 = true;
+	int Constant226 = 0;
+	EmitterState_EmitterChangeState001_Fire_Func_(ENiagaraExecutionState_IfResult34, Constant225, Constant226, Context);
+	int Constant229 = 1;
+	int Constant230 = 0;
+	bool Result266 = NiagaraAll(Context.Map.System.ExecutionState != Constant230);
+	int Constant231 = 0;
+	bool Result267 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant231);
+	bool Result268 = Result266 && Result267;
+	int Constant232 = 1;
+	EmitterState_EmitterChangeState006_Fire_Func_(Constant229, Result268, Constant232, Context);
+	int Constant235 = 1;
+	int Constant236 = 0;
+	bool Result275 = NiagaraAll(Context.Map.System.ExecutionState != Constant236);
+	int Constant237 = 2;
+	bool Result276 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant237);
+	bool Result277 = Result275 && Result276;
+	int Constant238 = 1;
+	EmitterState_EmitterChangeState005_Fire_Func_(Constant235, Result277, Constant238, Context);
+	int Constant241 = 3;
+	int Constant242 = 0;
+	bool Result284 = NiagaraAll(Context.Map.Fire.ExecutionState != Constant242);
+	bool Result285 = Context.Map.Local.EmitterState.NoActiveEmitterParticles && Result284;
+	int Constant243 = 0;
+	bool Result286 = NiagaraAll(Context.Map.Fire.ExecutionStateSource != Constant243);
+	bool Result287 = Result285 && Result286;
+	bool bool_IfResult3;
+	if(Context.Map.System.bCompleteOnInactive)
+	{
+	bool_IfResult3 = Result287;
+	}
+	else
+	{
+	bool_IfResult3 = Result284;
+	}
+	int Constant244 = 3;
+	EmitterState_EmitterChangeState004_Fire_Func_(Constant241, bool_IfResult3, Constant244, Context);
+	bool Constant247 = false;
+	Context.Map.EmitterState.ResetAgeOnAwaken = Constant247;
+	int Constant248 = 0;
+	bool Result294 = NiagaraAll(Context.Map.Local.EmitterState.PreviousEmitterState != Constant248);
+	int Constant249 = 0;
+	bool Result295 = NiagaraAll(Context.Map.Fire.ExecutionState == Constant249);
+	int Constant250 = 0;
+	bool Result296 = NiagaraAll(Context.Map.Fire.ExecutionStateSource == Constant250);
+	bool Result297 = Context.Map.EmitterState.ResetAgeOnAwaken && Result294 && Result295 && Result296;
+	float Constant251 = 0;
+	float Constant252 = 0;
+	bool Constant253 = false;
+	int Constant254 = 0;
+	float Constant255 = 0;
+	float Age_IfResult3;
+	float LoopedAge_IfResult4;
+	bool LoopCountIncreased_IfResult3;
+	int LoopCount_IfResult3;
+	float NormalizedLoopAge_IfResult3;
+	if(Result297)
+	{
+	Age_IfResult3 = Constant251;
+	LoopedAge_IfResult4 = Constant252;
+	LoopCountIncreased_IfResult3 = Constant253;
+	LoopCount_IfResult3 = Constant254;
+	NormalizedLoopAge_IfResult3 = Constant255;
+	}
+	else
+	{
+	Age_IfResult3 = Context.Map.Fire.Age;
+	LoopedAge_IfResult4 = Context.Map.Fire.LoopedAge;
+	LoopCountIncreased_IfResult3 = Context.Map.Local.EmitterState.LoopCountIncreased;
+	LoopCount_IfResult3 = Context.Map.Fire.LoopCount;
+	NormalizedLoopAge_IfResult3 = Context.Map.Fire.NormalizedLoopAge;
+	}
+	Context.Map.Fire.Age = Age_IfResult3;
+	Context.Map.Fire.LoopedAge = LoopedAge_IfResult4;
+	Context.Map.Local.EmitterState.LoopCountIncreased = LoopCountIncreased_IfResult3;
+	Context.Map.Fire.LoopCount = LoopCount_IfResult3;
+	Context.Map.Fire.NormalizedLoopAge = NormalizedLoopAge_IfResult3;
+}
+
+void SpawnBurst_Instantaneous_Fire_Func_(inout FSimulationContext Context)
+{
+	Context.Map.SpawnBurst_Instantaneous.Age = Context.Map.Fire.LoopedAge;
+	float Result298 = Context.Map.SpawnBurst_Instantaneous.Age - Context.Map.Engine.DeltaTime;
+	float Result299 = Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnTime - Result298;
+	float Constant256 = 0;
+	float Output19;
+	Output19 = Constant256;
+	bool Result300 = NiagaraAll(Result299 >= Output19);
+	float Result301 = Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnTime - Context.Map.SpawnBurst_Instantaneous.Age;
+	bool Result302 = NiagaraAll(Result301 < Output19);
+	bool Result303 = Result300 && Result302;
+	int Constant257 = 0;
+	bool Result304 = NiagaraAll(Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnCount == Constant257);
+	float Constant258 = 0;
+	float Result305 = Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnCount * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.Fire.SpawnCountScale;
+	float Constant259 = 1;
+	float Result306 = max(Result305, Constant259);
+	float float_IfResult11;
+	if(Result304)
+	{
+	float_IfResult11 = Constant258;
+	}
+	else
+	{
+	float_IfResult11 = Result306;
+	}
+	float Constant260 = 0;
+	NiagaraSpawnInfo Output110;
+	Output110.Count = float_IfResult11;
+	Output110.InterpStartDt = Result299;
+	Output110.IntervalDt = Constant260;
+	Output110.SpawnGroup = Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnGroup;
+	int Constant261 = 0;
+	float Constant262 = 0;
+	float Constant263 = 0;
+	NiagaraSpawnInfo Output111;
+	Output111.Count = Constant261;
+	Output111.InterpStartDt = Constant262;
+	Output111.SpawnGroup = Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnGroup;
+	Output111.IntervalDt = Constant263;
+	NiagaraSpawnInfo SpawnInfo_IfResult3;
+	if(Result303)
+	{
+	SpawnInfo_IfResult3 = Output110;
+	}
+	else
+	{
+	SpawnInfo_IfResult3 = Output111;
+	}
+	Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst = SpawnInfo_IfResult3;
+	bool Result307 = NiagaraAll(Context.Map.Fire.LoopedAge <= Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnTime);
+	bool Result308 = Context.Map.Transient.SpawningbCanEverSpawn || Result307;
+	Context.Map.Transient.SpawningbCanEverSpawn = Result308;
+}
+
+void Fire_Func_(inout FSimulationContext Context)
+{
+	bool Constant203 = true;
+	bool Constant204 = true;
+	Context.Map.EmitterState.bUseMinDistance = Constant203;
+	Context.Map.EmitterState.bUseMaxDistance = Constant204;
+	EnterStatScope(12 );
+	EmitterState_Fire_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(13 );
+	SpawnBurst_Instantaneous_Fire_Func_(Context);
+	ExitStatScope( );
+}
+
+void EmitterState_EmitterChangeState002_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant282 = 3;
+	bool Result325 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant282);
+	int Constant283 = 4;
+	bool Result326 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant283);
+	bool Result327 = Result325 && Result326;
+	bool Result328 = In_Condition && Result327;
+	bool Result329 = NiagaraAll(Context.Map.Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result330 = Result328 && Result329;
+	int ENiagaraExecutionState_IfResult42;
+	int ENiagaraExecutionStateSource_IfResult23;
+	if(Result330)
+	{
+	ENiagaraExecutionState_IfResult42 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult23 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult42 = Context.Map.Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult23 = Context.Map.Smoke.ExecutionStateSource;
+	}
+	Context.Map.Smoke.ExecutionState = ENiagaraExecutionState_IfResult42;
+	Context.Map.Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult23;
+}
+
+void EmitterState_EmitterChangeState001_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant288 = 3;
+	bool Result334 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant288);
+	int Constant289 = 4;
+	bool Result335 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant289);
+	bool Result336 = Result334 && Result335;
+	bool Result337 = In_Condition && Result336;
+	bool Result338 = NiagaraAll(Context.Map.Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result339 = Result337 && Result338;
+	int ENiagaraExecutionState_IfResult44;
+	int ENiagaraExecutionStateSource_IfResult24;
+	if(Result339)
+	{
+	ENiagaraExecutionState_IfResult44 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult24 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult44 = Context.Map.Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult24 = Context.Map.Smoke.ExecutionStateSource;
+	}
+	Context.Map.Smoke.ExecutionState = ENiagaraExecutionState_IfResult44;
+	Context.Map.Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult24;
+}
+
+void EmitterState_EmitterChangeState006_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant294 = 3;
+	bool Result343 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant294);
+	int Constant295 = 4;
+	bool Result344 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant295);
+	bool Result345 = Result343 && Result344;
+	bool Result346 = In_Condition && Result345;
+	bool Result347 = NiagaraAll(Context.Map.Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result348 = Result346 && Result347;
+	int ENiagaraExecutionState_IfResult45;
+	int ENiagaraExecutionStateSource_IfResult25;
+	if(Result348)
+	{
+	ENiagaraExecutionState_IfResult45 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult25 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult45 = Context.Map.Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult25 = Context.Map.Smoke.ExecutionStateSource;
+	}
+	Context.Map.Smoke.ExecutionState = ENiagaraExecutionState_IfResult45;
+	Context.Map.Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult25;
+}
+
+void EmitterState_EmitterChangeState005_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant300 = 3;
+	bool Result352 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant300);
+	int Constant301 = 4;
+	bool Result353 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant301);
+	bool Result354 = Result352 && Result353;
+	bool Result355 = In_Condition && Result354;
+	bool Result356 = NiagaraAll(Context.Map.Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result357 = Result355 && Result356;
+	int ENiagaraExecutionState_IfResult46;
+	int ENiagaraExecutionStateSource_IfResult26;
+	if(Result357)
+	{
+	ENiagaraExecutionState_IfResult46 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult26 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult46 = Context.Map.Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult26 = Context.Map.Smoke.ExecutionStateSource;
+	}
+	Context.Map.Smoke.ExecutionState = ENiagaraExecutionState_IfResult46;
+	Context.Map.Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult26;
+}
+
+void EmitterState_EmitterChangeState004_Smoke_Func_(int In_NewState, bool In_Condition, int In_NewStateSource, inout FSimulationContext Context)
+{
+	int Constant306 = 3;
+	bool Result362 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant306);
+	int Constant307 = 4;
+	bool Result363 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant307);
+	bool Result364 = Result362 && Result363;
+	bool Result365 = In_Condition && Result364;
+	bool Result366 = NiagaraAll(Context.Map.Smoke.ExecutionStateSource <= In_NewStateSource);
+	bool Result367 = Result365 && Result366;
+	int ENiagaraExecutionState_IfResult47;
+	int ENiagaraExecutionStateSource_IfResult27;
+	if(Result367)
+	{
+	ENiagaraExecutionState_IfResult47 = In_NewState;
+	ENiagaraExecutionStateSource_IfResult27 = In_NewStateSource;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult47 = Context.Map.Smoke.ExecutionState;
+	ENiagaraExecutionStateSource_IfResult27 = Context.Map.Smoke.ExecutionStateSource;
+	}
+	Context.Map.Smoke.ExecutionState = ENiagaraExecutionState_IfResult47;
+	Context.Map.Smoke.ExecutionStateSource = ENiagaraExecutionStateSource_IfResult27;
+}
+
+void EmitterState_Smoke_Func_(inout FSimulationContext Context)
+{
+	Context.Map.Local.EmitterState.PreviousEmitterState = Context.Map.Smoke.ExecutionState;
+	bool Constant266 = false;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Constant266;
+	Context.Map.Smoke.Age = Context.Map.System.Age;
+	Context.Map.Smoke.LoopedAge = Context.Map.System.LoopedAge;
+	Context.Map.Smoke.NormalizedLoopAge = Context.Map.System.NormalizedLoopAge;
+	Context.Map.Smoke.LoopCount = Context.Map.System.LoopCount;
+	Context.Map.Smoke.CurrentLoopDelay = Context.Map.System.CurrentLoopDelay;
+	Context.Map.Smoke.CurrentLoopDuration = Context.Map.System.CurrentLoopDuration;
+	Context.Map.EmitterState.LoopDuration = Context.Map.Constants.Smoke.EmitterState.LoopDuration;
+	Context.Map.EmitterState.LoopDelay = Context.Map.Constants.Smoke.EmitterState.LoopDelay;
+	Context.Map.EmitterState.RecalculateDurationEachLoop = Context.Map.EmitterState.RecalculateDurationEachLoop;
+	float Constant267 = 0;
+	float float_IfResult12;
+	if(Context.Map.EmitterState.bUseMinDistance)
+	{
+	float_IfResult12 = Context.Map.Constants.Smoke.EmitterState.MinDistance;
+	}
+	else
+	{
+	float_IfResult12 = Constant267;
+	}
+	float Result309 = Context.Map.Engine.Owner.LODDistance - float_IfResult12;
+	float Constant268 = 1e+12;
+	float float_IfResult13;
+	if(Context.Map.EmitterState.bUseMaxDistance)
+	{
+	float_IfResult13 = Context.Map.Constants.Smoke.EmitterState.MaxDistance;
+	}
+	else
+	{
+	float_IfResult13 = Constant268;
+	}
+	float Result310 = float_IfResult13 - float_IfResult12;
+	float Result311 = Result309 / Result310;
+	Context.Map.Smoke.Scalability.DistanceFraction = Result311;
+	int Constant269 = 0;
+	Context.Map.EmitterState.MinDistanceResponse = Constant269;
+	float Constant270 = 0;
+	bool Result312 = NiagaraAll(Context.Map.Smoke.Scalability.DistanceFraction < Constant270);
+	bool Result313 = Result312 && Context.Map.EmitterState.bUseMinDistance;
+	int Constant271 = 3;
+	int Result314 = min(Context.Map.EmitterState.MinDistanceResponse, Constant271);
+	int ExecutionState12;
+	ExecutionState12 = Result314;
+	int ENiagaraExecutionState_IfResult39;
+	if(Result313)
+	{
+	ENiagaraExecutionState_IfResult39 = ExecutionState12;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult39 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant272 = 4;
+	bool Result315 = NiagaraAll(Context.Map.EmitterState.MinDistanceResponse == Constant272);
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult39;
+	Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin = Result315;
+	int Constant273 = 1;
+	Context.Map.EmitterState.MaxDistanceResponse = Constant273;
+	float Constant274 = 1;
+	bool Result316 = NiagaraAll(Context.Map.Smoke.Scalability.DistanceFraction > Constant274);
+	bool Result317 = Result316 && Context.Map.EmitterState.bUseMaxDistance;
+	int Constant275 = 3;
+	int Result318 = min(Context.Map.EmitterState.MaxDistanceResponse, Constant275);
+	int ExecutionState13;
+	ExecutionState13 = Result318;
+	int ENiagaraExecutionState_IfResult40;
+	if(Result317)
+	{
+	ENiagaraExecutionState_IfResult40 = ExecutionState13;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult40 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	int Constant276 = 4;
+	bool Result319 = NiagaraAll(Context.Map.EmitterState.MaxDistanceResponse == Constant276);
+	bool Result320 = Context.Map.Local.EmitterState.ScalabilityKillOnCompleteMin || Result319;
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult40;
+	Context.Map.Local.EmitterState.ScalabilityKillOnComplete = Result320;
+	int Constant277 = 0;
+	bool Result321 = NiagaraAll(Context.Map.Engine.Smoke.NumParticles == Constant277);
+	Context.Map.Local.EmitterState.NoActiveEmitterParticles = Result321;
+	int Constant278 = 1;
+	Context.Map.EmitterState.VisibilityCullResponse = Constant278;
+	bool Result322 = NiagaraAll(Context.Map.Engine.Owner.TimeSinceRendered > Context.Map.Constants.Smoke.EmitterState.VisibilityCullDelay);
+	int Constant279 = 3;
+	int Result323 = min(Context.Map.EmitterState.VisibilityCullResponse, Constant279);
+	int ExecutionState14;
+	ExecutionState14 = Result323;
+	int ENiagaraExecutionState_IfResult41;
+	if(Result322)
+	{
+	ENiagaraExecutionState_IfResult41 = ExecutionState14;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult41 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	Context.Map.Transient.ScalabilityEmitterExecutionState = ENiagaraExecutionState_IfResult41;
+	float Constant280 = 1;
+	Context.Map.Transient.ScalabilityEmitterSpawnCountScale = Constant280;
+	int Constant281 = 0;
+	bool Result324 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant281);
+	EmitterState_EmitterChangeState002_Smoke_Func_(Context.Map.System.ExecutionState, Result324, Context.Map.System.ExecutionStateSource, Context);
+	int Constant284 = 3;
+	bool Result331 = NiagaraAll(Context.Map.Transient.ScalabilityEmitterExecutionState == Constant284);
+	bool Result332 = !Context.Map.Local.EmitterState.NoActiveEmitterParticles;
+	bool Result333 = Result331 && Context.Map.Local.EmitterState.ScalabilityKillOnComplete && Result332;
+	int Constant285 = 1;
+	int ENiagaraExecutionState_IfResult43;
+	if(Result333)
+	{
+	ENiagaraExecutionState_IfResult43 = Constant285;
+	}
+	else
+	{
+	ENiagaraExecutionState_IfResult43 = Context.Map.Transient.ScalabilityEmitterExecutionState;
+	}
+	bool Constant286 = true;
+	int Constant287 = 0;
+	EmitterState_EmitterChangeState001_Smoke_Func_(ENiagaraExecutionState_IfResult43, Constant286, Constant287, Context);
+	int Constant290 = 1;
+	int Constant291 = 0;
+	bool Result340 = NiagaraAll(Context.Map.System.ExecutionState != Constant291);
+	int Constant292 = 0;
+	bool Result341 = NiagaraAll(Context.Map.System.ExecutionStateSource != Constant292);
+	bool Result342 = Result340 && Result341;
+	int Constant293 = 1;
+	EmitterState_EmitterChangeState006_Smoke_Func_(Constant290, Result342, Constant293, Context);
+	int Constant296 = 1;
+	int Constant297 = 0;
+	bool Result349 = NiagaraAll(Context.Map.System.ExecutionState != Constant297);
+	int Constant298 = 2;
+	bool Result350 = NiagaraAll(Context.Map.System.ExecutionStateSource == Constant298);
+	bool Result351 = Result349 && Result350;
+	int Constant299 = 1;
+	EmitterState_EmitterChangeState005_Smoke_Func_(Constant296, Result351, Constant299, Context);
+	int Constant302 = 3;
+	int Constant303 = 0;
+	bool Result358 = NiagaraAll(Context.Map.Smoke.ExecutionState != Constant303);
+	bool Result359 = Context.Map.Local.EmitterState.NoActiveEmitterParticles && Result358;
+	int Constant304 = 0;
+	bool Result360 = NiagaraAll(Context.Map.Smoke.ExecutionStateSource != Constant304);
+	bool Result361 = Result359 && Result360;
+	bool bool_IfResult4;
+	if(Context.Map.System.bCompleteOnInactive)
+	{
+	bool_IfResult4 = Result361;
+	}
+	else
+	{
+	bool_IfResult4 = Result358;
+	}
+	int Constant305 = 3;
+	EmitterState_EmitterChangeState004_Smoke_Func_(Constant302, bool_IfResult4, Constant305, Context);
+	bool Constant308 = false;
+	Context.Map.EmitterState.ResetAgeOnAwaken = Constant308;
+	int Constant309 = 0;
+	bool Result368 = NiagaraAll(Context.Map.Local.EmitterState.PreviousEmitterState != Constant309);
+	int Constant310 = 0;
+	bool Result369 = NiagaraAll(Context.Map.Smoke.ExecutionState == Constant310);
+	int Constant311 = 0;
+	bool Result370 = NiagaraAll(Context.Map.Smoke.ExecutionStateSource == Constant311);
+	bool Result371 = Context.Map.EmitterState.ResetAgeOnAwaken && Result368 && Result369 && Result370;
+	float Constant312 = 0;
+	float Constant313 = 0;
+	bool Constant314 = false;
+	int Constant315 = 0;
+	float Constant316 = 0;
+	float Age_IfResult4;
+	float LoopedAge_IfResult5;
+	bool LoopCountIncreased_IfResult4;
+	int LoopCount_IfResult4;
+	float NormalizedLoopAge_IfResult4;
+	if(Result371)
+	{
+	Age_IfResult4 = Constant312;
+	LoopedAge_IfResult5 = Constant313;
+	LoopCountIncreased_IfResult4 = Constant314;
+	LoopCount_IfResult4 = Constant315;
+	NormalizedLoopAge_IfResult4 = Constant316;
+	}
+	else
+	{
+	Age_IfResult4 = Context.Map.Smoke.Age;
+	LoopedAge_IfResult5 = Context.Map.Smoke.LoopedAge;
+	LoopCountIncreased_IfResult4 = Context.Map.Local.EmitterState.LoopCountIncreased;
+	LoopCount_IfResult4 = Context.Map.Smoke.LoopCount;
+	NormalizedLoopAge_IfResult4 = Context.Map.Smoke.NormalizedLoopAge;
+	}
+	Context.Map.Smoke.Age = Age_IfResult4;
+	Context.Map.Smoke.LoopedAge = LoopedAge_IfResult5;
+	Context.Map.Local.EmitterState.LoopCountIncreased = LoopCountIncreased_IfResult4;
+	Context.Map.Smoke.LoopCount = LoopCount_IfResult4;
+	Context.Map.Smoke.NormalizedLoopAge = NormalizedLoopAge_IfResult4;
+}
+
+void SpawnBurst_Instantaneous_Smoke_Func_(inout FSimulationContext Context)
+{
+	Context.Map.SpawnBurst_Instantaneous.Age = Context.Map.Smoke.LoopedAge;
+	float Result372 = Context.Map.SpawnBurst_Instantaneous.Age - Context.Map.Engine.DeltaTime;
+	float Result373 = Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnTime - Result372;
+	float Constant317 = 0;
+	float Output112;
+	Output112 = Constant317;
+	bool Result374 = NiagaraAll(Result373 >= Output112);
+	float Result375 = Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnTime - Context.Map.SpawnBurst_Instantaneous.Age;
+	bool Result376 = NiagaraAll(Result375 < Output112);
+	bool Result377 = Result374 && Result376;
+	int Constant318 = 0;
+	bool Result378 = NiagaraAll(Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnCount == Constant318);
+	float Constant319 = 0;
+	float Result379 = Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnCount * Context.Map.Transient.ScalabilityEmitterSpawnCountScale * Context.Map.Engine.Smoke.SpawnCountScale;
+	float Constant320 = 1;
+	float Result380 = max(Result379, Constant320);
+	float float_IfResult14;
+	if(Result378)
+	{
+	float_IfResult14 = Constant319;
+	}
+	else
+	{
+	float_IfResult14 = Result380;
+	}
+	float Constant321 = 0;
+	NiagaraSpawnInfo Output113;
+	Output113.Count = float_IfResult14;
+	Output113.InterpStartDt = Result373;
+	Output113.IntervalDt = Constant321;
+	Output113.SpawnGroup = Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnGroup;
+	int Constant322 = 0;
+	float Constant323 = 0;
+	float Constant324 = 0;
+	NiagaraSpawnInfo Output114;
+	Output114.Count = Constant322;
+	Output114.InterpStartDt = Constant323;
+	Output114.SpawnGroup = Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnGroup;
+	Output114.IntervalDt = Constant324;
+	NiagaraSpawnInfo SpawnInfo_IfResult4;
+	if(Result377)
+	{
+	SpawnInfo_IfResult4 = Output113;
+	}
+	else
+	{
+	SpawnInfo_IfResult4 = Output114;
+	}
+	Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst = SpawnInfo_IfResult4;
+	bool Result381 = NiagaraAll(Context.Map.Smoke.LoopedAge <= Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnTime);
+	bool Result382 = Context.Map.Transient.SpawningbCanEverSpawn || Result381;
+	Context.Map.Transient.SpawningbCanEverSpawn = Result382;
+}
+
+void Smoke_Func_(inout FSimulationContext Context)
+{
+	bool Constant264 = true;
+	bool Constant265 = true;
+	Context.Map.EmitterState.bUseMinDistance = Constant264;
+	Context.Map.EmitterState.bUseMaxDistance = Constant265;
+	EnterStatScope(15 );
+	EmitterState_Smoke_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(16 );
+	SpawnBurst_Instantaneous_Smoke_Func_(Context);
+	ExitStatScope( );
+}
+
+float GetSpawnInterpolation()
+{
+	return 1.0f;}
+
+
+void ReadDataSets(inout FSimulationContext Context)
+{
+}
+
+void WriteDataSets(inout FSimulationContext Context)
+{
+}
+
+void Simulate(inout FSimulationContext Context)
+{
+	EnterStatScope(0 );
+
+
+	bool Constant = (false);
+	Context.Map.Local.SystemState.LoopCountIncreased = Constant;
+	int Constant1 = 0;
+	Context.Map.Transient.ScalabilityExecutionState = Constant1;
+	EnterStatScope(1 );
+	SystemState_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(2 );
+	Shockwave_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(5 );
+	LIGHT_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(8 );
+	Fire_Smoke_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(11 );
+	Fire_Func_(Context);
+	ExitStatScope( );
+	EnterStatScope(14 );
+	Smoke_Func_(Context);
+	ExitStatScope( );
+	ExitStatScope( );
+}
+void SimulateMain()
+{
+EnterStatScope(17 );
+
+	FSimulationContext Context = (FSimulationContext)0;
+	Context.Map.Emitter.RandomSeed = InputDataInt(0, 0);
+	Context.Map.Fire.Age = InputDataFloat(0, 1);
+	Context.Map.Fire.CurrentLoopDelay = InputDataFloat(0, 2);
+	Context.Map.Fire.CurrentLoopDuration = InputDataFloat(0, 3);
+	Context.Map.Fire.ExecutionState = InputDataInt(0, 4);
+	Context.Map.Fire.ExecutionStateSource = InputDataInt(0, 5);
+	Context.Map.Fire.LocalSpace = InputDataBool(0, 6);
+	Context.Map.Fire.LoopCount = InputDataInt(0, 7);
+	Context.Map.Fire.LoopedAge = InputDataFloat(0, 8);
+	Context.Map.Fire.NormalizedLoopAge = InputDataFloat(0, 9);
+	Context.Map.Fire.Scalability.DistanceFraction = InputDataFloat(0, 10);
+	Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.Count = 0;
+	Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt = 0.0f;
+	Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt = 0.0f;
+	Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup = 0;
+	Context.Map.Fire_Smoke.Age = InputDataFloat(0, 15);
+	Context.Map.Fire_Smoke.AlphaScale = InputDataFloat(0, 16);
+	Context.Map.Fire_Smoke.CurrentLoopDelay = InputDataFloat(0, 17);
+	Context.Map.Fire_Smoke.CurrentLoopDuration = InputDataFloat(0, 18);
+	Context.Map.Fire_Smoke.ExecutionState = InputDataInt(0, 19);
+	Context.Map.Fire_Smoke.ExecutionStateSource = InputDataInt(0, 20);
+	Context.Map.Fire_Smoke.LocalSpace = InputDataBool(0, 21);
+	Context.Map.Fire_Smoke.LoopCount = InputDataInt(0, 22);
+	Context.Map.Fire_Smoke.LoopedAge = InputDataFloat(0, 23);
+	Context.Map.Fire_Smoke.NormalizedLoopAge = InputDataFloat(0, 24);
+	Context.Map.Fire_Smoke.Scalability.DistanceFraction = InputDataFloat(0, 25);
+	Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.Count = 0;
+	Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt = 0.0f;
+	Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt = 0.0f;
+	Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup = 0;
+	Context.Map.LIGHT.Age = InputDataFloat(0, 30);
+	Context.Map.LIGHT.CurrentLoopDelay = InputDataFloat(0, 31);
+	Context.Map.LIGHT.CurrentLoopDuration = InputDataFloat(0, 32);
+	Context.Map.LIGHT.ExecutionState = InputDataInt(0, 33);
+	Context.Map.LIGHT.ExecutionStateSource = InputDataInt(0, 34);
+	Context.Map.LIGHT.LocalSpace = InputDataBool(0, 35);
+	Context.Map.LIGHT.LoopCount = InputDataInt(0, 36);
+	Context.Map.LIGHT.LoopedAge = InputDataFloat(0, 37);
+	Context.Map.LIGHT.NormalizedLoopAge = InputDataFloat(0, 38);
+	Context.Map.LIGHT.Scalability.DistanceFraction = InputDataFloat(0, 39);
+	Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.Count = 0;
+	Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt = 0.0f;
+	Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt = 0.0f;
+	Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup = 0;
+	Context.Map.Shockwave.Age = InputDataFloat(0, 44);
+	Context.Map.Shockwave.CurrentLoopDelay = InputDataFloat(0, 45);
+	Context.Map.Shockwave.CurrentLoopDuration = InputDataFloat(0, 46);
+	Context.Map.Shockwave.ExecutionState = InputDataInt(0, 47);
+	Context.Map.Shockwave.ExecutionStateSource = InputDataInt(0, 48);
+	Context.Map.Shockwave.LocalSpace = InputDataBool(0, 49);
+	Context.Map.Shockwave.LoopCount = InputDataInt(0, 50);
+	Context.Map.Shockwave.LoopedAge = InputDataFloat(0, 51);
+	Context.Map.Shockwave.NormalizedLoopAge = InputDataFloat(0, 52);
+	Context.Map.Shockwave.Scalability.DistanceFraction = InputDataFloat(0, 53);
+	Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.Count = 0;
+	Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt = 0.0f;
+	Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt = 0.0f;
+	Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup = 0;
+	Context.Map.Smoke.Age = InputDataFloat(0, 58);
+	Context.Map.Smoke.AlphaScale = InputDataFloat(0, 59);
+	Context.Map.Smoke.CurrentLoopDelay = InputDataFloat(0, 60);
+	Context.Map.Smoke.CurrentLoopDuration = InputDataFloat(0, 61);
+	Context.Map.Smoke.ExecutionState = InputDataInt(0, 62);
+	Context.Map.Smoke.ExecutionStateSource = InputDataInt(0, 63);
+	Context.Map.Smoke.LocalSpace = InputDataBool(0, 64);
+	Context.Map.Smoke.LoopCount = InputDataInt(0, 65);
+	Context.Map.Smoke.LoopedAge = InputDataFloat(0, 66);
+	Context.Map.Smoke.NormalizedLoopAge = InputDataFloat(0, 67);
+	Context.Map.Smoke.Scalability.DistanceFraction = InputDataFloat(0, 68);
+	Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.Count = 0;
+	Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt = 0.0f;
+	Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt = 0.0f;
+	Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup = 0;
+	Context.Map.System.Age = InputDataFloat(0, 73);
+	Context.Map.System.bCompleteOnInactive = InputDataBool(0, 74);
+	Context.Map.System.CurrentLoopDelay = InputDataFloat(0, 75);
+	Context.Map.System.CurrentLoopDuration = InputDataFloat(0, 76);
+	Context.Map.System.ExecutionState = InputDataInt(0, 77);
+	Context.Map.System.ExecutionStateSource = InputDataInt(0, 78);
+	Context.Map.System.LoopCount = InputDataInt(0, 79);
+	Context.Map.System.LoopedAge = InputDataFloat(0, 80);
+	Context.Map.System.NormalizedLoopAge = InputDataFloat(0, 81);
+	Context.Map.Engine.Emitter.TotalSpawnedParticles = InputDataInt(1, 0);
+	Context.Map.Engine.Fire.NumParticles = InputDataInt(1, 1);
+	Context.Map.Engine.Fire.SpawnCountScale = InputDataFloat(1, 2);
+	Context.Map.Engine.Fire_Smoke.NumParticles = InputDataInt(1, 3);
+	Context.Map.Engine.Fire_Smoke.SpawnCountScale = InputDataFloat(1, 4);
+	Context.Map.Engine.LIGHT.NumParticles = InputDataInt(1, 5);
+	Context.Map.Engine.LIGHT.SpawnCountScale = InputDataFloat(1, 6);
+	Context.Map.Engine.Owner.ExecutionState = InputDataInt(1, 7);
+	Context.Map.Engine.Owner.LODDistance = InputDataFloat(1, 8);
+	Context.Map.Engine.Owner.TimeSinceRendered = InputDataFloat(1, 9);
+	Context.Map.Engine.Shockwave.NumParticles = InputDataInt(1, 10);
+	Context.Map.Engine.Shockwave.SpawnCountScale = InputDataFloat(1, 11);
+	Context.Map.Engine.Smoke.NumParticles = InputDataInt(1, 12);
+	Context.Map.Engine.Smoke.SpawnCountScale = InputDataFloat(1, 13);
+	Context.Map.Constants.SystemState.LoopDelay = Constants_SystemState_LoopDelay;
+	Context.Map.Constants.SystemState.LoopDuration = Constants_SystemState_LoopDuration;
+	Context.Map.Engine.DeltaTime = Engine_DeltaTime;
+	Context.Map.Constants.Shockwave.EmitterState.LoopDuration = Constants_Shockwave_EmitterState_LoopDuration;
+	Context.Map.Constants.Shockwave.EmitterState.LoopDelay = Constants_Shockwave_EmitterState_LoopDelay;
+	Context.Map.Constants.Shockwave.EmitterState.MinDistance = Constants_Shockwave_EmitterState_MinDistance;
+	Context.Map.Constants.Shockwave.EmitterState.MaxDistance = Constants_Shockwave_EmitterState_MaxDistance;
+	Context.Map.Constants.Shockwave.EmitterState.VisibilityCullDelay = Constants_Shockwave_EmitterState_VisibilityCullDelay;
+	Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnTime = Constants_Shockwave_SpawnBurst_Instantaneous_SpawnTime;
+	Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnGroup = Constants_Shockwave_SpawnBurst_Instantaneous_SpawnGroup;
+	Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnProbability = Constants_Shockwave_SpawnBurst_Instantaneous_SpawnProbability;
+	Context.Map.Constants.Shockwave.SpawnBurst_Instantaneous.SpawnCount = Constants_Shockwave_SpawnBurst_Instantaneous_SpawnCount;
+	Context.Map.Constants.LIGHT.EmitterState.LoopDuration = Constants_LIGHT_EmitterState_LoopDuration;
+	Context.Map.Constants.LIGHT.EmitterState.LoopDelay = Constants_LIGHT_EmitterState_LoopDelay;
+	Context.Map.Constants.LIGHT.EmitterState.MinDistance = Constants_LIGHT_EmitterState_MinDistance;
+	Context.Map.Constants.LIGHT.EmitterState.MaxDistance = Constants_LIGHT_EmitterState_MaxDistance;
+	Context.Map.Constants.LIGHT.EmitterState.VisibilityCullDelay = Constants_LIGHT_EmitterState_VisibilityCullDelay;
+	Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnTime = Constants_LIGHT_SpawnBurst_Instantaneous_SpawnTime;
+	Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnGroup = Constants_LIGHT_SpawnBurst_Instantaneous_SpawnGroup;
+	Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnProbability = Constants_LIGHT_SpawnBurst_Instantaneous_SpawnProbability;
+	Context.Map.Constants.LIGHT.SpawnBurst_Instantaneous.SpawnCount = Constants_LIGHT_SpawnBurst_Instantaneous_SpawnCount;
+	Context.Map.Constants.Fire_Smoke.EmitterState.LoopDuration = Constants_Fire_Smoke_EmitterState_LoopDuration;
+	Context.Map.Constants.Fire_Smoke.EmitterState.LoopDelay = Constants_Fire_Smoke_EmitterState_LoopDelay;
+	Context.Map.Constants.Fire_Smoke.EmitterState.MinDistance = Constants_Fire_Smoke_EmitterState_MinDistance;
+	Context.Map.Constants.Fire_Smoke.EmitterState.MaxDistance = Constants_Fire_Smoke_EmitterState_MaxDistance;
+	Context.Map.Constants.Fire_Smoke.EmitterState.VisibilityCullDelay = Constants_Fire_Smoke_EmitterState_VisibilityCullDelay;
+	Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnTime = Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnTime;
+	Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnGroup = Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnGroup;
+	Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnProbability = Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnProbability;
+	Context.Map.Constants.Fire_Smoke.SpawnBurst_Instantaneous.SpawnCount = Constants_Fire_Smoke_SpawnBurst_Instantaneous_SpawnCount;
+	Context.Map.Constants.Fire.EmitterState.LoopDuration = Constants_Fire_EmitterState_LoopDuration;
+	Context.Map.Constants.Fire.EmitterState.LoopDelay = Constants_Fire_EmitterState_LoopDelay;
+	Context.Map.Constants.Fire.EmitterState.MinDistance = Constants_Fire_EmitterState_MinDistance;
+	Context.Map.Constants.Fire.EmitterState.MaxDistance = Constants_Fire_EmitterState_MaxDistance;
+	Context.Map.Constants.Fire.EmitterState.VisibilityCullDelay = Constants_Fire_EmitterState_VisibilityCullDelay;
+	Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnTime = Constants_Fire_SpawnBurst_Instantaneous_SpawnTime;
+	Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnGroup = Constants_Fire_SpawnBurst_Instantaneous_SpawnGroup;
+	Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnProbability = Constants_Fire_SpawnBurst_Instantaneous_SpawnProbability;
+	Context.Map.Constants.Fire.SpawnBurst_Instantaneous.SpawnCount = Constants_Fire_SpawnBurst_Instantaneous_SpawnCount;
+	Context.Map.Constants.Smoke.EmitterState.LoopDuration = Constants_Smoke_EmitterState_LoopDuration;
+	Context.Map.Constants.Smoke.EmitterState.LoopDelay = Constants_Smoke_EmitterState_LoopDelay;
+	Context.Map.Constants.Smoke.EmitterState.MinDistance = Constants_Smoke_EmitterState_MinDistance;
+	Context.Map.Constants.Smoke.EmitterState.MaxDistance = Constants_Smoke_EmitterState_MaxDistance;
+	Context.Map.Constants.Smoke.EmitterState.VisibilityCullDelay = Constants_Smoke_EmitterState_VisibilityCullDelay;
+	Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnTime = Constants_Smoke_SpawnBurst_Instantaneous_SpawnTime;
+	Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnGroup = Constants_Smoke_SpawnBurst_Instantaneous_SpawnGroup;
+	Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnProbability = Constants_Smoke_SpawnBurst_Instantaneous_SpawnProbability;
+	Context.Map.Constants.Smoke.SpawnBurst_Instantaneous.SpawnCount = Constants_Smoke_SpawnBurst_Instantaneous_SpawnCount;
+	Context.Map.Emitter.RandomSeed = Emitter_RandomSeed;
+	ReadDataSets(Context);
+	Simulate(Context);
+	WriteDataSets(Context);
+	{
+	int TmpWriteIndex = OutputIndex(0, false, true);
+	OutputDataInt(0, 0, TmpWriteIndex, Context.Map.Emitter.RandomSeed);
+	OutputDataFloat(0, 1, TmpWriteIndex, Context.Map.Fire.Age);
+	OutputDataFloat(0, 2, TmpWriteIndex, Context.Map.Fire.CurrentLoopDelay);
+	OutputDataFloat(0, 3, TmpWriteIndex, Context.Map.Fire.CurrentLoopDuration);
+	OutputDataInt(0, 4, TmpWriteIndex, Context.Map.Fire.ExecutionState);
+	OutputDataInt(0, 5, TmpWriteIndex, Context.Map.Fire.ExecutionStateSource);
+	OutputDataBool(0, 6, TmpWriteIndex, Context.Map.Fire.LocalSpace);
+	OutputDataInt(0, 7, TmpWriteIndex, Context.Map.Fire.LoopCount);
+	OutputDataFloat(0, 8, TmpWriteIndex, Context.Map.Fire.LoopedAge);
+	OutputDataFloat(0, 9, TmpWriteIndex, Context.Map.Fire.NormalizedLoopAge);
+	OutputDataFloat(0, 10, TmpWriteIndex, Context.Map.Fire.Scalability.DistanceFraction);
+	OutputDataInt(0, 11, TmpWriteIndex, Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.Count);
+	OutputDataFloat(0, 12, TmpWriteIndex, Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt);
+	OutputDataFloat(0, 13, TmpWriteIndex, Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt);
+	OutputDataInt(0, 14, TmpWriteIndex, Context.Map.Fire.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup);
+	OutputDataFloat(0, 15, TmpWriteIndex, Context.Map.Fire_Smoke.Age);
+	OutputDataFloat(0, 16, TmpWriteIndex, Context.Map.Fire_Smoke.AlphaScale);
+	OutputDataFloat(0, 17, TmpWriteIndex, Context.Map.Fire_Smoke.CurrentLoopDelay);
+	OutputDataFloat(0, 18, TmpWriteIndex, Context.Map.Fire_Smoke.CurrentLoopDuration);
+	OutputDataInt(0, 19, TmpWriteIndex, Context.Map.Fire_Smoke.ExecutionState);
+	OutputDataInt(0, 20, TmpWriteIndex, Context.Map.Fire_Smoke.ExecutionStateSource);
+	OutputDataBool(0, 21, TmpWriteIndex, Context.Map.Fire_Smoke.LocalSpace);
+	OutputDataInt(0, 22, TmpWriteIndex, Context.Map.Fire_Smoke.LoopCount);
+	OutputDataFloat(0, 23, TmpWriteIndex, Context.Map.Fire_Smoke.LoopedAge);
+	OutputDataFloat(0, 24, TmpWriteIndex, Context.Map.Fire_Smoke.NormalizedLoopAge);
+	OutputDataFloat(0, 25, TmpWriteIndex, Context.Map.Fire_Smoke.Scalability.DistanceFraction);
+	OutputDataInt(0, 26, TmpWriteIndex, Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.Count);
+	OutputDataFloat(0, 27, TmpWriteIndex, Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt);
+	OutputDataFloat(0, 28, TmpWriteIndex, Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt);
+	OutputDataInt(0, 29, TmpWriteIndex, Context.Map.Fire_Smoke.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup);
+	OutputDataFloat(0, 30, TmpWriteIndex, Context.Map.LIGHT.Age);
+	OutputDataFloat(0, 31, TmpWriteIndex, Context.Map.LIGHT.CurrentLoopDelay);
+	OutputDataFloat(0, 32, TmpWriteIndex, Context.Map.LIGHT.CurrentLoopDuration);
+	OutputDataInt(0, 33, TmpWriteIndex, Context.Map.LIGHT.ExecutionState);
+	OutputDataInt(0, 34, TmpWriteIndex, Context.Map.LIGHT.ExecutionStateSource);
+	OutputDataBool(0, 35, TmpWriteIndex, Context.Map.LIGHT.LocalSpace);
+	OutputDataInt(0, 36, TmpWriteIndex, Context.Map.LIGHT.LoopCount);
+	OutputDataFloat(0, 37, TmpWriteIndex, Context.Map.LIGHT.LoopedAge);
+	OutputDataFloat(0, 38, TmpWriteIndex, Context.Map.LIGHT.NormalizedLoopAge);
+	OutputDataFloat(0, 39, TmpWriteIndex, Context.Map.LIGHT.Scalability.DistanceFraction);
+	OutputDataInt(0, 40, TmpWriteIndex, Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.Count);
+	OutputDataFloat(0, 41, TmpWriteIndex, Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt);
+	OutputDataFloat(0, 42, TmpWriteIndex, Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt);
+	OutputDataInt(0, 43, TmpWriteIndex, Context.Map.LIGHT.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup);
+	OutputDataFloat(0, 44, TmpWriteIndex, Context.Map.Shockwave.Age);
+	OutputDataFloat(0, 45, TmpWriteIndex, Context.Map.Shockwave.CurrentLoopDelay);
+	OutputDataFloat(0, 46, TmpWriteIndex, Context.Map.Shockwave.CurrentLoopDuration);
+	OutputDataInt(0, 47, TmpWriteIndex, Context.Map.Shockwave.ExecutionState);
+	OutputDataInt(0, 48, TmpWriteIndex, Context.Map.Shockwave.ExecutionStateSource);
+	OutputDataBool(0, 49, TmpWriteIndex, Context.Map.Shockwave.LocalSpace);
+	OutputDataInt(0, 50, TmpWriteIndex, Context.Map.Shockwave.LoopCount);
+	OutputDataFloat(0, 51, TmpWriteIndex, Context.Map.Shockwave.LoopedAge);
+	OutputDataFloat(0, 52, TmpWriteIndex, Context.Map.Shockwave.NormalizedLoopAge);
+	OutputDataFloat(0, 53, TmpWriteIndex, Context.Map.Shockwave.Scalability.DistanceFraction);
+	OutputDataInt(0, 54, TmpWriteIndex, Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.Count);
+	OutputDataFloat(0, 55, TmpWriteIndex, Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt);
+	OutputDataFloat(0, 56, TmpWriteIndex, Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt);
+	OutputDataInt(0, 57, TmpWriteIndex, Context.Map.Shockwave.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup);
+	OutputDataFloat(0, 58, TmpWriteIndex, Context.Map.Smoke.Age);
+	OutputDataFloat(0, 59, TmpWriteIndex, Context.Map.Smoke.AlphaScale);
+	OutputDataFloat(0, 60, TmpWriteIndex, Context.Map.Smoke.CurrentLoopDelay);
+	OutputDataFloat(0, 61, TmpWriteIndex, Context.Map.Smoke.CurrentLoopDuration);
+	OutputDataInt(0, 62, TmpWriteIndex, Context.Map.Smoke.ExecutionState);
+	OutputDataInt(0, 63, TmpWriteIndex, Context.Map.Smoke.ExecutionStateSource);
+	OutputDataBool(0, 64, TmpWriteIndex, Context.Map.Smoke.LocalSpace);
+	OutputDataInt(0, 65, TmpWriteIndex, Context.Map.Smoke.LoopCount);
+	OutputDataFloat(0, 66, TmpWriteIndex, Context.Map.Smoke.LoopedAge);
+	OutputDataFloat(0, 67, TmpWriteIndex, Context.Map.Smoke.NormalizedLoopAge);
+	OutputDataFloat(0, 68, TmpWriteIndex, Context.Map.Smoke.Scalability.DistanceFraction);
+	OutputDataInt(0, 69, TmpWriteIndex, Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.Count);
+	OutputDataFloat(0, 70, TmpWriteIndex, Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.InterpStartDt);
+	OutputDataFloat(0, 71, TmpWriteIndex, Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.IntervalDt);
+	OutputDataInt(0, 72, TmpWriteIndex, Context.Map.Smoke.SpawnBurst_Instantaneous.SpawnBurst.SpawnGroup);
+	OutputDataFloat(0, 73, TmpWriteIndex, Context.Map.System.Age);
+	OutputDataBool(0, 74, TmpWriteIndex, Context.Map.System.bCompleteOnInactive);
+	OutputDataFloat(0, 75, TmpWriteIndex, Context.Map.System.CurrentLoopDelay);
+	OutputDataFloat(0, 76, TmpWriteIndex, Context.Map.System.CurrentLoopDuration);
+	OutputDataInt(0, 77, TmpWriteIndex, Context.Map.System.ExecutionState);
+	OutputDataInt(0, 78, TmpWriteIndex, Context.Map.System.ExecutionStateSource);
+	OutputDataInt(0, 79, TmpWriteIndex, Context.Map.System.LoopCount);
+	OutputDataFloat(0, 80, TmpWriteIndex, Context.Map.System.LoopedAge);
+	OutputDataFloat(0, 81, TmpWriteIndex, Context.Map.System.NormalizedLoopAge);
+	}
+ExitStatScope( );
+}
+#line 703 "/Plugin/FX/Niagara/Private/NiagaraEmitterInstanceShader.usf"
+
+#if 0 /*BEGIN_RESOURCE_TABLES*/
+NULL, 0
+NULL, NULL, 0, 0
+#endif /*END_RESOURCE_TABLES*/
