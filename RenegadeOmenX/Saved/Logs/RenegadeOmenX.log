@@ -3136,3 +3136,761 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.02.16-19.05.43:214][414]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Zombies/ChasePlayer]
 [2021.02.16-19.05.43:241][414]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/ChasePlayer_Auto44E46E34746016B24D7D1E3B801383569.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Autosaves/Game/Blueprints/Zombies/ChasePlayer_Auto4.uasset'
 [2021.02.16-19.05.43:242][414]LogFileHelpers: Auto-saving content packages took 0.028
+[2021.02.17-04.06.58:028][812]LogTemp: Resetting audio stream to device id 
+[2021.02.17-04.06.58:053][812]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.17-04.06.58:053][812]LogAudioMixer: Display: 1: FrontRight
+[2021.02.17-04.06.59:028][816]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2021.02.17-04.06.59:363][816]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2021.02.17-04.06.59:363][816]LogTemp: Resetting audio stream to device id 
+[2021.02.17-07.07.00:935][816]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2021.02.17-07.07.00:935][816]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.17-07.07.00:935][816]LogAudioMixer: Display: 1: FrontRight
+[2021.02.17-07.07.01:060][817]LogTemp: Resetting audio stream to device id 
+[2021.02.17-07.07.01:118][817]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.17-07.07.01:118][817]LogAudioMixer: Display: 1: FrontRight
+[2021.02.17-07.07.01:536][819]LogD3D11RHI: Timed out while waiting for GPU to catch up. (500 ms)
+[2021.02.17-07.07.07:839][837]LogTemp: Resetting audio stream to device id 
+[2021.02.17-14.55.20:843][837]LogHttp: Warning: 0000016E8A1BC800: HTTP request timed out after 28105.77 seconds URL=https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BB913D1B1-40FD-946E-52C2-E484EAB9168B%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=205a473340242489ce81079a01667d1c%7Cba25ea716df54fb1b44e0ec246108bc9%7C8fba83d6-fb36-4d17-b2ae-b61aebd92f8b&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2021.02.17-14.55.20:843][837]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.17-14.55.20:843][837]LogAudioMixer: Display: 1: FrontRight
+[2021.02.17-14.55.21:913][838]LogHttp: Warning: 0000016E8A1BC800: request failed, libcurl error: 0 (No error)
+[2021.02.17-14.55.21:913][838]LogHttp: Warning: 0000016E8A1BC800: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x16dcda8ff70 [can pipeline])
+[2021.02.17-14.55.21:913][838]LogHttp: Warning: 0000016E8A1BC800: libcurl info message cache 1 (Re-using existing connection! (#140) with host datarouter.ol.epicgames.com)
+[2021.02.17-14.55.21:914][838]LogHttp: Warning: 0000016E8A1BC800: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (54.243.67.50) port 443 (#140))
+[2021.02.17-14.55.21:914][838]LogHttp: Warning: 0000016E8A1BC800: libcurl info message cache 3 (We are completely uploaded and fine)
+[2021.02.17-14.55.21:914][838]LogHttp: Warning: 0000016E8A1BC800: libcurl info message cache 4 (Closing connection 140)
+[2021.02.17-14.55.21:914][838]LogHttp: Warning: 0000016E8A1BC800: libcurl info message cache 5 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2021.02.17-14.55.21:979][838]LogTemp: Resetting audio stream to device id 
+[2021.02.17-14.55.22:020][838]LogAudioMixer: Display: 0: FrontLeft
+[2021.02.17-14.55.22:020][838]LogAudioMixer: Display: 1: FrontRight
+[2021.02.17-14.55.22:108][839]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BB913D1B1-40FD-946E-52C2-E484EAB9168B%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=205a473340242489ce81079a01667d1c%7Cba25ea716df54fb1b44e0ec246108bc9%7C8fba83d6-fb36-4d17-b2ae-b61aebd92f8b&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2021.02.17-14.57.05:491][379]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Zombies/LoopPath.LoopPath
+[2021.02.17-14.57.22:986][299]BlueprintLog: New page: Compile LoopPath
+[2021.02.17-14.57.23:047][299]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
+[2021.02.17-14.57.25:927][456]BlueprintLog: New page: Compile LoopPath
+[2021.02.17-14.57.25:976][456]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2021.02.17-14.58.12:002][ 97]BlueprintLog: New page: Compile LoopPath
+[2021.02.17-14.58.12:051][ 97]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2021.02.17-14.58.12:476][119]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Zombies/LoopPath" FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/LoopPath.uasset" SILENT=true
+[2021.02.17-14.58.12:548][119]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/LoopPath0779BB0F44370C15A1033BB3FF66ABDC.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/LoopPath.uasset'
+[2021.02.17-14.58.12:579][119]AssetCheck: New page: Asset Save: LoopPath
+[2021.02.17-14.58.12:579][119]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Zombies/LoopPath.LoopPath
+[2021.02.17-14.58.17:184][379]BlueprintLog: New page: Compile LoopPath
+[2021.02.17-14.58.17:236][379]LogUObjectHash: Compacting FUObjectHashTables data took   3.26ms
+[2021.02.17-14.58.17:661][401]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Zombies/LoopPath" FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/LoopPath.uasset" SILENT=true
+[2021.02.17-14.58.17:691][401]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/LoopPath72E07B6D4138E0B016F567873CE3EEF5.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/LoopPath.uasset'
+[2021.02.17-14.58.17:715][401]AssetCheck: New page: Asset Save: LoopPath
+[2021.02.17-14.58.17:715][401]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Zombies/LoopPath.LoopPath
+[2021.02.17-14.58.45:187][658]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
+[2021.02.17-14.58.45:193][658]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap' took 0.037
+[2021.02.17-14.58.45:193][658]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Zombies/NPC_BT] ([1] browsable assets)...
+[2021.02.17-14.58.45:193][658]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Zombies/NPC_BT]
+[2021.02.17-14.58.45:231][658]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/NPC_BT_Auto5A991D25947F3E9B42022F4A6B86C89AA.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Autosaves/Game/Blueprints/Zombies/NPC_BT_Auto5.uasset'
+[2021.02.17-14.58.45:233][658]LogFileHelpers: Auto-saving content packages took 0.040
+[2021.02.17-14.58.53:218][791]BlueprintLog: New page: Compile LoopPath
+[2021.02.17-14.58.53:288][791]LogUObjectHash: Compacting FUObjectHashTables data took   3.06ms
+[2021.02.17-14.58.53:709][811]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Zombies/LoopPath" FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/LoopPath.uasset" SILENT=true
+[2021.02.17-14.58.53:748][811]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/LoopPathA80DCA8841419E2B7852499453BE1147.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/LoopPath.uasset'
+[2021.02.17-14.58.53:767][811]AssetCheck: New page: Asset Save: LoopPath
+[2021.02.17-14.58.53:767][811]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Zombies/LoopPath.LoopPath
+[2021.02.17-14.59.15:016][ 41]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:206][ 49]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:222][ 50]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:238][ 51]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:254][ 52]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:271][ 53]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:287][ 54]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:304][ 55]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:321][ 56]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:338][ 57]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:354][ 58]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:371][ 59]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:388][ 60]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:405][ 61]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:423][ 62]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:441][ 63]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:459][ 64]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:477][ 65]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:493][ 66]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:510][ 67]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:528][ 68]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:545][ 69]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:562][ 70]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:580][ 71]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:598][ 72]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:617][ 73]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:635][ 74]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:656][ 75]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:712][ 76]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:728][ 77]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:745][ 78]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:761][ 79]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:778][ 80]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:795][ 81]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:812][ 82]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:829][ 83]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:845][ 84]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:863][ 85]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:888][ 86]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:905][ 87]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:923][ 88]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:942][ 89]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:959][ 90]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:976][ 91]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.15:995][ 92]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:013][ 93]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:031][ 94]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:049][ 95]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:067][ 96]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:086][ 97]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:104][ 98]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:124][ 99]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:142][100]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:159][101]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:176][102]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:197][103]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:244][104]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:259][105]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:276][106]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:292][107]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:308][108]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:325][109]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:342][110]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:358][111]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:375][112]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:392][113]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:409][114]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:425][115]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:443][116]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:461][117]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:479][118]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:497][119]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:515][120]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:537][121]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:566][122]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:584][123]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:599][124]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:616][125]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:632][126]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:650][127]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:667][128]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:683][129]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:701][130]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:720][131]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:739][132]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:757][133]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:775][134]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:794][135]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:810][136]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:829][137]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:847][138]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:865][139]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:884][140]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:902][141]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:922][142]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:940][143]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:958][144]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:976][145]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.16:994][146]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:012][147]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:030][148]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:048][149]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:067][150]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:085][151]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:103][152]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:122][153]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:137][154]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:154][155]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:171][156]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:188][157]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:204][158]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:221][159]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:238][160]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:255][161]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:271][162]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:288][163]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:305][164]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:321][165]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:338][166]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:355][167]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:371][168]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:388][169]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:405][170]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:422][171]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:438][172]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:455][173]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:475][174]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:516][175]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:533][176]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:550][177]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:566][178]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:600][180]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:618][181]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:636][182]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:667][183]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:684][184]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:700][185]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:717][186]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:734][187]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:750][188]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:766][189]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:783][190]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:799][191]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:816][192]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:833][193]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:850][194]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:867][195]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:884][196]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:899][197]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:916][198]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:933][199]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:949][200]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:966][201]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.17:983][202]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:000][203]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:017][204]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:034][205]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:052][206]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:067][207]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:083][208]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:100][209]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:116][210]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:134][211]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:150][212]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:166][213]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:183][214]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:200][215]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:216][216]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:234][217]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:250][218]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:267][219]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:284][220]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:300][221]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:317][222]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:334][223]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:350][224]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:369][225]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:399][226]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:416][227]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:432][228]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:448][229]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:465][230]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:482][231]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:498][232]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:516][233]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:532][234]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:549][235]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:566][236]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:582][237]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:599][238]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:616][239]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:631][240]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:815][251]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:832][252]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:849][253]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:865][254]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:882][255]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:899][256]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:916][257]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:932][258]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:949][259]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:966][260]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:982][261]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.18:998][262]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:015][263]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:032][264]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:048][265]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:065][266]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:081][267]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:098][268]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:116][269]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:151][270]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:168][271]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:185][272]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:202][273]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:218][274]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:235][275]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:251][276]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:268][277]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:285][278]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:301][279]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.19:318][280]LogAnimation: Warning: SkeletalMesh ZombieMale01_mesh has no skeleton. This needs to fixed before an animation can be set
+[2021.02.17-14.59.23:798][532]LogUObjectHash: Compacting FUObjectHashTables data took   2.56ms
+[2021.02.17-14.59.23:869][532]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/FirstPersonExampleMap9E21F9F040C1097222AE6EB8EC5F4929.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2021.02.17-14.59.24:503][532]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/FirstPersonExampleMap_BuiltDataD2AEE2A34DC2EAFD51C30E8A69212A3B.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2021.02.17-14.59.24:524][532]AssetCheck: New page: Asset Save: multiple assets
+[2021.02.17-14.59.24:524][532]LogContentValidation: Display: Validating World /Game/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2021.02.17-14.59.24:524][532]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2021.02.17-15.08.14:067][ 63]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Assets/Zombies/DemoAnimations/Zombie_Walk_Anim.Zombie_Walk_Anim
+[2021.02.17-15.08.14:178][ 63]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0022 seconds. Added 1 classes and 2 folders.
+[2021.02.17-15.08.14:537][ 63]LogContentBrowser: Native class hierarchy updated for 'PinnedCommandList' in 0.0008 seconds. Added 1 classes and 0 folders.
+[2021.02.17-15.08.15:907][ 63]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.02.17-15.08.25:636][520]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.25:636][520]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.08.25:686][520]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.25:686][520]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.08.25:830][520]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.25:830][520]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.08.29:696][745]BlueprintLog: New page: Compile LoopPath
+[2021.02.17-15.08.29:830][745]LogUObjectHash: Compacting FUObjectHashTables data took   3.82ms
+[2021.02.17-15.08.31:086][810]LogSlate: Window 'LoopPath' being destroyed
+[2021.02.17-15.08.31:099][810]LogSlate: Window 'LoopPath' being destroyed
+[2021.02.17-15.08.31:252][810]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.31:252][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.08.31:448][810]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2021.02.17-15.08.31:448][810]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.31:448][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.08.31:667][810]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.31:667][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.08.31:811][810]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.31:811][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.08.32:002][810]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.08.32:003][810]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.02.17-15.10.12:444][555]LogUObjectHash: Compacting FUObjectHashTables data took   3.42ms
+[2021.02.17-15.10.12:506][555]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/FirstPersonExampleMapE466DFC94CADF6F013213BBD8B033E83.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2021.02.17-15.10.13:014][555]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/FirstPersonExampleMap_BuiltData97ED3789404CF7DA64CFDC8CF625B66A.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.uasset'
+[2021.02.17-15.10.13:031][555]AssetCheck: New page: Asset Save: multiple assets
+[2021.02.17-15.10.13:031][555]LogContentValidation: Display: Validating World /Game/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap.FirstPersonExampleMap
+[2021.02.17-15.10.13:031][555]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Blueprints/FirstPersonBP/Maps/FirstPersonExampleMap_BuiltData.FirstPersonExampleMap_BuiltData
+[2021.02.17-15.10.14:288][620]LogUObjectHash: Compacting FUObjectHashTables data took   3.08ms
+[2021.02.17-15.10.14:319][620]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Zombies/NPC_BT" FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/NPC_BT.uasset" SILENT=true
+[2021.02.17-15.10.14:343][620]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/NPC_BT77FD16D943D224FC536D7A980522E5D9.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/NPC_BT.uasset'
+[2021.02.17-15.10.14:346][620]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Zombies/Zombie" FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/Zombie.uasset" SILENT=true
+[2021.02.17-15.10.14:375][620]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Zombie9B1B0B9A4C8BBDE08A83A28DB9A8A880.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/Zombie.uasset'
+[2021.02.17-15.10.14:412][620]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/ChasePlayerDB6812184F3F80B08EE50BB5FF9127F5.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/ChasePlayer.uasset'
+[2021.02.17-15.10.14:453][620]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/ChangeStatus631ACEF74FD7537D81828899666F7CE0.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/Zombies/ChangeStatus.uasset'
+[2021.02.17-15.10.14:485][620]AssetCheck: New page: Asset Save: multiple assets
+[2021.02.17-15.10.14:485][620]LogContentValidation: Display: Validating BehaviorTree /Game/Blueprints/Zombies/NPC_BT.NPC_BT
+[2021.02.17-15.10.14:485][620]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Zombies/Zombie.Zombie
+[2021.02.17-15.10.14:485][620]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Zombies/ChasePlayer.ChasePlayer
+[2021.02.17-15.10.14:485][620]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Zombies/ChangeStatus.ChangeStatus
+[2021.02.17-15.10.15:462][675]LogUObjectHash: Compacting FUObjectHashTables data took   0.45ms
+[2021.02.17-15.10.15:570][675]LogSlate: Window 'RenegadeOmenX - Unreal Editor' being destroyed
+[2021.02.17-15.10.15:572][675]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.02.17-15.10.15:875][676]Cmd: QUIT_EDITOR
+[2021.02.17-15.10.15:875][676]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.02.17-15.10.15:888][676]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.02.17-15.10.16:291][676]LogExit: Preparing to exit.
+[2021.02.17-15.10.16:883][676]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.10.16:884][676]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.10.16:886][676]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.10.16:886][676]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.02.17-15.10.16:886][676]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.10.16:887][676]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.10.16:888][676]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2021.02.17-15.10.16:934][676]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.02.17-15.10.16:968][676]LogExit: Editor shut down
+[2021.02.17-15.10.16:969][676]LogExit: Transaction tracking system shut down
+[2021.02.17-15.10.17:707][676]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (0000016DEB09C380), frame # 407676
+[2021.02.17-15.10.17:707][676]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000016DEAFBFB00), frame # 407676
+[2021.02.17-15.10.17:708][676]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000016DEB031E00), frame # 407676
+[2021.02.17-15.10.17:823][676]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000016D96D3FC40), frame # 407676
+[2021.02.17-15.10.17:824][676]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000016D98491800), frame # 407676
+[2021.02.17-15.10.17:928][676]LogExit: Object subsystem successfully closed.
+[2021.02.17-15.10.17:996][676]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.02.17-15.10.18:185][676]LogModuleManager: Shutting down and abandoning module SequencerWidgets (804)
+[2021.02.17-15.10.18:185][676]LogModuleManager: Shutting down and abandoning module PinnedCommandList (802)
+[2021.02.17-15.10.18:185][676]LogModuleManager: Shutting down and abandoning module SkeletonEditor (800)
+[2021.02.17-15.10.18:186][676]LogModuleManager: Shutting down and abandoning module AnimationEditor (798)
+[2021.02.17-15.10.18:186][676]LogModuleManager: Shutting down and abandoning module BlueprintGraph (796)
+[2021.02.17-15.10.18:187][676]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (794)
+[2021.02.17-15.10.18:187][676]LogModuleManager: Shutting down and abandoning module Voice (792)
+[2021.02.17-15.10.18:187][676]LogModuleManager: Shutting down and abandoning module StatsViewer (790)
+[2021.02.17-15.10.18:189][676]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (788)
+[2021.02.17-15.10.18:189][676]LogModuleManager: Shutting down and abandoning module SceneOutliner (786)
+[2021.02.17-15.10.18:189][676]LogModuleManager: Shutting down and abandoning module AddContentDialog (784)
+[2021.02.17-15.10.18:192][676]LogModuleManager: Shutting down and abandoning module WidgetCarousel (783)
+[2021.02.17-15.10.18:192][676]LogModuleManager: Shutting down and abandoning module EditorWidgets (780)
+[2021.02.17-15.10.18:192][676]LogModuleManager: Shutting down and abandoning module CollectionManager (778)
+[2021.02.17-15.10.18:193][676]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (776)
+[2021.02.17-15.10.18:193][676]LogModuleManager: Shutting down and abandoning module FoliageEdit (774)
+[2021.02.17-15.10.18:194][676]LogModuleManager: Shutting down and abandoning module LandscapeEditor (772)
+[2021.02.17-15.10.18:198][676]LogModuleManager: Shutting down and abandoning module MeshPaintMode (770)
+[2021.02.17-15.10.18:199][676]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (768)
+[2021.02.17-15.10.18:199][676]LogModuleManager: Shutting down and abandoning module ActorPickerMode (766)
+[2021.02.17-15.10.18:199][676]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (764)
+[2021.02.17-15.10.18:206][676]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (762)
+[2021.02.17-15.10.18:206][676]LogModuleManager: Shutting down and abandoning module AutomationWorker (760)
+[2021.02.17-15.10.18:207][676]LogModuleManager: Shutting down and abandoning module SteamVREditor (758)
+[2021.02.17-15.10.18:207][676]LogModuleManager: Shutting down and abandoning module OculusMR (756)
+[2021.02.17-15.10.18:207][676]LogModuleManager: Shutting down and abandoning module GooglePADEditor (754)
+[2021.02.17-15.10.18:207][676]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (752)
+[2021.02.17-15.10.18:208][676]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (750)
+[2021.02.17-15.10.18:213][676]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (748)
+[2021.02.17-15.10.18:213][676]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (746)
+[2021.02.17-15.10.18:216][676]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (744)
+[2021.02.17-15.10.18:217][676]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (742)
+[2021.02.17-15.10.18:217][676]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (740)
+[2021.02.17-15.10.18:217][676]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (738)
+[2021.02.17-15.10.18:217][676]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (736)
+[2021.02.17-15.10.18:217][676]LogModuleManager: Shutting down and abandoning module WebMMedia (734)
+[2021.02.17-15.10.18:217][676]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (732)
+[2021.02.17-15.10.18:219][676]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (730)
+[2021.02.17-15.10.18:220][676]LogModuleManager: Shutting down and abandoning module SequenceRecorder (729)
+[2021.02.17-15.10.18:220][676]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (726)
+[2021.02.17-15.10.18:220][676]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (724)
+[2021.02.17-15.10.18:220][676]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (722)
+[2021.02.17-15.10.18:220][676]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (720)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (718)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (716)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (714)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (712)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (710)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (708)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module PlanarCut (706)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module CharacterAI (704)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module TextureAlignMode (702)
+[2021.02.17-15.10.18:221][676]LogModuleManager: Shutting down and abandoning module BspMode (700)
+[2021.02.17-15.10.18:223][676]LogModuleManager: Shutting down and abandoning module PlacementMode (699)
+[2021.02.17-15.10.18:223][676]LogModuleManager: Shutting down and abandoning module GeometryMode (696)
+[2021.02.17-15.10.18:223][676]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (694)
+[2021.02.17-15.10.18:224][676]LogModuleManager: Shutting down and abandoning module SmartSnapping (692)
+[2021.02.17-15.10.18:224][676]LogModuleManager: Shutting down and abandoning module SessionServices (690)
+[2021.02.17-15.10.18:224][676]LogModuleManager: Shutting down and abandoning module MeshPaint (688)
+[2021.02.17-15.10.18:224][676]LogModuleManager: Shutting down and abandoning module ViewportSnapping (686)
+[2021.02.17-15.10.18:225][676]LogModuleManager: Shutting down and abandoning module ViewportInteraction (684)
+[2021.02.17-15.10.18:225][676]LogModuleManager: Shutting down and abandoning module ClothPainter (682)
+[2021.02.17-15.10.18:227][676]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (681)
+[2021.02.17-15.10.18:229][676]LogModuleManager: Shutting down and abandoning module LogVisualizer (678)
+[2021.02.17-15.10.18:232][676]LogModuleManager: Shutting down and abandoning module IntroTutorials (676)
+[2021.02.17-15.10.18:233][676]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (675)
+[2021.02.17-15.10.18:235][676]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (672)
+[2021.02.17-15.10.18:236][676]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (670)
+[2021.02.17-15.10.18:236][676]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (668)
+[2021.02.17-15.10.18:237][676]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (667)
+[2021.02.17-15.10.19:081][676]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (664)
+[2021.02.17-15.10.19:081][676]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (662)
+[2021.02.17-15.10.19:081][676]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (660)
+[2021.02.17-15.10.19:081][676]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (658)
+[2021.02.17-15.10.19:082][676]LogModuleManager: Shutting down and abandoning module TraceInsights (656)
+[2021.02.17-15.10.19:090][676]LogModuleManager: Shutting down and abandoning module TraceServices (655)
+[2021.02.17-15.10.19:091][676]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (652)
+[2021.02.17-15.10.19:091][676]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (650)
+[2021.02.17-15.10.19:091][676]LogModuleManager: Shutting down and abandoning module InputBindingEditor (648)
+[2021.02.17-15.10.19:093][676]LogModuleManager: Shutting down and abandoning module MergeActors (646)
+[2021.02.17-15.10.19:093][676]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (644)
+[2021.02.17-15.10.19:094][676]LogModuleManager: Shutting down and abandoning module LocalizationService (643)
+[2021.02.17-15.10.19:094][676]LogModuleManager: Shutting down and abandoning module HardwareTargeting (640)
+[2021.02.17-15.10.19:094][676]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (638)
+[2021.02.17-15.10.19:095][676]LogModuleManager: Shutting down and abandoning module UndoHistory (636)
+[2021.02.17-15.10.19:095][676]LogModuleManager: Shutting down and abandoning module XmlParser (634)
+[2021.02.17-15.10.19:096][676]LogModuleManager: Shutting down and abandoning module Blutility (632)
+[2021.02.17-15.10.19:096][676]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (630)
+[2021.02.17-15.10.19:096][676]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (629)
+[2021.02.17-15.10.19:097][676]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (626)
+[2021.02.17-15.10.19:097][676]LogModuleManager: Shutting down and abandoning module SettingsEditor (624)
+[2021.02.17-15.10.19:098][676]LogModuleManager: Shutting down and abandoning module ProjectLauncher (622)
+[2021.02.17-15.10.19:099][676]LogModuleManager: Shutting down and abandoning module SessionFrontend (620)
+[2021.02.17-15.10.19:099][676]LogModuleManager: Shutting down and abandoning module ProfilerClient (618)
+[2021.02.17-15.10.19:100][676]LogModuleManager: Shutting down and abandoning module DeviceManager (616)
+[2021.02.17-15.10.19:101][676]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (615)
+[2021.02.17-15.10.19:134][676]LogModuleManager: Shutting down and abandoning module AutomationController (612)
+[2021.02.17-15.10.19:134][676]LogModuleManager: Shutting down and abandoning module AutomationWindow (610)
+[2021.02.17-15.10.19:135][676]LogModuleManager: Shutting down and abandoning module Layers (608)
+[2021.02.17-15.10.19:137][676]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (606)
+[2021.02.17-15.10.19:137][676]LogModuleManager: Shutting down and abandoning module DetailCustomizations (604)
+[2021.02.17-15.10.19:137][676]LogModuleManager: Shutting down and abandoning module PackagesDialog (602)
+[2021.02.17-15.10.19:138][676]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (600)
+[2021.02.17-15.10.19:139][676]LogModuleManager: Shutting down and abandoning module Persona (598)
+[2021.02.17-15.10.19:139][676]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (597)
+[2021.02.17-15.10.19:139][676]LogModuleManager: Shutting down and abandoning module AnimGraph (595)
+[2021.02.17-15.10.19:139][676]LogModuleManager: Shutting down and abandoning module Kismet (592)
+[2021.02.17-15.10.19:150][676]LogModuleManager: Shutting down and abandoning module KismetWidgets (591)
+[2021.02.17-15.10.19:151][676]LogModuleManager: Shutting down and abandoning module GraphEditor (588)
+[2021.02.17-15.10.19:151][676]LogModuleManager: Shutting down and abandoning module StructViewer (586)
+[2021.02.17-15.10.19:151][676]LogModuleManager: Shutting down and abandoning module ClassViewer (584)
+[2021.02.17-15.10.19:154][676]LogModuleManager: Shutting down and abandoning module Toolbox (582)
+[2021.02.17-15.10.19:155][676]LogModuleManager: Shutting down and abandoning module ModuleUI (580)
+[2021.02.17-15.10.19:155][676]LogModuleManager: Shutting down and abandoning module OutputLog (578)
+[2021.02.17-15.10.19:167][676]LogModuleManager: Shutting down and abandoning module GammaUI (576)
+[2021.02.17-15.10.19:167][676]LogModuleManager: Shutting down and abandoning module Documentation (574)
+[2021.02.17-15.10.19:171][676]LogModuleManager: Shutting down and abandoning module LiveCoding (572)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module LevelSequence (570)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (568)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module MovieScene (566)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (564)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module LauncherPlatform (562)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module AnalyticsET (560)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module PortalServices (558)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module PortalRpc (556)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module MessagingRpc (554)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (552)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module AudioMixerCore (551)
+[2021.02.17-15.10.19:172][676]LogModuleManager: Shutting down and abandoning module AIModule (548)
+[2021.02.17-15.10.19:173][676]LogModuleManager: Shutting down and abandoning module GameplayDebugger (547)
+[2021.02.17-15.10.19:173][676]LogModuleManager: Shutting down and abandoning module AITestSuite (545)
+[2021.02.17-15.10.19:173][676]LogModuleManager: Shutting down and abandoning module NavigationSystem (543)
+[2021.02.17-15.10.19:173][676]LogModuleManager: Shutting down and abandoning module ProfilerService (540)
+[2021.02.17-15.10.19:283][676]LogModuleManager: Shutting down and abandoning module TaskGraph (538)
+[2021.02.17-15.10.19:283][676]LogModuleManager: Shutting down and abandoning module ScreenshotTools (536)
+[2021.02.17-15.10.19:283][676]LogModuleManager: Shutting down and abandoning module SynthesisEditor (534)
+[2021.02.17-15.10.19:283][676]LogModuleManager: Shutting down and abandoning module Synthesis (532)
+[2021.02.17-15.10.19:285][676]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (530)
+[2021.02.17-15.10.19:285][676]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (528)
+[2021.02.17-15.10.19:285][676]LogModuleManager: Shutting down and abandoning module OculusEditor (526)
+[2021.02.17-15.10.19:285][676]LogModuleManager: Shutting down and abandoning module OculusInput (524)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (522)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module GooglePAD (520)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module EditableMesh (518)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (516)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module CableComponent (514)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module AudioCapture (512)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (511)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module AssetTags (508)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (506)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (504)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module AppleImageUtils (502)
+[2021.02.17-15.10.19:286][676]LogModuleManager: Shutting down and abandoning module AndroidPermission (500)
+[2021.02.17-15.10.19:287][676]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (498)
+[2021.02.17-15.10.19:287][676]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (496)
+[2021.02.17-15.10.19:289][676]LogModuleManager: Shutting down and abandoning module TemplateSequence (494)
+[2021.02.17-15.10.19:289][676]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (492)
+[2021.02.17-15.10.19:289][676]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (490)
+[2021.02.17-15.10.19:289][676]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (488)
+[2021.02.17-15.10.19:289][676]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (486)
+[2021.02.17-15.10.19:289][676]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (485)
+[2021.02.17-15.10.19:294][676]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (482)
+[2021.02.17-15.10.19:294][676]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (480)
+[2021.02.17-15.10.19:294][676]LogModuleManager: Shutting down and abandoning module MediaCompositing (478)
+[2021.02.17-15.10.19:294][676]LogModuleManager: Shutting down and abandoning module ImgMedia (476)
+[2021.02.17-15.10.19:294][676]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (474)
+[2021.02.17-15.10.19:294][676]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (472)
+[2021.02.17-15.10.19:294][676]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (470)
+[2021.02.17-15.10.19:295][676]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (468)
+[2021.02.17-15.10.19:295][676]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (466)
+[2021.02.17-15.10.19:295][676]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (464)
+[2021.02.17-15.10.19:298][676]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (462)
+[2021.02.17-15.10.19:299][676]LogModuleManager: Shutting down and abandoning module MeshConversion (460)
+[2021.02.17-15.10.19:299][676]LogModuleManager: Shutting down and abandoning module DynamicMesh (458)
+[2021.02.17-15.10.19:300][676]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (456)
+[2021.02.17-15.10.19:300][676]LogModuleManager: Shutting down and abandoning module GeometricObjects (454)
+[2021.02.17-15.10.19:300][676]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (452)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (451)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (448)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (446)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (444)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (442)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module ChaosNiagara (440)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module FractureEditor (438)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (436)
+[2021.02.17-15.10.19:301][676]LogModuleManager: Shutting down and abandoning module ChaosCloth (434)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module BackChannel (432)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (430)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module AutomationUtils (428)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module AlembicImporter (426)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module AlembicLibrary (425)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module GeometryCache (424)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (423)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (418)
+[2021.02.17-15.10.19:302][676]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (416)
+[2021.02.17-15.10.19:303][676]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (414)
+[2021.02.17-15.10.19:303][676]LogModuleManager: Shutting down and abandoning module PluginBrowser (412)
+[2021.02.17-15.10.19:306][676]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (410)
+[2021.02.17-15.10.19:306][676]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (408)
+[2021.02.17-15.10.19:306][676]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (406)
+[2021.02.17-15.10.19:307][676]LogModuleManager: Shutting down and abandoning module CurveEditorTools (404)
+[2021.02.17-15.10.19:308][676]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (402)
+[2021.02.17-15.10.19:308][676]LogModuleManager: Shutting down and abandoning module CryptoKeys (400)
+[2021.02.17-15.10.19:308][676]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (398)
+[2021.02.17-15.10.19:308][676]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (396)
+[2021.02.17-15.10.19:308][676]LogModuleManager: Shutting down and abandoning module UObjectPlugin (394)
+[2021.02.17-15.10.19:308][676]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (392)
+[2021.02.17-15.10.19:310][676]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (390)
+[2021.02.17-15.10.19:310][676]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (388)
+[2021.02.17-15.10.19:311][676]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (386)
+[2021.02.17-15.10.19:314][676]LogModuleManager: Shutting down and abandoning module GitSourceControl (384)
+[2021.02.17-15.10.19:316][676]LogModuleManager: Shutting down and abandoning module SourceControl (383)
+[2021.02.17-15.10.19:316][676]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (380)
+[2021.02.17-15.10.19:316][676]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (378)
+[2021.02.17-15.10.19:316][676]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (376)
+[2021.02.17-15.10.19:317][676]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (374)
+[2021.02.17-15.10.19:317][676]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (372)
+[2021.02.17-15.10.19:317][676]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (370)
+[2021.02.17-15.10.19:317][676]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (368)
+[2021.02.17-15.10.19:317][676]LogModuleManager: Shutting down and abandoning module Paper2DEditor (366)
+[2021.02.17-15.10.19:318][676]LogModuleManager: Shutting down and abandoning module SoundFields (364)
+[2021.02.17-15.10.19:318][676]LogModuleManager: Shutting down and abandoning module SignificanceManager (362)
+[2021.02.17-15.10.19:318][676]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (360)
+[2021.02.17-15.10.19:318][676]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (358)
+[2021.02.17-15.10.19:318][676]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (354)
+[2021.02.17-15.10.19:318][676]LogModuleManager: Shutting down and abandoning module ActorSequence (352)
+[2021.02.17-15.10.19:318][676]LogModuleManager: Shutting down and abandoning module UdpMessaging (350)
+[2021.02.17-15.10.19:420][676]LogModuleManager: Shutting down and abandoning module TcpMessaging (348)
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (346)
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (344)
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (342)
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (340)
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (338)
+[2021.02.17-15.10.19:521][676]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (336)
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (334)
+[2021.02.17-15.10.19:521][676]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (332)
+[2021.02.17-15.10.19:522][676]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (330)
+[2021.02.17-15.10.19:522][676]LogModuleManager: Shutting down and abandoning module MagicLeapController (328)
+[2021.02.17-15.10.19:523][676]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2021.02.17-15.10.19:524][676]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (326)
+[2021.02.17-15.10.19:525][676]LogModuleManager: Shutting down and abandoning module MagicLeapAR (324)
+[2021.02.17-15.10.19:525][676]LogModuleManager: Shutting down and abandoning module AugmentedReality (323)
+[2021.02.17-15.10.19:525][676]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (320)
+[2021.02.17-15.10.19:525][676]LogModuleManager: Shutting down and abandoning module Niagara (318)
+[2021.02.17-15.10.19:526][676]LogModuleManager: Shutting down and abandoning module SignalProcessing (317)
+[2021.02.17-15.10.19:526][676]LogModuleManager: Shutting down and abandoning module NiagaraEditor (315)
+[2021.02.17-15.10.19:530][676]LogModuleManager: Shutting down and abandoning module NiagaraCore (312)
+[2021.02.17-15.10.19:530][676]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (310)
+[2021.02.17-15.10.19:530][676]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (308)
+[2021.02.17-15.10.19:530][676]LogModuleManager: Shutting down and abandoning module FacialAnimation (306)
+[2021.02.17-15.10.19:530][676]LogModuleManager: Shutting down and abandoning module DataValidation (304)
+[2021.02.17-15.10.19:531][676]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (302)
+[2021.02.17-15.10.19:533][676]LogModuleManager: Shutting down and abandoning module LevelEditor (301)
+[2021.02.17-15.10.19:536][676]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (300)
+[2021.02.17-15.10.19:537][676]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (298)
+[2021.02.17-15.10.19:538][676]LogModuleManager: Shutting down and abandoning module MainFrame (296)
+[2021.02.17-15.10.19:539][676]LogModuleManager: Shutting down and abandoning module HotReload (295)
+[2021.02.17-15.10.19:541][676]LogModuleManager: Shutting down and abandoning module ToolMenus (291)
+[2021.02.17-15.10.19:541][676]LogModuleManager: Shutting down and abandoning module TreeMap (289)
+[2021.02.17-15.10.19:542][676]LogModuleManager: Shutting down and abandoning module AnimationSharing (286)
+[2021.02.17-15.10.19:542][676]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (284)
+[2021.02.17-15.10.19:542][676]LogModuleManager: Shutting down and abandoning module Paper2D (282)
+[2021.02.17-15.10.19:543][676]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (280)
+[2021.02.17-15.10.19:633][676]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (278)
+[2021.02.17-15.10.19:633][676]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (276)
+[2021.02.17-15.10.19:633][676]LogModuleManager: Shutting down and abandoning module PacketHandler (274)
+[2021.02.17-15.10.19:633][676]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (272)
+[2021.02.17-15.10.19:633][676]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (270)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module MediaAssets (268)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module Overlay (266)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module OverlayEditor (265)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module VREditor (262)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module StringTableEditor (260)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (258)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (256)
+[2021.02.17-15.10.19:635][676]LogModuleManager: Shutting down and abandoning module FunctionalTesting (254)
+[2021.02.17-15.10.19:636][676]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (252)
+[2021.02.17-15.10.19:637][676]LogModuleManager: Shutting down and abandoning module UMG (250)
+[2021.02.17-15.10.19:637][676]LogModuleManager: Shutting down and abandoning module UMGEditor (249)
+[2021.02.17-15.10.19:639][676]LogModuleManager: Shutting down and abandoning module MessageLog (247)
+[2021.02.17-15.10.19:639][676]LogModuleManager: Shutting down and abandoning module MaterialEditor (245)
+[2021.02.17-15.10.19:640][676]LogModuleManager: Shutting down and abandoning module ContentBrowser (244)
+[2021.02.17-15.10.19:642][676]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (243)
+[2021.02.17-15.10.19:643][676]LogModuleManager: Shutting down and abandoning module SlateReflector (236)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module Slate (234)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module SlateCore (232)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (230)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module UnrealEd (228)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module MRMesh (226)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (224)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (222)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module XAudio2 (220)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module Networking (218)
+[2021.02.17-15.10.19:646][676]LogModuleManager: Shutting down and abandoning module Core (216)
+[2021.02.17-15.10.19:647][676]LogModuleManager: Shutting down and abandoning module MovieSceneTools (214)
+[2021.02.17-15.10.19:649][676]LogModuleManager: Shutting down and abandoning module CurveEditor (213)
+[2021.02.17-15.10.19:652][676]LogModuleManager: Shutting down and abandoning module Sequencer (211)
+[2021.02.17-15.10.19:654][676]LogModuleManager: Shutting down and abandoning module EditorStyle (210)
+[2021.02.17-15.10.19:661][676]LogModuleManager: Shutting down and abandoning module KismetCompiler (206)
+[2021.02.17-15.10.19:661][676]LogModuleManager: Shutting down and abandoning module MeshBuilder (204)
+[2021.02.17-15.10.19:661][676]LogModuleManager: Shutting down and abandoning module MeshUtilities (202)
+[2021.02.17-15.10.19:662][676]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (201)
+[2021.02.17-15.10.19:663][676]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (200)
+[2021.02.17-15.10.19:663][676]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (199)
+[2021.02.17-15.10.19:663][676]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (197)
+[2021.02.17-15.10.19:664][676]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (195)
+[2021.02.17-15.10.19:667][676]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (193)
+[2021.02.17-15.10.19:667][676]LogModuleManager: Shutting down and abandoning module MaterialBaking (189)
+[2021.02.17-15.10.19:668][676]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (184)
+[2021.02.17-15.10.19:668][676]LogModuleManager: Shutting down and abandoning module DerivedDataCache (182)
+[2021.02.17-15.10.19:668][676]LogModuleManager: Shutting down and abandoning module XGEController (180)
+[2021.02.17-15.10.19:668][676]LogModuleManager: Shutting down and abandoning module TargetPlatform (178)
+[2021.02.17-15.10.19:670][676]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (177)
+[2021.02.17-15.10.19:670][676]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (175)
+[2021.02.17-15.10.19:671][676]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (173)
+[2021.02.17-15.10.19:671][676]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (171)
+[2021.02.17-15.10.19:671][676]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (169)
+[2021.02.17-15.10.19:672][676]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (167)
+[2021.02.17-15.10.19:672][676]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (165)
+[2021.02.17-15.10.19:672][676]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (163)
+[2021.02.17-15.10.19:673][676]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (161)
+[2021.02.17-15.10.19:674][676]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (159)
+[2021.02.17-15.10.19:674][676]LogModuleManager: Shutting down and abandoning module ImageWrapper (158)
+[2021.02.17-15.10.19:674][676]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (155)
+[2021.02.17-15.10.19:674][676]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (153)
+[2021.02.17-15.10.19:675][676]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (151)
+[2021.02.17-15.10.19:675][676]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (149)
+[2021.02.17-15.10.19:675][676]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (147)
+[2021.02.17-15.10.19:675][676]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (145)
+[2021.02.17-15.10.19:676][676]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (143)
+[2021.02.17-15.10.19:676][676]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (141)
+[2021.02.17-15.10.19:676][676]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (139)
+[2021.02.17-15.10.19:739][676]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (137)
+[2021.02.17-15.10.19:760][676]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (135)
+[2021.02.17-15.10.19:760][676]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (133)
+[2021.02.17-15.10.19:761][676]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (131)
+[2021.02.17-15.10.19:761][676]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (129)
+[2021.02.17-15.10.19:761][676]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (127)
+[2021.02.17-15.10.19:762][676]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (125)
+[2021.02.17-15.10.19:762][676]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2021.02.17-15.10.19:762][676]LogModuleManager: Shutting down and abandoning module Messaging (121)
+[2021.02.17-15.10.19:768][676]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (119)
+[2021.02.17-15.10.19:827][676]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (117)
+[2021.02.17-15.10.19:937][676]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (115)
+[2021.02.17-15.10.19:938][676]LogModuleManager: Shutting down and abandoning module InputCore (112)
+[2021.02.17-15.10.19:938][676]LogModuleManager: Shutting down and abandoning module Settings (110)
+[2021.02.17-15.10.19:938][676]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (108)
+[2021.02.17-15.10.19:938][676]LogModuleManager: Shutting down and abandoning module PhysXCooking (106)
+[2021.02.17-15.10.19:938][676]LogModuleManager: Shutting down and abandoning module ChaosSolvers (104)
+[2021.02.17-15.10.19:940][676]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (103)
+[2021.02.17-15.10.19:940][676]LogModuleManager: Shutting down and abandoning module Chaos (100)
+[2021.02.17-15.10.19:941][676]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (98)
+[2021.02.17-15.10.19:941][676]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (97)
+[2021.02.17-15.10.19:941][676]LogModuleManager: Shutting down and abandoning module AVEncoder (96)
+[2021.02.17-15.10.19:941][676]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (92)
+[2021.02.17-15.10.19:942][676]LogModuleManager: Shutting down and abandoning module SteamVRInput (90)
+[2021.02.17-15.10.19:942][676]LogModuleManager: Shutting down and abandoning module SteamVR (88)
+[2021.02.17-15.10.19:942][676]LogHMD: Freeing OpenVRDLLHandle.
+[2021.02.17-15.10.19:942][676]LogModuleManager: Shutting down and abandoning module OculusHMD (86)
+[2021.02.17-15.10.19:942][676]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2021.02.17-15.10.19:942][676]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (82)
+[2021.02.17-15.10.19:942][676]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2021.02.17-15.10.19:942][676]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (76)
+[2021.02.17-15.10.19:944][676]LogModuleManager: Shutting down and abandoning module XMPP (71)
+[2021.02.17-15.10.19:944][676]LogModuleManager: Shutting down and abandoning module WebSockets (70)
+[2021.02.17-15.10.19:966][676]LogModuleManager: Shutting down and abandoning module HTTP (67)
+[2021.02.17-15.10.19:967][676]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2021.02.17-15.10.19:967][676]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BB913D1B1-40FD-946E-52C2-E484EAB9168B%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=205a473340242489ce81079a01667d1c%7Cba25ea716df54fb1b44e0ec246108bc9%7C8fba83d6-fb36-4d17-b2ae-b61aebd92f8b&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2021.02.17-15.10.19:971][676]LogModuleManager: Shutting down and abandoning module SSL (66)
+[2021.02.17-15.10.19:981][676]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
+[2021.02.17-15.10.19:982][676]LogModuleManager: Shutting down and abandoning module Media (61)
+[2021.02.17-15.10.19:983][676]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2021.02.17-15.10.19:983][676]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2021.02.17-15.10.19:983][676]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2021.02.17-15.10.19:983][676]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2021.02.17-15.10.19:983][676]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2021.02.17-15.10.19:983][676]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2021.02.17-15.10.19:983][676]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2021.02.17-15.10.19:984][676]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2021.02.17-15.10.19:985][676]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2021.02.17-15.10.19:985][676]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2021.02.17-15.10.19:985][676]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2021.02.17-15.10.19:986][676]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2021.02.17-15.10.19:987][676]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2021.02.17-15.10.19:991][676]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2021.02.17-15.10.19:993][676]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2021.02.17-15.10.19:993][676]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2021.02.17-15.10.19:993][676]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2021.02.17-15.10.20:001][676]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2021.02.17-15.10.20:002][676]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2021.02.17-15.10.20:002][676]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2021.02.17-15.10.20:002][676]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2021.02.17-15.10.20:003][676]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2021.02.17-15.10.20:003][676]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2021.02.17-15.10.20:003][676]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2021.02.17-15.10.20:003][676]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2021.02.17-15.10.20:003][676]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2021.02.17-15.10.20:004][676]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2021.02.17-15.10.20:004][676]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2021.02.17-15.10.20:007][676]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2021.02.17-15.10.20:008][676]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2021.02.17-15.10.20:016][676]LogD3D11RHI: Shutdown
+[2021.02.17-15.10.20:016][676]LogD3D11RHI: CleanupD3DDevice
+[2021.02.17-15.10.20:068][676]LogExit: Exiting.
+[2021.02.17-15.10.20:091][676]Log file closed, 02/17/21 10:10:20
