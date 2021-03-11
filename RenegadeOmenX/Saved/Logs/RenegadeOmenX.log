@@ -1791,6 +1791,7 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.03.11-16.52.25:449][346]LogContentValidation: Display: Validating World /Game/Levels/TestLevel.TestLevel
 [2021.03.11-16.52.27:258][492]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
 [2021.03.11-16.52.30:996][815]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+<<<<<<< Updated upstream
 [2021.03.11-17.35.41:460][172]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
 [2021.03.11-17.35.41:626][172]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
 [2021.03.11-17.35.41:627][172]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
@@ -2233,3 +2234,5 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.03.11-17.35.45:161][173]LogD3D11RHI: CleanupD3DDevice
 [2021.03.11-17.35.45:183][173]LogExit: Exiting.
 [2021.03.11-17.35.45:199][173]Log file closed, 03/11/21 12:35:45
+=======
+>>>>>>> Stashed changes
