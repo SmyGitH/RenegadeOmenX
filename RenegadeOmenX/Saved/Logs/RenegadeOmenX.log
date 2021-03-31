@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 ﻿Log file open, 03/31/21 18:34:46
 LogInit: Display: Running engine for game: RenegadeOmenX
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
 LogStats: Stats thread started at 0.189602
+=======
+﻿Log file open, 03/29/21 10:15:27
+LogInit: Display: Running engine for game: RenegadeOmenX
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.164823
+>>>>>>> parent of cf91645 (added ammo items and uses)
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -194,6 +202,7 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
+<<<<<<< HEAD
 [2021.03.31-22.34.46:527][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2021.03.31-22.34.46:527][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
 [2021.03.31-22.34.46:527][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
@@ -2932,3 +2941,1641 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.03.31-23.43.01:974][919]LogD3D11RHI: CleanupD3DDevice
 [2021.03.31-23.43.02:026][919]LogExit: Exiting.
 [2021.03.31-23.43.02:038][919]Log file closed, 03/31/21 19:43:02
+=======
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.Mobile.VirtualTextures:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VirtualTextures:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VirtualTexturedLightmaps:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VT.TileSize:128]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VT.TileBorderSize:4]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.vt.FeedbackFactor:16]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VT.EnableCompressZlib:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VT.EnableCompressCrunch:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.AnisotropicBRDF:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Bias:1.000000]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.UsePreExposure:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.EyeAdaptation.EditorOnly:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.SSGI.Enable:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.VertexDeformationOutputsVelocity:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.Mobile.UseHWsRGBEncoding:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.MeshStreaming:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.RayTracing.UseTextureLod:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphere:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphereAffectsHeightFog:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SkinCache.DefaultBehavior:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableSpotlights:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.GPUSkin.Support16BitBoneIndex:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[r.LightPropagationVolume:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.03.29-14.15.27:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.03.29-14.15.27:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.03.29-14.15.27:294][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.03.29-14.15.27:297][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.29-14.15.27:297][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.29-14.15.27:298][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.29-14.15.27:298][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.03.29-14.15.27:298][  0]LogHAL: Display: Platform has ~ 16 GB [17066782720 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.03.29-14.15.27:298][  0]LogInit: Going up to parent DeviceProfile []
+[2021.03.29-14.15.27:298][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:298][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.03.29-14.15.27:298][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.03.29-14.15.27:299][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.03.29-14.15.27:300][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.03.29-14.15.27:300][  0]LogInit: Computer: DESKTOP-NTOTJRM
+[2021.03.29-14.15.27:300][  0]LogInit: User: smybr
+[2021.03.29-14.15.27:300][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.03.29-14.15.27:300][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.03.29-14.15.27:300][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.03.29-14.15.27:300][  0]LogMemory: Platform Memory Stats for Windows
+[2021.03.29-14.15.27:300][  0]LogMemory: Process Physical Memory: 117.13 MB used, 117.13 MB peak
+[2021.03.29-14.15.27:300][  0]LogMemory: Process Virtual Memory: 113.39 MB used, 113.39 MB peak
+[2021.03.29-14.15.27:300][  0]LogMemory: Physical Memory: 11381.73 MB used,  4894.43 MB free, 16276.15 MB total
+[2021.03.29-14.15.27:300][  0]LogMemory: Virtual Memory: 5182.93 MB used,  134212544.00 MB free, 134217728.00 MB total
+[2021.03.29-14.15.27:304][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.03.29-14.15.27:325][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.03.29-14.15.27:325][  0]LogInit: Using OS detected language (en-US).
+[2021.03.29-14.15.27:325][  0]LogInit: Using OS detected locale (en-US).
+[2021.03.29-14.15.27:330][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.03.29-14.15.27:485][  0]LogInit: Setting process to per monitor DPI aware
+[2021.03.29-14.15.27:521][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.03.29-14.15.27:521][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.03.29-14.15.27:652][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.29-14.15.27:652][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.03.29-14.15.27:652][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.03.29-14.15.27:652][  0]LogD3D11RHI: D3D11 adapters:
+[2021.03.29-14.15.27:820][  0]LogD3D11RHI:    0. 'Radeon Pro 555X' (Feature Level 11_0)
+[2021.03.29-14.15.27:820][  0]LogD3D11RHI:       4041/0/8138 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2021.03.29-14.15.27:822][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.03.29-14.15.27:822][  0]LogD3D11RHI:       0/0/8138 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.03.29-14.15.27:822][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.03.29-14.15.27:829][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.03.29-14.15.27:829][  0]LogD3D11RHI:     GPU DeviceId: 0x67ef (for the marketing name, search the web for "GPU Device Id")
+[2021.03.29-14.15.27:829][  0]LogWindows: EnumDisplayDevices:
+[2021.03.29-14.15.27:829][  0]LogWindows:    0. 'Radeon Pro 555X' (P:1 D:1)
+[2021.03.29-14.15.27:829][  0]LogWindows:    1. 'Radeon Pro 555X' (P:0 D:0)
+[2021.03.29-14.15.27:830][  0]LogWindows:    2. 'Radeon Pro 555X' (P:0 D:0)
+[2021.03.29-14.15.27:830][  0]LogWindows:    3. 'Radeon Pro 555X' (P:0 D:0)
+[2021.03.29-14.15.27:830][  0]LogWindows:    4. 'Radeon Pro 555X' (P:0 D:0)
+[2021.03.29-14.15.27:831][  0]LogWindows:    5. 'Radeon Pro 555X' (P:0 D:0)
+[2021.03.29-14.15.27:831][  0]LogWindows:    6. 'Radeon Pro 555X' (P:0 D:0)
+[2021.03.29-14.15.27:831][  0]LogWindows: DebugString: FoundDriverCount:7 
+[2021.03.29-14.15.27:831][  0]LogD3D11RHI:     Adapter Name: Radeon Pro 555X
+[2021.03.29-14.15.27:831][  0]LogD3D11RHI:   Driver Version: Adrenalin 19.30.01.33 (internal:26.20.13001.33012, unified:26.20.13001.33012)
+[2021.03.29-14.15.27:831][  0]LogD3D11RHI:      Driver Date: 11-21-2019
+[2021.03.29-14.15.27:831][  0]LogRHI: Texture pool is 2404 MB (70% of 3434 MB)
+[2021.03.29-14.15.27:966][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
+[2021.03.29-14.15.27:966][  0]LogD3D11RHI: Async texture creation enabled
+[2021.03.29-14.15.27:966][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.03.29-14.15.27:985][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2021.03.29-14.15.28:247][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.03.29-14.15.28:268][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.03.29-14.15.28:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.03.29-14.15.28:290][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.03.29-14.15.28:300][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.03.29-14.15.28:309][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.03.29-14.15.28:319][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.03.29-14.15.28:327][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.03.29-14.15.28:337][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.03.29-14.15.28:357][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.03.29-14.15.28:366][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.03.29-14.15.28:393][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.03.29-14.15.28:393][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.03.29-14.15.28:409][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.03.29-14.15.28:409][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.03.29-14.15.28:420][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.03.29-14.15.28:430][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.03.29-14.15.28:441][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.03.29-14.15.28:452][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.03.29-14.15.28:452][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.03.29-14.15.28:459][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.03.29-14.15.28:510][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Intermediate/Shaders/WorkingDirectory/11520/).
+[2021.03.29-14.15.28:510][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/smybr/AppData/Local/Temp/UnrealShaderWorkingDir/7B6F3C074FC56E3305515483E60F7B01/'.
+[2021.03.29-14.15.28:511][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.03.29-14.15.28:511][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.03.29-14.15.28:511][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.03.29-14.15.29:252][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.03.29-14.15.29:304][  0]LogDerivedDataCache: Loaded boot cache 0.05s 76MB C:/Users/smybr/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.29-14.15.29:304][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/smybr/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.03.29-14.15.29:304][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.03.29-14.15.29:304][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.03.29-14.15.29:304][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.29-14.15.29:304][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.03.29-14.15.29:314][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.03.29-14.15.29:315][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.03.29-14.15.29:315][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.03.29-14.15.29:316][  0]LogDerivedDataCache: Using Local data cache path C:/Users/smybr/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.03.29-14.15.29:316][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.03.29-14.15.29:316][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.03.29-14.15.29:362][  0]LogSlate: Using FreeType 2.10.0
+[2021.03.29-14.15.29:363][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.03.29-14.15.29:387][  0]LogAssetRegistry: FAssetRegistry took 0.0025 seconds to start up
+[2021.03.29-14.15.29:618][  0]LogInit: Selected Device Profile: [Windows]
+[2021.03.29-14.15.29:733][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.03.29-14.15.29:733][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.03.29-14.15.29:733][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.03.29-14.15.29:733][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.03.29-14.15.29:733][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.03.29-14.15.29:747][  0]LogNetVersion: RenegadeOmenX 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4142527166)
+[2021.03.29-14.15.30:165][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000001D80B0A1BC0), frame # 0
+[2021.03.29-14.15.30:166][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D80AFDBB00), frame # 0
+[2021.03.29-14.15.30:167][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D80B060800), frame # 0
+[2021.03.29-14.15.30:216][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.045529 seconds
+[2021.03.29-14.15.30:220][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.03.29-14.15.30:220][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.03.29-14.15.30:220][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.03.29-14.15.30:494][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.03.29-14.15.30:497][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.03.29-14.15.30:556][  0]SourceControl: Source control is disabled
+[2021.03.29-14.15.30:556][  0]SourceControl: Source control is disabled
+[2021.03.29-14.15.30:559][  0]SourceControl: Source control is disabled
+[2021.03.29-14.15.30:561][  0]SourceControl: Source control is disabled
+[2021.03.29-14.15.30:567][  0]SourceControl: Source control is disabled
+[2021.03.29-14.15.30:786][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.03.29-14.15.30:805][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.29-14.15.30:805][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.03.29-14.15.30:847][  0]LogOcInput: OculusInput pre-init called
+[2021.03.29-14.15.30:857][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.03.29-14.15.30:857][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.03.29-14.15.30:910][  0]LogEngine: Initializing Engine...
+[2021.03.29-14.15.30:912][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.03.29-14.15.30:912][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.03.29-14.15.30:913][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.03.29-14.15.31:044][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.03.29-14.15.31:053][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.03.29-14.15.31:053][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D818BBFC00), frame # 0
+[2021.03.29-14.15.31:053][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D818C1D6C0), frame # 0
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.03.29-14.15.31:078][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.03.29-14.15.31:078][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.03.29-14.15.31:078][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.03.29-14.15.31:089][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.03.29-14.15.31:089][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.03.29-14.15.31:121][  0]LogAudioMixer: Display: Using Audio Device Speakers (Apple Audio Device)
+[2021.03.29-14.15.31:128][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.03.29-14.15.31:130][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.03.29-14.15.31:130][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.03.29-14.15.31:131][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.03.29-14.15.31:132][  0]LogInit: FAudioDevice initialized.
+[2021.03.29-14.15.31:132][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.03.29-14.15.31:185][  0]LogDerivedDataCache: Saved boot cache 0.05s 76MB C:/Users/smybr/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.03.29-14.15.31:189][  0]LogInit: Texture streaming: Enabled
+[2021.03.29-14.15.31:202][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.03.29-14.15.31:202][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.03.29-14.15.31:204][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.03.29-14.15.31:266][  0]LogInit: Transaction tracking system initialized
+[2021.03.29-14.15.31:282][  0]BlueprintLog: New page: Editor Load
+[2021.03.29-14.15.31:334][  0]LocalizationService: Localization service is disabled
+[2021.03.29-14.15.31:467][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.03.29-14.15.31:467][  0]LogCook: Display: Mobile HDR setting 1
+[2021.03.29-14.15.31:578][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/' took 0.06s
+[2021.03.29-14.15.31:778][  0]SourceControl: Source control is disabled
+[2021.03.29-14.15.31:778][  0]LogUnrealEdMisc: Loading editor; pre map load, took 6.134
+[2021.03.29-14.15.31:778][  0]Cmd: MAP LOAD FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.03.29-14.15.31:778][  0]LogEditorServer: Warning: Can't find file '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2021.03.29-14.15.31:778][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.03.29-14.15.31:778][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.155ms to complete.
+[2021.03.29-14.15.31:778][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.001
+[2021.03.29-14.15.31:780][  0]LogUnrealEdMisc: Total Editor Startup Time, took 6.136
+[2021.03.29-14.15.31:953][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-14.15.31:959][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-14.15.31:966][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-14.15.31:972][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.03.29-14.15.31:978][  0]LogCollectionManager: Loaded 0 collections in 0.001676 seconds
+[2021.03.29-14.15.31:992][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Collections/' took 0.00s
+[2021.03.29-14.15.31:992][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Developers/smybr/Collections/' took 0.00s
+[2021.03.29-14.15.31:992][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Collections/' took 0.00s
+[2021.03.29-14.15.31:992][  0]LogContentBrowser: Native class hierarchy populated in 0.0081 seconds. Added 3427 classes and 821 folders.
+[2021.03.29-14.15.31:998][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2021.03.29-14.15.32:048][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.03.29-14.15.32:049][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0002 seconds. Added 2 classes and 0 folders.
+[2021.03.29-14.15.32:111][  0]LogSlate: Took 0.000232 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.03.29-14.15.32:115][  0]LogSlate: Took 0.000170 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.03.29-14.15.32:117][  0]LogSlate: Took 0.000118 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.03.29-14.15.32:185][  0]LogRenderer: Reallocating scene render targets to support 708x404 Format 10 NumSamples 1 (Frame:1).
+[2021.03.29-14.15.32:300][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.03.29-14.15.32:301][  0]LogLoad: (Engine Initialization) Total time: 6.66 seconds
+[2021.03.29-14.15.32:301][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.03.29-14.15.32:360][  0]LogAssetRegistry: Asset discovery search completed in 2.9748 seconds
+[2021.03.29-14.15.32:365][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.03.29-14.15.32:366][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.03.29-14.15.33:348][ 56]LogSlate: Took 0.000157 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.03.29-14.15.38:194][275]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/FirstPersonBP/Blueprints/BP_GameMode_Base.BP_GameMode_Base
+[2021.03.29-14.15.38:855][275]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0005 seconds. Added 125 classes and 0 folders.
+[2021.03.29-14.15.40:512][275]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Zombies/SpawnPoint.SpawnPoint
+[2021.03.29-14.15.41:355][275]LogSlate: Took 0.000247 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.03.29-14.15.41:481][276]LogSlate: Took 0.006771 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.03.29-14.16.37:781][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.37:781][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.37:782][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.37:782][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.37:874][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.37:874][959]LoadErrors: Failed to load /Game/SpaceshipInterior/Materials/MI_Scifi_Door_02.MI_Scifi_Door_02 Referenced by SM_Scifi_Door_02_Frame
+[2021.03.29-14.16.37:875][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.37:875][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.37:875][959]LogLinker: Warning: While loading '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/SpaceshipInterior/Meshes/SM_Scifi_Door_02_Frame.uasset' failed to load '/Game/SpaceshipInterior/Materials/MI_Scifi_Door_02': Can't find file.
+[2021.03.29-14.16.38:163][959]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Levels/Survival_World.Survival_World
+[2021.03.29-14.16.38:194][959]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2021.03.29-14.16.38:196][959]Cmd: MAP LOAD FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.03.29-14.16.38:196][959]LightingResults: New page: Lighting Build
+[2021.03.29-14.16.38:197][959]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0003 seconds. Added 6 classes and 0 folders.
+[2021.03.29-14.16.38:197][959]LoadErrors: New page: Loading map: Survival_World.umap
+[2021.03.29-14.16.38:197][959]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.16.38:197][959]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.16.38:197][959]MapCheck: New page: Map Check
+[2021.03.29-14.16.38:197][959]LightingResults: New page: Lighting Build
+[2021.03.29-14.16.38:217][959]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D818BBFC00), frame # 1959
+[2021.03.29-14.16.38:217][959]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D818C1D6C0), frame # 1959
+[2021.03.29-14.16.38:218][959]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2021.03.29-14.16.38:490][959]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.03.29-14.16.38:490][959]LogAIModule: Creating AISystem for world Survival_World
+[2021.03.29-14.16.38:490][959]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001D88C091800), frame # 1959
+[2021.03.29-14.16.38:490][959]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001D84FF02700), frame # 1959
+[2021.03.29-14.16.38:522][959]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2021.03.29-14.16.38:563][959]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.03.29-14.16.38:564][959]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.131ms to complete.
+[2021.03.29-14.16.38:564][959]LogFileHelpers: Loading map 'Survival_World' took 0.368
+[2021.03.29-14.16.45:309][319]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_02_L2)
+[2021.03.29-14.16.47:148][426]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_02_L2)
+[2021.03.29-14.16.47:443][443]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SM_Roads_02_L2)
+[2021.03.29-14.16.54:459][826]Cmd: DELETE
+[2021.03.29-14.16.54:459][826]Cmd: ACTOR DELETE
+[2021.03.29-14.16.54:478][826]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.16.54:522][826]LogUObjectHash: Compacting FUObjectHashTables data took   3.20ms
+[2021.03.29-14.16.54:524][826]LogEditorActor: Deleted 1 Actors (0.054 secs)
+[2021.03.29-14.17.05:009][433]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_03_Cross)
+[2021.03.29-14.17.08:979][668]Cmd: EDIT COPY
+[2021.03.29-14.17.09:350][690]Cmd: EDIT PASTE
+[2021.03.29-14.17.50:951][244]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_03_Cross2)
+[2021.03.29-14.17.51:313][265]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_01_Straight5)
+[2021.03.29-14.17.52:190][317]LogEditorViewport: Clicking Background
+[2021.03.29-14.18.11:426][440]Cmd: EDIT PASTE
+[2021.03.29-14.18.23:584][ 56]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_01_Straight4)
+[2021.03.29-14.18.32:117][561]LogEditorViewport: Clicking Background
+[2021.03.29-14.18.32:573][587]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_3)
+[2021.03.29-14.19.16:864][837]LogEditorViewport: Clicking Background
+[2021.03.29-14.19.20:674][ 60]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_3)
+[2021.03.29-14.19.29:373][321]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_03_Cross)
+[2021.03.29-14.19.49:124][414]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_3)
+[2021.03.29-14.19.56:338][742]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_3)
+[2021.03.29-14.19.56:732][754]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_03_Cross)
+[2021.03.29-14.20.12:259][614]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_5)
+[2021.03.29-14.20.23:769][250]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_4)
+[2021.03.29-14.21.56:044][553]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_03_Cross2)
+[2021.03.29-14.22.05:563][ 68]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_02)
+[2021.03.29-14.22.15:855][607]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Roads_01_Straight5)
+[2021.03.29-14.22.16:225][626]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_4)
+[2021.03.29-14.22.18:179][734]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2021.03.29-14.22.18:286][734]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Survival_World421227FD4039C572737BBABE788BB533.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World.umap'
+[2021.03.29-14.22.18:691][734]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Survival_World_BuiltData360B396346826952F021A28E2635EC60.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World_BuiltData.uasset'
+[2021.03.29-14.22.18:711][734]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.22.18:711][734]LogContentValidation: Display: Validating World /Game/Levels/Survival_World.Survival_World
+[2021.03.29-14.22.18:711][734]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Survival_World_BuiltData.Survival_World_BuiltData
+[2021.03.29-14.22.20:203][814]LogUObjectHash: Compacting FUObjectHashTables data took   1.85ms
+[2021.03.29-14.23.02:222][494]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Grounds_02)
+[2021.03.29-14.24.42:344][ 85]BlueprintLog: New page: Compile BP_GameMode_Base
+[2021.03.29-14.24.42:391][ 85]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2021.03.29-14.24.42:415][ 85]LogSlate: Took 0.000106 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.03.29-14.24.43:157][115]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/BP_GameMode_BaseEDE2A1844F63A57A098809BD0321ECB6.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/BP_GameMode_Base.uasset'
+[2021.03.29-14.24.43:174][115]AssetCheck: New page: Asset Save: BP_GameMode_Base
+[2021.03.29-14.24.43:174][115]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/FirstPersonBP/Blueprints/BP_GameMode_Base.BP_GameMode_Base
+[2021.03.29-14.27.41:797][358]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_Gasoline\PickUp_Gasoline.fbx)
+[2021.03.29-14.27.41:816][358]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_Gasoline\PickUp_Gasoline.fbx
+[2021.03.29-14.27.41:831][358]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.28.01:208][358]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.28.01:489][358]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/Gasoline/textures/PickUp_Gasoline_Diffuse.png
+[2021.03.29-14.28.01:489][358]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/Gasoline/textures/PickUp_Gasoline_Normal.png
+[2021.03.29-14.28.01:491][358]LogMaterial: Display: Missing cached shader map for material PickUpGasoline, compiling. 
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.28.01:528][358]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.28.01:530][358]LogStaticMesh: Building static mesh PickUp_Gasoline...
+[2021.03.29-14.28.01:541][358]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/PickupItems/PickUp_Gasoline.PickUp_Gasoline
+[2021.03.29-14.28.03:451][445]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Assets/PickupItems/PickUp_Gasoline.PickUp_Gasoline
+[2021.03.29-14.28.03:859][445]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.28.03:859][445]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.28.04:395][446]LogRenderer: Reallocating scene render targets to support 944x744 Format 10 NumSamples 1 (Frame:1).
+[2021.03.29-14.28.09:064][616]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.28.09:064][616]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.28.17:815][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   3.75ms
+[2021.03.29-14.28.18:717][ 30]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.28.18:855][ 30]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2021.03.29-14.28.30:747][316]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_Gasoline\PickUp_Gasoline.fbx)
+[2021.03.29-14.28.30:764][316]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_Gasoline\PickUp_Gasoline.fbx
+[2021.03.29-14.28.30:780][316]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.28.37:091][316]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.28.37:171][316]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/Gasoline/textures/PickUp_Gasoline_Diffuse.png
+[2021.03.29-14.28.37:171][316]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/Gasoline/textures/PickUp_Gasoline_Normal.png
+[2021.03.29-14.28.37:172][316]LogMaterial: Display: Missing cached shader map for material PickUpGasoline, compiling. 
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.28.37:188][316]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.28.37:189][316]LogStaticMesh: Building static mesh PickUp_Gasoline...
+[2021.03.29-14.28.37:197][316]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/PickupItems/PickUp_Gasoline.PickUp_Gasoline
+[2021.03.29-14.28.39:506][393]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Assets/PickupItems/PickUp_Gasoline.PickUp_Gasoline
+[2021.03.29-14.28.39:660][393]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.28.39:660][393]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.28.55:920][216]LogActorFactory: Actor Factory created PickUp_Gasoline
+[2021.03.29-14.28.56:673][261]LogActorFactory: Actor Factory created PickUp_Gasoline
+[2021.03.29-14.29.01:706][556]Cmd: DELETE
+[2021.03.29-14.29.01:706][556]Cmd: ACTOR DELETE
+[2021.03.29-14.29.01:711][556]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.29.01:738][556]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2021.03.29-14.29.01:739][556]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2021.03.29-14.29.13:491][114]LogMetaData: Removing '/Game/Assets/PickupItems/Gasoline/PickUp_Gasoline.PickUp_Gasoline' ref from Metadata '/Game/Assets/PickupItems/PickUp_Gasoline.PackageMetaData'
+[2021.03.29-14.29.13:571][114]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUpGasoline0A68A1CC41D4E5CBC84831B964411F73.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Gasoline/PickUpGasoline.uasset'
+[2021.03.29-14.29.13:600][114]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_GasolineB62C774843389E7CFCC14E9759EF20F4.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Gasoline/PickUp_Gasoline.uasset'
+[2021.03.29-14.29.13:938][114]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2021.03.29-14.29.13:962][114]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.29.13:999][114]LogUObjectHash: Compacting FUObjectHashTables data took   1.82ms
+[2021.03.29-14.29.14:023][114]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.29.14:099][114]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.29.14:099][114]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/Gasoline/PickUpGasoline.PickUpGasoline
+[2021.03.29-14.29.14:099][114]LogContentValidation: Display: Validating StaticMesh /Game/Assets/PickupItems/Gasoline/PickUp_Gasoline.PickUp_Gasoline
+[2021.03.29-14.29.39:212][368]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_Hand_Grenade\PickUp_Grenade\PickUp_Grenade.fbx)
+[2021.03.29-14.29.39:254][368]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_Hand_Grenade\PickUp_Grenade\PickUp_Grenade.fbx
+[2021.03.29-14.29.39:335][368]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.29.48:493][368]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.29.48:568][368]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/game-ready-grenades/Model/textures/Hand_Grenade_2K_Albedo.png
+[2021.03.29-14.29.48:568][368]LogFbxMaterialImport: Display: Unable to find Texture file G:\Backup_Alienware\Backup_02042021\Misc_DesktopDownload\Download\RenegadeOmen_Project\Pickups\game-ready-grenades\Model\textures\Hand_Grenade_2K_Roughness.png
+[2021.03.29-14.29.48:675][368]LogTexture: Display: Building textures: PickUp_Grenade_Nrm (BC5, 2048X2048)
+[2021.03.29-14.29.48:825][368]LogMaterial: Display: Missing cached shader map for material PickUp_Grenade1, compiling. 
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.29.48:867][368]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.29.48:867][368]LogStaticMesh: Building static mesh PickUp_Grenade...
+[2021.03.29-14.29.48:942][368]LogStaticMesh: Built static mesh [0.08s] /Game/Assets/PickupItems/PickUp_Grenade.PickUp_Grenade
+[2021.03.29-14.29.52:317][472]LogActorFactory: Actor Factory created PickUp_Grenade
+[2021.03.29-14.29.54:431][595]LogActorFactory: Actor Factory created PickUp_Grenade
+[2021.03.29-14.30.06:754][220]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2021.03.29-14.30.07:709][220]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.30.09:038][220]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Assets/PickupItems/PickUp_Grenade.PickUp_Grenade
+[2021.03.29-14.30.10:769][220]LogUObjectHash: Compacting FUObjectHashTables data took   2.09ms
+[2021.03.29-14.30.14:042][363]LogUObjectHash: Compacting FUObjectHashTables data took   3.55ms
+[2021.03.29-14.30.15:102][363]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.30.15:249][363]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2021.03.29-14.30.18:901][543]Cmd: DELETE
+[2021.03.29-14.30.18:901][543]Cmd: ACTOR DELETE
+[2021.03.29-14.30.18:905][543]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.30.18:928][543]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2021.03.29-14.30.18:933][543]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2021.03.29-14.30.23:799][794]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
+[2021.03.29-14.30.24:740][794]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.30.24:846][794]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2021.03.29-14.30.39:481][464]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_Hand_Grenade\PickUp_Grenade\PickUp_Grenade.fbx)
+[2021.03.29-14.30.39:524][464]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_Hand_Grenade\PickUp_Grenade\PickUp_Grenade.fbx
+[2021.03.29-14.30.39:606][464]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.30.45:448][464]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.30.45:551][464]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/game-ready-grenades/Model/textures/Hand_Grenade_2K_Albedo.png
+[2021.03.29-14.30.45:551][464]LogFbxMaterialImport: Display: Unable to find Texture file G:\Backup_Alienware\Backup_02042021\Misc_DesktopDownload\Download\RenegadeOmen_Project\Pickups\game-ready-grenades\Model\textures\Hand_Grenade_2K_Roughness.png
+[2021.03.29-14.30.45:655][464]LogTexture: Display: Building textures: PickUp_Grenade_Nrm (BC5, 2048X2048)
+[2021.03.29-14.30.45:813][464]LogMaterial: Display: Missing cached shader map for material PickUp_Grenade1, compiling. 
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.30.45:853][464]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.30.45:854][464]LogStaticMesh: Building static mesh PickUp_Grenade...
+[2021.03.29-14.30.45:927][464]LogStaticMesh: Built static mesh [0.07s] /Game/Assets/PickupItems/Grenade/PickUp_Grenade.PickUp_Grenade
+[2021.03.29-14.30.48:264][541]LogActorFactory: Actor Factory created PickUp_Grenade
+[2021.03.29-14.30.49:485][614]LogActorFactory: Actor Factory created PickUp_Grenade
+[2021.03.29-14.30.53:747][864]Cmd: DELETE
+[2021.03.29-14.30.53:747][864]Cmd: ACTOR DELETE
+[2021.03.29-14.30.53:751][864]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.30.53:779][864]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2021.03.29-14.30.53:783][864]LogEditorActor: Deleted 1 Actors (0.035 secs)
+[2021.03.29-14.31.03:952][404]LogMaterial: Display: Missing cached shader map for material Pickup_Rope, compiling. 
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.31.03:962][404]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.31.06:451][529]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2021.03.29-14.31.07:627][529]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.31.07:768][529]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2021.03.29-14.31.07:800][529]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2021.03.29-14.31.07:822][529]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.03.29-14.31.44:758][906]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_MilitaryVest\PickUp_Military_Vest.fbx)
+[2021.03.29-14.31.44:785][906]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_MilitaryVest\PickUp_Military_Vest.fbx
+[2021.03.29-14.31.44:827][906]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.31.47:428][906]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.31.47:589][906]LogTexture: Display: Building textures: PickUp_MilitaryVest_Diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.31.47:879][906]LogTexture: Display: Building textures: PickUp_MilitaryVest_Normal (BC5, 2048X2048)
+[2021.03.29-14.31.48:033][906]LogMaterial: Display: Missing cached shader map for material PickUp_Vest, compiling. 
+[2021.03.29-14.31.48:045][906]LogFbx: Display: Triangulating static mesh PickUp_MilitaryVest
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.31.48:159][906]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.31.48:160][906]LogStaticMesh: Building static mesh PickUp_Military_Vest...
+[2021.03.29-14.31.48:198][906]LogStaticMesh: Built static mesh [0.04s] /Game/Assets/PickupItems/PickUp_Military_Vest.PickUp_Military_Vest
+[2021.03.29-14.31.53:681][128]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2021.03.29-14.31.54:671][128]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.31.54:801][128]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2021.03.29-14.32.22:560][316]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_WaterBottle\PickUp_WaterContainer.fbx)
+[2021.03.29-14.32.22:620][316]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_WaterBottle\PickUp_WaterContainer.fbx
+[2021.03.29-14.32.22:825][316]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.32.26:703][316]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.32.26:925][316]LogTexture: Display: Building textures: PickUp_Bottle_02_Container_Diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.32.27:431][316]LogTexture: Display: Building textures: PickUp_Bottle_02_Container_Normal (BC5, 2048X2048)
+[2021.03.29-14.32.27:602][316]LogMaterial: Display: Missing cached shader map for material bottle_02, compiling. 
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.32.27:812][316]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.32.27:812][316]LogTexture: Display: Building textures: PickUp_Bottle_02_Straps_Diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.32.28:248][316]LogTexture: Display: Building textures: PickUp_Bottle_02_Straps_AO (BC5, 2048X2048)
+[2021.03.29-14.32.28:545][316]LogMaterial: Display: Missing cached shader map for material Straps_02, compiling. 
+[2021.03.29-14.32.28:554][316]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 15
+[2021.03.29-14.32.28:818][316]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 13
+[2021.03.29-14.32.28:818][316]LogTexture: Display: Building textures: PickUp_Bottle_01_Straps_Diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.32.29:443][316]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 11
+[2021.03.29-14.32.29:443][316]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 9
+[2021.03.29-14.32.29:806][316]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 7
+[2021.03.29-14.32.29:806][316]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 6
+[2021.03.29-14.32.29:806][316]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2021.03.29-14.32.29:806][316]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 4
+[2021.03.29-14.32.29:806][316]LogTexture: Display: Building textures: PickUp_Bottle_01_Straps_Normal (BC5, 2048X2048)
+[2021.03.29-14.32.30:022][316]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 3
+[2021.03.29-14.32.30:044][316]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 2
+[2021.03.29-14.32.30:045][316]LogMaterial: Display: Missing cached shader map for material Straps, compiling. 
+[2021.03.29-14.32.30:289][316]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 16
+[2021.03.29-14.32.30:289][316]LogTexture: Display: Building textures: PickUp_Bottle_01_Container_Diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.32.30:741][316]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 13
+[2021.03.29-14.32.30:741][316]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 11
+[2021.03.29-14.32.30:741][316]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.32.30:741][316]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 7
+[2021.03.29-14.32.31:047][316]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2021.03.29-14.32.31:047][316]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 4
+[2021.03.29-14.32.31:047][316]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 3
+[2021.03.29-14.32.31:047][316]LogTexture: Display: Building textures: PickUp_Bottle_01_Container_Normal (BC5, 2048X2048)
+[2021.03.29-14.32.31:290][316]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 2
+[2021.03.29-14.32.31:319][316]LogMaterial: Display: Missing cached shader map for material Bottle, compiling. 
+[2021.03.29-14.32.31:458][316]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 16
+[2021.03.29-14.32.31:459][316]LogStaticMesh: Building static mesh PickUp_WaterContainer...
+[2021.03.29-14.32.31:622][316]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 13
+[2021.03.29-14.32.31:622][316]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.32.31:622][316]LogStaticMesh: Built static mesh [0.16s] /Game/Assets/PickupItems/PickUp_WaterContainer.PickUp_WaterContainer
+[2021.03.29-14.32.31:637][316]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 9
+[2021.03.29-14.32.31:944][317]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 7
+[2021.03.29-14.32.31:944][317]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 6
+[2021.03.29-14.32.32:214][325]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 5
+[2021.03.29-14.32.32:296][329]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 4
+[2021.03.29-14.32.32:473][334]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 3
+[2021.03.29-14.32.32:630][341]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 2
+[2021.03.29-14.32.32:645][342]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 1
+[2021.03.29-14.32.37:989][550]LogActorFactory: Actor Factory created PickUp_WaterContainer
+[2021.03.29-14.32.38:864][601]LogActorFactory: Actor Factory created PickUp_WaterContainer
+[2021.03.29-14.32.47:793][130]Cmd: DELETE
+[2021.03.29-14.32.47:793][130]Cmd: ACTOR DELETE
+[2021.03.29-14.32.47:797][130]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.32.47:822][130]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2021.03.29-14.32.47:827][130]LogEditorActor: Deleted 1 Actors (0.034 secs)
+[2021.03.29-14.33.07:098][ 42]LogMetaData: Removing '/Game/Assets/PickupItems/WaterBottle/PickUp_WaterContainer.PickUp_WaterContainer' ref from Metadata '/Game/Assets/PickupItems/PickUp_WaterContainer.PackageMetaData'
+[2021.03.29-14.33.07:202][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/BottleAC6656E3451902E9B00DA6B8C5F5D8B6.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/Bottle.uasset'
+[2021.03.29-14.33.07:236][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/bottle_026EE2156B43239F2E9E6683AD5D98AE48.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/bottle_02.uasset'
+[2021.03.29-14.33.07:445][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_01_Container_Diffu885FC98C4FBE191CA68A559EB696BAB9.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Container_Diffuse.uasset'
+[2021.03.29-14.33.07:788][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_01_Container_NormaAC5F9947477BBF4B31FC7A841DA9D891.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Container_Normal.uasset'
+[2021.03.29-14.33.08:062][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_01_Straps_DiffuseB5054DEA4792F893765E3D8511470339.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Straps_Diffuse.uasset'
+[2021.03.29-14.33.08:303][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_01_Straps_Normal95FF3DDE4A49B3B9B98D1CB5E4D54B27.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Straps_Normal.uasset'
+[2021.03.29-14.33.08:519][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_02_Container_Diffu88F98E07408125EFA161D99CBF47E4BF.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Container_Diffuse.uasset'
+[2021.03.29-14.33.08:895][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_02_Container_Norma917FB7904FA06214E045348FFEB6751D.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Container_Normal.uasset'
+[2021.03.29-14.33.08:966][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_02_Straps_AO9C9D228F46F2752D631EA89931589D3C.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Straps_AO.uasset'
+[2021.03.29-14.33.09:140][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Bottle_02_Straps_Diffuse7D6B4CEF413BC2A914F5B1A9F23793AA.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Straps_Diffuse.uasset'
+[2021.03.29-14.33.09:262][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_WaterContainer623C19CA4AD3BEA970996D9F8D599C84.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/PickUp_WaterContainer.uasset'
+[2021.03.29-14.33.09:330][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Straps9572CA8447C73BF8470834B66DBF5660.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/Straps.uasset'
+[2021.03.29-14.33.09:380][ 42]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Straps_02C4263AB244544E46FB1260B57E5693EE.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/WaterBottle/Straps_02.uasset'
+[2021.03.29-14.33.11:000][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2021.03.29-14.33.11:025][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:048][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:071][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2021.03.29-14.33.11:095][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:118][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:142][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2021.03.29-14.33.11:165][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:189][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:217][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:240][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:263][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.60ms
+[2021.03.29-14.33.11:287][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.03.29-14.33.11:317][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   1.72ms
+[2021.03.29-14.33.11:340][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2021.03.29-14.33.11:473][ 42]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.33.11:473][ 42]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/WaterBottle/Bottle.Bottle
+[2021.03.29-14.33.11:473][ 42]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/WaterBottle/bottle_02.bottle_02
+[2021.03.29-14.33.11:473][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Container_Diffuse.PickUp_Bottle_01_Container_Diffuse
+[2021.03.29-14.33.11:473][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Container_Normal.PickUp_Bottle_01_Container_Normal
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Straps_Diffuse.PickUp_Bottle_01_Straps_Diffuse
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_01_Straps_Normal.PickUp_Bottle_01_Straps_Normal
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Container_Diffuse.PickUp_Bottle_02_Container_Diffuse
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Container_Normal.PickUp_Bottle_02_Container_Normal
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Straps_AO.PickUp_Bottle_02_Straps_AO
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/WaterBottle/PickUp_Bottle_02_Straps_Diffuse.PickUp_Bottle_02_Straps_Diffuse
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating StaticMesh /Game/Assets/PickupItems/WaterBottle/PickUp_WaterContainer.PickUp_WaterContainer
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/WaterBottle/Straps.Straps
+[2021.03.29-14.33.11:474][ 42]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/WaterBottle/Straps_02.Straps_02
+[2021.03.29-14.33.58:256][242]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2021.03.29-14.33.58:352][242]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Survival_World_Auto1B2B8368A4397CAB1208A6DBC418649B2.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Autosaves/Game/Levels/Survival_World_Auto1.umap'
+[2021.03.29-14.33.58:357][242]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/Survival_World' took 0.159
+[2021.03.29-14.33.58:357][242]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.159
+[2021.03.29-14.33.58:357][242]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/PickupItems/Grenade/PickUp_Grenade] ([1] browsable assets)...
+[2021.03.29-14.33.58:383][242]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Assets/PickupItems/Grenade/PickUp_Grenade.PickUp_Grenade]
+[2021.03.29-14.33.58:383][242]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/PickupItems/Grenade/PickUp_Grenade]
+[2021.03.29-14.33.58:409][242]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Grenade_Auto11FB1D02D48B097B95178F89A918B6A60.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Autosaves/Game/Assets/PickupItems/Grenade/PickUp_Grenade_Auto1.uasset'
+[2021.03.29-14.33.58:409][242]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/PickupItems/Grenade/PickUp_Grenade1] ([1] browsable assets)...
+[2021.03.29-14.33.58:433][242]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Assets/PickupItems/Grenade/PickUp_Grenade1.PickUp_Grenade1]
+[2021.03.29-14.33.58:433][242]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/PickupItems/Grenade/PickUp_Grenade1]
+[2021.03.29-14.33.58:447][242]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Grenade1_Auto19DFECD2748C3BBA58AE0A4B14EAC1298.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Autosaves/Game/Assets/PickupItems/Grenade/PickUp_Grenade1_Auto1.uasset'
+[2021.03.29-14.33.58:448][242]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/PickupItems/Grenade/PickUp_Grenade_Nrm] ([1] browsable assets)...
+[2021.03.29-14.33.58:454][242]OBJ SavePackage:     Rendered thumbnail for [Texture2D /Game/Assets/PickupItems/Grenade/PickUp_Grenade_Nrm.PickUp_Grenade_Nrm]
+[2021.03.29-14.33.58:454][242]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/PickupItems/Grenade/PickUp_Grenade_Nrm]
+[2021.03.29-14.33.58:469][242]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Grenade_Nrm_Auto18CF7F78C4EBCBD840987A784BB641D30.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Autosaves/Game/Assets/PickupItems/Grenade/PickUp_Grenade_Nrm_Auto1.uasset'
+[2021.03.29-14.33.58:470][242]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Assets/PickupItems/Rope/Pickup_Rope] ([1] browsable assets)...
+[2021.03.29-14.33.58:494][242]OBJ SavePackage:     Rendered thumbnail for [Material /Game/Assets/PickupItems/Rope/Pickup_Rope.Pickup_Rope]
+[2021.03.29-14.33.58:494][242]OBJ SavePackage: Finished generating thumbnails for package [/Game/Assets/PickupItems/Rope/Pickup_Rope]
+[2021.03.29-14.33.58:505][242]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Pickup_Rope_Auto1A5CC009D4CFB390CDC0A8BBBC0E8A5E1.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Autosaves/Game/Assets/PickupItems/Rope/Pickup_Rope_Auto1.uasset'
+[2021.03.29-14.33.58:505][242]LogFileHelpers: Auto-saving content packages took 0.148
+[2021.03.29-14.34.51:553][ 28]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_Compass\PickUp_Compass\PickUP_Compass.fbx)
+[2021.03.29-14.34.51:581][ 28]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_Compass\PickUp_Compass\PickUP_Compass.fbx
+[2021.03.29-14.34.51:620][ 28]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.34.56:392][ 28]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.34.56:572][ 28]LogTexture: Display: Building textures: PickUp_Compass_Diff (AutoDXT, 2048X2048)
+[2021.03.29-14.34.56:938][ 28]LogTexture: Display: Building textures: Pickup_Compas_Nrm (BC5, 2048X2048)
+[2021.03.29-14.34.57:080][ 28]LogMaterial: Display: Missing cached shader map for material Compas, compiling. 
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.34.57:094][ 28]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.34.57:098][ 28]LogMaterial: Display: Missing cached shader map for material Compass_Shell, compiling. 
+[2021.03.29-14.34.57:116][ 28]LogMaterial: Display: Missing cached shader map for material Glass, compiling. 
+[2021.03.29-14.34.57:128][ 28]LogFbx: Display: Triangulating static mesh PickUp_Compass
+[2021.03.29-14.34.57:255][ 28]LogStaticMesh: Building static mesh PickUP_Compass...
+[2021.03.29-14.34.57:325][ 28]LogStaticMesh: Built static mesh [0.07s] /Game/Assets/PickupItems/Compass/PickUP_Compass.PickUP_Compass
+[2021.03.29-14.34.57:518][ 29]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 30
+[2021.03.29-14.34.57:918][ 42]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 26
+[2021.03.29-14.34.58:364][ 54]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 22
+[2021.03.29-14.34.58:386][ 55]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 19
+[2021.03.29-14.34.58:415][ 55]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 16
+[2021.03.29-14.34.58:438][ 56]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
+[2021.03.29-14.34.58:686][ 63]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 11
+[2021.03.29-14.34.58:698][ 63]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 9
+[2021.03.29-14.34.59:334][ 82]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 7
+[2021.03.29-14.34.59:448][ 86]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 6
+[2021.03.29-14.34.59:468][ 86]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2021.03.29-14.34.59:601][ 90]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 4
+[2021.03.29-14.34.59:780][ 96]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 3
+[2021.03.29-14.34.59:997][103]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 2
+[2021.03.29-14.35.00:058][105]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 1
+[2021.03.29-14.35.04:707][249]LogActorFactory: Actor Factory created PickUP_Compass
+[2021.03.29-14.35.05:931][322]LogActorFactory: Actor Factory created PickUP_Compass
+[2021.03.29-14.35.07:495][414]Cmd: DELETE
+[2021.03.29-14.35.07:495][414]Cmd: ACTOR DELETE
+[2021.03.29-14.35.07:499][414]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.35.07:525][414]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2021.03.29-14.35.07:527][414]LogEditorActor: Deleted 1 Actors (0.032 secs)
+[2021.03.29-14.35.16:545][766]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2021.03.29-14.35.18:138][766]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.35.18:599][766]LogUObjectGlobals: Force Deleting 6 Package(s):
+	Asset Name: /Game/Assets/PickupItems/Compass/Compas.Compas
+	Asset Name: /Game/Assets/PickupItems/Compass/Compass_Shell.Compass_Shell
+	Asset Name: /Game/Assets/PickupItems/Compass/Glass.Glass
+	Asset Name: /Game/Assets/PickupItems/Compass/Pickup_Compas_Nrm.Pickup_Compas_Nrm
+	Asset Name: /Game/Assets/PickupItems/Compass/PickUP_Compass.PickUP_Compass
+	Asset Name: /Game/Assets/PickupItems/Compass/PickUp_Compass_Diff.PickUp_Compass_Diff
+[2021.03.29-14.35.18:860][766]LogMaterial: Display: Missing cached shader map for material Compas, compiling. 
+[2021.03.29-14.35.18:861][766]LogMaterial: Warning: /Game/Assets/PickupItems/Compass/Compas.Compas (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.35.18:861][766]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.35.18:862][766]LogMaterial: Display: Missing cached shader map for material Compas, compiling. 
+[2021.03.29-14.35.18:862][766]LogMaterial: Warning: /Game/Assets/PickupItems/Compass/Compas.Compas (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.35.18:862][766]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.35.18:863][766]LogMaterial: Display: Missing cached shader map for material Compas, compiling. 
+[2021.03.29-14.35.18:863][766]LogMaterial: Warning: /Game/Assets/PickupItems/Compass/Compas.Compas (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.35.18:864][766]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.35.18:864][766]LogMaterial: Display: Missing cached shader map for material Compas, compiling. 
+[2021.03.29-14.35.18:865][766]LogMaterial: Warning: /Game/Assets/PickupItems/Compass/Compas.Compas (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.35.18:865][766]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.35.20:135][766]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2021.03.29-14.35.28:282][906]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_Compass\PickUp_Compass\PickUP_Compass.fbx)
+[2021.03.29-14.35.28:308][906]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_Compass\PickUp_Compass\PickUP_Compass.fbx
+[2021.03.29-14.35.28:345][906]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.35.32:660][906]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.35.32:854][906]LogTexture: Display: Building textures: PickUp_Compass_Diff (AutoDXT, 2048X2048)
+[2021.03.29-14.35.33:213][906]LogTexture: Display: Building textures: Pickup_Compas_Nrm (BC5, 2048X2048)
+[2021.03.29-14.35.33:352][906]LogMaterial: Display: Missing cached shader map for material Compas, compiling. 
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.35.33:369][906]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.35.33:369][906]LogMaterial: Display: Missing cached shader map for material Compass_Shell, compiling. 
+[2021.03.29-14.35.33:386][906]LogMaterial: Display: Missing cached shader map for material Glass, compiling. 
+[2021.03.29-14.35.33:399][906]LogFbx: Display: Triangulating static mesh PickUp_Compass
+[2021.03.29-14.35.33:511][906]LogStaticMesh: Building static mesh PickUP_Compass...
+[2021.03.29-14.35.33:584][906]LogStaticMesh: Built static mesh [0.07s] /Game/Assets/PickupItems/Compass/PickUP_Compass.PickUP_Compass
+[2021.03.29-14.35.33:794][911]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 30
+[2021.03.29-14.35.34:184][923]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 26
+[2021.03.29-14.35.34:634][935]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 22
+[2021.03.29-14.35.34:658][935]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 19
+[2021.03.29-14.35.34:698][937]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 16
+[2021.03.29-14.35.34:746][938]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 13
+[2021.03.29-14.35.34:973][944]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.35.34:995][945]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 9
+[2021.03.29-14.35.35:598][961]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 7
+[2021.03.29-14.35.35:743][965]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 6
+[2021.03.29-14.35.35:762][966]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 5
+[2021.03.29-14.35.35:850][968]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 4
+[2021.03.29-14.35.36:082][974]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 3
+[2021.03.29-14.35.36:264][979]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 2
+[2021.03.29-14.35.36:287][980]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 1
+[2021.03.29-14.36.00:231][354]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_BulletAmo_And_HealthBox\PickUp_BulletAmoCrate.fbx)
+[2021.03.29-14.36.00:251][354]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_BulletAmo_And_HealthBox\PickUp_BulletAmoCrate.fbx
+[2021.03.29-14.36.00:272][354]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.36.03:675][354]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.36.03:880][354]LogTexture: Display: Building textures: PickUp_AmoHealth_diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.36.04:489][354]LogTexture: Display: Building textures: PickUp_AmoHealth_normal (BC5, 2048X2048)
+[2021.03.29-14.36.04:652][354]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.36.04:663][354]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.36.04:663][354]LogFbx: Display: Triangulating static mesh PickUp_AmoCrate
+[2021.03.29-14.36.04:694][354]LogStaticMesh: Building static mesh PickUp_BulletAmoCrate...
+[2021.03.29-14.36.04:711][354]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/PickupItems/PickUp_BulletAmoCrate.PickUp_BulletAmoCrate
+[2021.03.29-14.36.09:650][537]LogActorFactory: Actor Factory created PickUp_BulletAmoCrate
+[2021.03.29-14.36.10:137][564]LogActorFactory: Actor Factory created PickUp_BulletAmoCrate
+[2021.03.29-14.36.15:319][854]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Assets/PickupItems/PickUp_BulletAmoCrate.PickUp_BulletAmoCrate
+[2021.03.29-14.36.15:478][854]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.36.15:478][854]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.36.21:128][ 18]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.36.21:128][ 18]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.36.26:898][272]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2021.03.29-14.36.28:103][272]LogSlate: Window 'Delete Assets' being destroyed
+[2021.03.29-14.36.29:532][272]LogUObjectGlobals: Force Deleting 4 Package(s):
+	Asset Name: /Game/Assets/PickupItems/PickUp_Amo_Health_Diffuse.PickUp_Amo_Health_Diffuse
+	Asset Name: /Game/Assets/PickupItems/PickUp_AmoHealth_diffuse.PickUp_AmoHealth_diffuse
+	Asset Name: /Game/Assets/PickupItems/PickUp_AmoHealth_normal.PickUp_AmoHealth_normal
+	Asset Name: /Game/Assets/PickupItems/PickUp_BulletAmoCrate.PickUp_BulletAmoCrate
+[2021.03.29-14.36.29:820][272]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.03.29-14.36.29:821][272]LogMaterial: Warning: /Game/Assets/PickupItems/PickUp_Amo_Health_Diffuse.PickUp_Amo_Health_Diffuse (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.36.29:821][272]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.36.29:824][272]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.03.29-14.36.29:826][272]LogMaterial: Warning: /Game/Assets/PickupItems/PickUp_Amo_Health_Diffuse.PickUp_Amo_Health_Diffuse (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.36.29:826][272]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.36.29:829][272]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.03.29-14.36.29:831][272]LogMaterial: Warning: /Game/Assets/PickupItems/PickUp_Amo_Health_Diffuse.PickUp_Amo_Health_Diffuse (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.36.29:831][272]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.36.29:834][272]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.03.29-14.36.29:835][272]LogMaterial: Warning: /Game/Assets/PickupItems/PickUp_Amo_Health_Diffuse.PickUp_Amo_Health_Diffuse (no disk path found): Failed to compile Material for platform PCD3D_SM5, Default Material will be used in game.
+[2021.03.29-14.36.29:835][272]LogMaterial: Display: 	(Node TextureSample) Texture Sample> Missing input texture
+[2021.03.29-14.36.30:853][272]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2021.03.29-14.36.34:380][460]Cmd: DELETE
+[2021.03.29-14.36.34:380][460]Cmd: ACTOR DELETE
+[2021.03.29-14.36.34:384][460]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.36.34:409][460]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2021.03.29-14.36.34:410][460]LogEditorActor: Deleted 1 Actors (0.030 secs)
+[2021.03.29-14.36.43:047][738]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_BulletAmo_And_HealthBox\PickUp_BulletAmoCrate.fbx)
+[2021.03.29-14.36.43:065][738]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_BulletAmo_And_HealthBox\PickUp_BulletAmoCrate.fbx
+[2021.03.29-14.36.43:085][738]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.36.53:429][738]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.36.53:641][738]LogTexture: Display: Building textures: PickUp_AmoHealth_diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.36.54:253][738]LogTexture: Display: Building textures: PickUp_AmoHealth_normal (BC5, 2048X2048)
+[2021.03.29-14.36.54:416][738]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.36.54:427][738]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.36.54:427][738]LogFbx: Display: Triangulating static mesh PickUp_AmoCrate
+[2021.03.29-14.36.54:460][738]LogStaticMesh: Building static mesh PickUp_BulletAmoCrate...
+[2021.03.29-14.36.54:480][738]LogStaticMesh: Built static mesh [0.02s] /Game/Assets/PickupItems/PickUp_BulletAmoCrate.PickUp_BulletAmoCrate
+[2021.03.29-14.36.56:524][807]LogActorFactory: Actor Factory created PickUp_BulletAmoCrate
+[2021.03.29-14.36.56:983][833]LogActorFactory: Actor Factory created PickUp_BulletAmoCrate
+[2021.03.29-14.36.58:775][932]Cmd: DELETE
+[2021.03.29-14.36.58:775][932]Cmd: ACTOR DELETE
+[2021.03.29-14.36.58:779][932]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.36.58:806][932]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2021.03.29-14.36.58:809][932]LogEditorActor: Deleted 1 Actors (0.033 secs)
+[2021.03.29-14.37.13:657][661]LogMetaData: Removing '/Game/Assets/PickupItems/AmmoBox/PickUp_BulletAmoCrate.PickUp_BulletAmoCrate' ref from Metadata '/Game/Assets/PickupItems/PickUp_BulletAmoCrate.PackageMetaData'
+[2021.03.29-14.37.13:740][661]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Amo_Health_Diffuse32B81DCA4A7967524A15B195A53E84ED.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/AmmoBox/PickUp_Amo_Health_Diffuse.uasset'
+[2021.03.29-14.37.14:005][661]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_AmoHealth_diffuse3F708F554339F7522906AB86F9C167CC.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/AmmoBox/PickUp_AmoHealth_diffuse.uasset'
+[2021.03.29-14.37.14:218][661]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_AmoHealth_normal6AA5325744735A1DD577A2BC3098D667.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/AmmoBox/PickUp_AmoHealth_normal.uasset'
+[2021.03.29-14.37.14:259][661]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_BulletAmoCrate96E86CE54F76233727A05488DEF7B793.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/AmmoBox/PickUp_BulletAmoCrate.uasset'
+[2021.03.29-14.37.14:776][661]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2021.03.29-14.37.14:802][661]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.03.29-14.37.14:825][661]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.03.29-14.37.14:850][661]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.03.29-14.37.14:887][661]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2021.03.29-14.37.14:911][661]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2021.03.29-14.37.14:988][661]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.37.14:988][661]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/AmmoBox/PickUp_Amo_Health_Diffuse.PickUp_Amo_Health_Diffuse
+[2021.03.29-14.37.14:988][661]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/AmmoBox/PickUp_AmoHealth_diffuse.PickUp_AmoHealth_diffuse
+[2021.03.29-14.37.14:988][661]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/AmmoBox/PickUp_AmoHealth_normal.PickUp_AmoHealth_normal
+[2021.03.29-14.37.14:988][661]LogContentValidation: Display: Validating StaticMesh /Game/Assets/PickupItems/AmmoBox/PickUp_BulletAmoCrate.PickUp_BulletAmoCrate
+[2021.03.29-14.37.22:979][820]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_BulletAmo_And_HealthBox\PickUp_HealthBox.fbx)
+[2021.03.29-14.37.22:996][820]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_BulletAmo_And_HealthBox\PickUp_HealthBox.fbx
+[2021.03.29-14.37.23:011][820]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.37.29:358][820]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.37.29:572][820]LogTexture: Display: Building textures: PickUp_AmoHealth_diffuse (AutoDXT, 2048X2048)
+[2021.03.29-14.37.30:212][820]LogTexture: Display: Building textures: PickUp_AmoHealth_normal (BC5, 2048X2048)
+[2021.03.29-14.37.30:398][820]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.03.29-14.37.30:407][820]LogFbx: Display: Triangulating static mesh PickUp_HealthBox
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.37.30:426][820]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.37.30:426][820]LogStaticMesh: Building static mesh PickUp_HealthBox...
+[2021.03.29-14.37.30:438][820]LogStaticMesh: Built static mesh [0.01s] /Game/Assets/PickupItems/PickUp_HealthBox.PickUp_HealthBox
+[2021.03.29-14.37.32:686][902]LogActorFactory: Actor Factory created PickUp_HealthBox
+[2021.03.29-14.37.33:255][936]LogActorFactory: Actor Factory created PickUp_HealthBox
+[2021.03.29-14.37.34:283][997]Cmd: DELETE
+[2021.03.29-14.37.34:283][997]Cmd: ACTOR DELETE
+[2021.03.29-14.37.34:287][997]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.37.34:312][997]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
+[2021.03.29-14.37.34:315][997]LogEditorActor: Deleted 1 Actors (0.031 secs)
+[2021.03.29-14.37.48:471][697]LogMetaData: Removing '/Game/Assets/PickupItems/HealthBox/PickUp_HealthBox.PickUp_HealthBox' ref from Metadata '/Game/Assets/PickupItems/PickUp_HealthBox.PackageMetaData'
+[2021.03.29-14.37.48:557][697]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Amo_Health_Diffuse4B08F2B94157912F696E39B57C490790.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/HealthBox/PickUp_Amo_Health_Diffuse.uasset'
+[2021.03.29-14.37.48:759][697]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_AmoHealth_diffuseEEA3E90F4B443A2ADD553581316FCC1D.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/HealthBox/PickUp_AmoHealth_diffuse.uasset'
+[2021.03.29-14.37.48:975][697]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_AmoHealth_normalE82B759A46706C432F2C94B9EACD1AD8.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/HealthBox/PickUp_AmoHealth_normal.uasset'
+[2021.03.29-14.37.49:075][697]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_HealthBox7AB033E349CE66A1EF39B497C3545FE2.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/HealthBox/PickUp_HealthBox.uasset'
+[2021.03.29-14.37.49:676][697]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2021.03.29-14.37.49:702][697]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2021.03.29-14.37.49:725][697]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.03.29-14.37.49:749][697]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.03.29-14.37.49:780][697]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2021.03.29-14.37.49:802][697]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.03.29-14.37.49:881][697]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.37.49:881][697]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/HealthBox/PickUp_Amo_Health_Diffuse.PickUp_Amo_Health_Diffuse
+[2021.03.29-14.37.49:881][697]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/HealthBox/PickUp_AmoHealth_diffuse.PickUp_AmoHealth_diffuse
+[2021.03.29-14.37.49:881][697]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/HealthBox/PickUp_AmoHealth_normal.PickUp_AmoHealth_normal
+[2021.03.29-14.37.49:881][697]LogContentValidation: Display: Validating StaticMesh /Game/Assets/PickupItems/HealthBox/PickUp_HealthBox.PickUp_HealthBox
+[2021.03.29-14.39.44:192][ 39]LogAssetTools: Warning: Failed to import 'C:\Users\smybr\Downloads\PickUp_FoodSupplies_WoodenCrate.rar'. Unknown extension 'rar'.
+[2021.03.29-14.40.26:807][748]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\smybr\Downloads\PickUp_DuctTape\PickUp_DuctTape.fbx)
+[2021.03.29-14.40.26:829][748]LogFbx: Loading FBX Scene from C:\Users\smybr\Downloads\PickUp_DuctTape\PickUp_DuctTape.fbx
+[2021.03.29-14.40.26:859][748]LogFbx: FBX Scene Loaded Succesfully
+[2021.03.29-14.40.31:931][748]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.03.29-14.40.31:999][748]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/duct-tape-low-poly/textures/PickUp_Tape_Diffuse.png
+[2021.03.29-14.40.31:999][748]LogFbxMaterialImport: Display: Unable to find Texture file G:/Backup_Alienware/Backup_02042021/Misc_DesktopDownload/Download/RenegadeOmen_Project/Pickups/duct-tape-low-poly/textures/PickUp_Tape_Normal.png
+[2021.03.29-14.40.32:001][748]LogMaterial: Display: Missing cached shader map for material PickUp_DuctTape_Diffuse, compiling. 
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (1/9): shaders left to compile 15
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (2/9): shaders left to compile 13
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (3/9): shaders left to compile 11
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (4/9): shaders left to compile 9
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (5/9): shaders left to compile 7
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (6/9): shaders left to compile 5
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (7/9): shaders left to compile 3
+[2021.03.29-14.40.32:013][748]LogShaderCompilers: Display: Worker (8/9): shaders left to compile 1
+[2021.03.29-14.40.32:013][748]LogFbx: Display: Triangulating static mesh PickUp_Tape
+[2021.03.29-14.40.32:103][748]LogStaticMesh: Building static mesh PickUp_DuctTape...
+[2021.03.29-14.40.32:149][748]LogStaticMesh: Built static mesh [0.05s] /Game/Assets/PickupItems/PickUp_DuctTape.PickUp_DuctTape
+[2021.03.29-14.40.36:237][871]LogActorFactory: Actor Factory created PickUp_DuctTape
+[2021.03.29-14.40.36:938][913]LogActorFactory: Actor Factory created PickUp_DuctTape
+[2021.03.29-14.40.37:848][967]Cmd: DELETE
+[2021.03.29-14.40.37:848][967]Cmd: ACTOR DELETE
+[2021.03.29-14.40.37:852][967]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.03.29-14.40.37:875][967]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2021.03.29-14.40.37:878][967]LogEditorActor: Deleted 1 Actors (0.030 secs)
+[2021.03.29-14.40.52:960][628]LogMetaData: Removing '/Game/Assets/PickupItems/DuctTape/PickUp_DuctTape.PickUp_DuctTape' ref from Metadata '/Game/Assets/PickupItems/PickUp_DuctTape.PackageMetaData'
+[2021.03.29-14.40.53:053][628]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_DuctTape13B420054CCC73B667ACA69D92CAE86D.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/DuctTape/PickUp_DuctTape.uasset'
+[2021.03.29-14.40.53:083][628]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_DuctTape_Diffuse796331474AAE50DF4708009DEF282119.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/DuctTape/PickUp_DuctTape_Diffuse.uasset'
+[2021.03.29-14.40.53:451][628]LogUObjectHash: Compacting FUObjectHashTables data took   1.71ms
+[2021.03.29-14.40.53:476][628]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.03.29-14.40.53:509][628]LogUObjectHash: Compacting FUObjectHashTables data took   1.78ms
+[2021.03.29-14.40.53:532][628]LogUObjectHash: Compacting FUObjectHashTables data took   0.61ms
+[2021.03.29-14.40.53:623][628]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.40.53:623][628]LogContentValidation: Display: Validating StaticMesh /Game/Assets/PickupItems/DuctTape/PickUp_DuctTape.PickUp_DuctTape
+[2021.03.29-14.40.53:623][628]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/DuctTape/PickUp_DuctTape_Diffuse.PickUp_DuctTape_Diffuse
+[2021.03.29-14.40.54:738][681]LogUObjectHash: Compacting FUObjectHashTables data took   0.62ms
+[2021.03.29-14.40.54:826][681]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Survival_WorldCE4D5A764F3620E577C667966F212375.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World.umap'
+[2021.03.29-14.40.54:996][681]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Survival_World_BuiltData8015EF9F405C28103168029BFA11DD80.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World_BuiltData.uasset'
+[2021.03.29-14.40.55:014][681]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.40.55:014][681]LogContentValidation: Display: Validating World /Game/Levels/Survival_World.Survival_World
+[2021.03.29-14.40.55:014][681]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Survival_World_BuiltData.Survival_World_BuiltData
+[2021.03.29-14.40.56:892][769]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2021.03.29-14.40.56:951][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_GrenadeB980568540DEB6B49BD633893D866A3B.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Grenade/PickUp_Grenade.uasset'
+[2021.03.29-14.40.56:966][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Grenade15A76869D4CB68F80AA79C1AD58B3D8B9.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Grenade/PickUp_Grenade1.uasset'
+[2021.03.29-14.40.57:238][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Grenade_NrmA5F5B9C449E6CDB9DA75D1912CF9E4F2.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Grenade/PickUp_Grenade_Nrm.uasset'
+[2021.03.29-14.40.57:249][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Pickup_Rope0FAAD1C14269BC3507F753B422754269.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Rope/Pickup_Rope.uasset'
+[2021.03.29-14.40.57:308][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUP_Compass8D758EC0424DBFA3B0C3288EF334C45E.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Compass/PickUP_Compass.uasset'
+[2021.03.29-14.40.57:342][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/CompasE9918BAF45DC623C6389839581EEE55C.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Compass/Compas.uasset'
+[2021.03.29-14.40.57:542][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PickUp_Compass_DiffA5BB398A49B279AC98A4BBBB9C6DA169.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Compass/PickUp_Compass_Diff.uasset'
+[2021.03.29-14.40.57:785][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Pickup_Compas_NrmAD64938F4A4DCCC6F1D485BE3529D039.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Compass/Pickup_Compas_Nrm.uasset'
+[2021.03.29-14.40.57:875][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Compass_Shell7F36AE59411C504685EFBC9458A1E9CF.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Compass/Compass_Shell.uasset'
+[2021.03.29-14.40.57:948][769]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Glass9750927643FC9C25CABF47A9C0D33904.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Assets/PickupItems/Compass/Glass.uasset'
+[2021.03.29-14.40.58:020][769]AssetCheck: New page: Asset Save: multiple assets
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating StaticMesh /Game/Assets/PickupItems/Grenade/PickUp_Grenade.PickUp_Grenade
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/Grenade/PickUp_Grenade1.PickUp_Grenade1
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/Grenade/PickUp_Grenade_Nrm.PickUp_Grenade_Nrm
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/Rope/Pickup_Rope.Pickup_Rope
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating StaticMesh /Game/Assets/PickupItems/Compass/PickUP_Compass.PickUP_Compass
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/Compass/Compas.Compas
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/Compass/PickUp_Compass_Diff.PickUp_Compass_Diff
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Texture2D /Game/Assets/PickupItems/Compass/Pickup_Compas_Nrm.Pickup_Compas_Nrm
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/Compass/Compass_Shell.Compass_Shell
+[2021.03.29-14.40.58:020][769]LogContentValidation: Display: Validating Material /Game/Assets/PickupItems/Compass/Glass.Glass
+[2021.03.29-14.40.58:895][818]LogUObjectHash: Compacting FUObjectHashTables data took   1.18ms
+[2021.03.29-14.40.58:921][818]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.40.58:921][818]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.40.58:956][818]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2021.03.29-14.40.58:956][818]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.40.58:956][818]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.40.58:988][818]LogSlate: Window 'PickUp_Gasoline' being destroyed
+[2021.03.29-14.40.59:058][818]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.40.59:059][818]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.03.29-14.40.59:160][818]LogSlate: Window 'RenegadeOmenX - Unreal Editor' being destroyed
+[2021.03.29-14.40.59:162][818]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.03.29-14.40.59:312][819]Cmd: QUIT_EDITOR
+[2021.03.29-14.40.59:312][819]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.03.29-14.40.59:319][819]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.03.29-14.40.59:350][819]LogExit: Preparing to exit.
+[2021.03.29-14.41.00:394][819]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.41.00:399][819]LogWorld: UWorld::CleanupWorld for World_2, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.41.00:437][819]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.03.29-14.41.00:443][819]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.03.29-14.41.00:443][819]LogExit: Editor shut down
+[2021.03.29-14.41.00:443][819]LogExit: Transaction tracking system shut down
+[2021.03.29-14.41.00:562][819]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (000001D80B0A1BC0), frame # 40819
+[2021.03.29-14.41.00:562][819]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D80AFDBB00), frame # 40819
+[2021.03.29-14.41.00:562][819]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D80B060800), frame # 40819
+[2021.03.29-14.41.00:624][819]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001D84FF02700), frame # 40819
+[2021.03.29-14.41.00:624][819]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001D88C091800), frame # 40819
+[2021.03.29-14.41.00:679][819]LogExit: Object subsystem successfully closed.
+[2021.03.29-14.41.00:699][819]LogShaderCompilers: Display: Shaders left to compile 0
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module HierarchicalLODUtilities (796)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (794)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module StatsViewer (792)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module BlueprintGraph (790)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (788)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module SceneOutliner (786)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module AddContentDialog (784)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module WidgetCarousel (783)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module EditorWidgets (780)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module CollectionManager (778)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module VirtualTexturingEditor (776)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module FoliageEdit (774)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module LandscapeEditor (772)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module MeshPaintMode (770)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (768)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module ActorPickerMode (766)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (764)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (762)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module AutomationWorker (760)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module SteamVREditor (758)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module OculusMR (756)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module GooglePADEditor (754)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (752)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module TemplateSequenceEditor (750)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (748)
+[2021.03.29-14.41.00:724][819]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (746)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (744)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (742)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (740)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (738)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (736)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module WebMMedia (734)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (732)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (730)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module SequenceRecorder (729)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (726)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (724)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (722)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (720)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (718)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (716)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (714)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (712)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (710)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (708)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module PlanarCut (706)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module CharacterAI (704)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module TextureAlignMode (702)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module BspMode (700)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module PlacementMode (699)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module GeometryMode (696)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module CameraShakePreviewer (694)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module SmartSnapping (692)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module SessionServices (690)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module MeshPaint (688)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module ViewportSnapping (686)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module ViewportInteraction (684)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module ClothPainter (682)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (681)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module LogVisualizer (678)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module IntroTutorials (676)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (675)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (672)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (670)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (668)
+[2021.03.29-14.41.00:725][819]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (667)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (664)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (662)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (660)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (658)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module TraceInsights (656)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module TraceServices (655)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module EditorInteractiveToolsFramework (652)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (650)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module InputBindingEditor (648)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module MergeActors (646)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (644)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module LocalizationService (643)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module HardwareTargeting (640)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (638)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module UndoHistory (636)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module XmlParser (634)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module Blutility (632)
+[2021.03.29-14.41.01:270][819]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (630)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (629)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (626)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module SettingsEditor (624)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module ProjectLauncher (622)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module SessionFrontend (620)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module ProfilerClient (618)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module DeviceManager (616)
+[2021.03.29-14.41.01:271][819]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (615)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module AutomationController (612)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module AutomationWindow (610)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module Layers (608)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (606)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module DetailCustomizations (604)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module PackagesDialog (602)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (600)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module Persona (598)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (597)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module AnimGraph (595)
+[2021.03.29-14.41.01:304][819]LogModuleManager: Shutting down and abandoning module Kismet (592)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module KismetWidgets (591)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module GraphEditor (588)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module StructViewer (586)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module ClassViewer (584)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module Toolbox (582)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module ModuleUI (580)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module OutputLog (578)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module GammaUI (576)
+[2021.03.29-14.41.01:313][819]LogModuleManager: Shutting down and abandoning module Documentation (574)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module LiveCoding (572)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module LevelSequence (570)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (568)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module MovieScene (566)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (564)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module LauncherPlatform (562)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module AnalyticsET (560)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module PortalServices (558)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module PortalRpc (556)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module MessagingRpc (554)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (552)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module AudioMixerCore (551)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module AIModule (548)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module GameplayDebugger (547)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module AITestSuite (545)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module NavigationSystem (543)
+[2021.03.29-14.41.01:314][819]LogModuleManager: Shutting down and abandoning module ProfilerService (540)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module TaskGraph (538)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module ScreenshotTools (536)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module SynthesisEditor (534)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module Synthesis (532)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (530)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (528)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module OculusEditor (526)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module OculusInput (524)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (522)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module GooglePAD (520)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module EditableMesh (518)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (516)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module CableComponent (514)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module AudioCapture (512)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (511)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module AssetTags (508)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (506)
+[2021.03.29-14.41.01:349][819]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (504)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module AppleImageUtils (502)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module AndroidPermission (500)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (498)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (496)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module TemplateSequence (494)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineEditor (492)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineRenderPasses (490)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineSettings (488)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module MovieRenderPipelineCore (486)
+[2021.03.29-14.41.01:350][819]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (485)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MeshPaintingToolset (482)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MeshPaintEditorMode (480)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MediaCompositing (478)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module ImgMedia (476)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (474)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (472)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (470)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (468)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (466)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module NiagaraEditorWidgets (464)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (462)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MeshConversion (460)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module DynamicMesh (458)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (456)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometricObjects (454)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (452)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryCollectionSequencer (451)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryCollectionEditor (448)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (446)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (444)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module ChaosSolverEditor (442)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module ChaosNiagara (440)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module FractureEditor (438)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module ChaosClothEditor (436)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module ChaosCloth (434)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module BackChannel (432)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module AutomationUtilsEditor (430)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module AutomationUtils (428)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module AlembicImporter (426)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module AlembicLibrary (425)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryCache (424)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (423)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module VariantManagerContentEditor (418)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (416)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (414)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module PluginBrowser (412)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (410)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (408)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module EditorScriptingUtilities (406)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module CurveEditorTools (404)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (402)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module CryptoKeys (400)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (398)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (396)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module UObjectPlugin (394)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (392)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module RiderSourceCodeAccess (390)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module PlasticSourceControl (388)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (386)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module GitSourceControl (384)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module SourceControl (383)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (380)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (378)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (376)
+[2021.03.29-14.41.01:353][819]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (374)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (372)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (370)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (368)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module Paper2DEditor (366)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module SoundFields (364)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module SignificanceManager (362)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (360)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (358)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (354)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module ActorSequence (352)
+[2021.03.29-14.41.01:354][819]LogModuleManager: Shutting down and abandoning module UdpMessaging (350)
+[2021.03.29-14.41.01:454][819]LogModuleManager: Shutting down and abandoning module TcpMessaging (348)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (346)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (344)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (342)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (340)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (338)
+[2021.03.29-14.41.01:554][819]LogMagicLeapPlanes: Planes tracker already destroyed.
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (336)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (334)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (332)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (330)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapController (328)
+[2021.03.29-14.41.01:554][819]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (326)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module MagicLeapAR (324)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module AugmentedReality (323)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (320)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module Niagara (318)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module SignalProcessing (317)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module NiagaraEditor (315)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module NiagaraCore (312)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (310)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (308)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module FacialAnimation (306)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module DataValidation (304)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (302)
+[2021.03.29-14.41.01:554][819]LogModuleManager: Shutting down and abandoning module LevelEditor (301)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (300)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (298)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module MainFrame (296)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module HotReload (295)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module ToolMenus (291)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module TreeMap (289)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module AnimationSharing (286)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (284)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module Paper2D (282)
+[2021.03.29-14.41.01:555][819]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (280)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (278)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (276)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module PacketHandler (274)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (272)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (270)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module MediaAssets (268)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module Overlay (266)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module OverlayEditor (265)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module VREditor (262)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module StringTableEditor (260)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (258)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (256)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module FunctionalTesting (254)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (252)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module UMG (250)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module UMGEditor (249)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module MessageLog (247)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module MaterialEditor (245)
+[2021.03.29-14.41.01:556][819]LogModuleManager: Shutting down and abandoning module ContentBrowser (244)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (243)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module SlateReflector (236)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module Slate (234)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module SlateCore (232)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module LandscapeEditorUtilities (230)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module UnrealEd (228)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module MRMesh (226)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (224)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (222)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module XAudio2 (220)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module Networking (218)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module Core (216)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module MovieSceneTools (214)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module CurveEditor (213)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module Sequencer (211)
+[2021.03.29-14.41.01:557][819]LogModuleManager: Shutting down and abandoning module EditorStyle (210)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module KismetCompiler (206)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module MeshBuilder (204)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module MeshUtilities (202)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (201)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (200)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module MeshBoneReduction (199)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (197)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (195)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (193)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module MaterialBaking (189)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module NullInstallBundleManager (184)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module DerivedDataCache (182)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module XGEController (180)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module TargetPlatform (178)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (177)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (175)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (173)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (171)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (169)
+[2021.03.29-14.41.01:558][819]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (167)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (165)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (163)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (161)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (159)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module ImageWrapper (158)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (155)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (153)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (151)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (149)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (147)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (145)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (143)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (141)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (139)
+[2021.03.29-14.41.01:559][819]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (137)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module LinuxAArch64ServerTargetPlatform (135)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module LinuxAArch64ClientTargetPlatform (133)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module LinuxAArch64NoEditorTargetPlatform (131)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (129)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (127)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (125)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (123)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module Messaging (121)
+[2021.03.29-14.41.01:560][819]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (119)
+[2021.03.29-14.41.01:561][819]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (117)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (115)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module InputCore (112)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module Settings (110)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (108)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module PhysXCooking (106)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module ChaosSolvers (104)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (103)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module Chaos (100)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (98)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (97)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module AVEncoder (96)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (92)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module SteamVRInput (90)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module SteamVR (88)
+[2021.03.29-14.41.01:563][819]LogHMD: Freeing OpenVRDLLHandle.
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module OculusHMD (86)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (84)
+[2021.03.29-14.41.01:563][819]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (82)
+[2021.03.29-14.41.01:564][819]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (80)
+[2021.03.29-14.41.01:564][819]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (76)
+[2021.03.29-14.41.01:564][819]LogModuleManager: Shutting down and abandoning module XMPP (71)
+[2021.03.29-14.41.01:564][819]LogModuleManager: Shutting down and abandoning module WebSockets (70)
+[2021.03.29-14.41.01:576][819]LogModuleManager: Shutting down and abandoning module HTTP (67)
+[2021.03.29-14.41.01:576][819]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2021.03.29-14.41.01:576][819]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD391FD0E-45DD-E118-7D80-A69724BD6F53%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=205a473340242489ce81079a01667d1c%7Cba25ea716df54fb1b44e0ec246108bc9%7C8fba83d6-fb36-4d17-b2ae-b61aebd92f8b&AppEnvironment=datacollector-source&UploadType=eteventstream] refs=[1] status=Processing
+[2021.03.29-14.41.01:577][819]LogModuleManager: Shutting down and abandoning module SSL (66)
+[2021.03.29-14.41.01:578][819]LogModuleManager: Shutting down and abandoning module WmfMedia (62)
+[2021.03.29-14.41.01:579][819]LogModuleManager: Shutting down and abandoning module Media (61)
+[2021.03.29-14.41.01:579][819]LogModuleManager: Shutting down and abandoning module MagicLeap (58)
+[2021.03.29-14.41.01:579][819]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (56)
+[2021.03.29-14.41.01:579][819]LogModuleManager: Shutting down and abandoning module NiagaraShader (54)
+[2021.03.29-14.41.01:579][819]LogModuleManager: Shutting down and abandoning module VariantManagerContent (52)
+[2021.03.29-14.41.01:579][819]LogModuleManager: Shutting down and abandoning module DatasmithContent (50)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module AISupportModule (48)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module DesktopPlatform (46)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (44)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (42)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module PlatformCrypto (40)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2021.03.29-14.41.01:580][819]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2021.03.29-14.41.01:581][819]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2021.03.29-14.41.01:581][819]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2021.03.29-14.41.01:585][819]LogD3D11RHI: Shutdown
+[2021.03.29-14.41.01:585][819]LogD3D11RHI: CleanupD3DDevice
+[2021.03.29-14.41.01:599][819]LogExit: Exiting.
+[2021.03.29-14.41.01:607][819]Log file closed, 03/29/21 10:41:01
+>>>>>>> parent of cf91645 (added ammo items and uses)
