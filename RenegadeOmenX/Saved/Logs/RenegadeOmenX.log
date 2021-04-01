@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 22a065f (revert to normal)
 ﻿Log file open, 03/31/21 18:34:46
@@ -81,6 +82,13 @@ LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
 LogStats: Stats thread started at 0.178034
 >>>>>>> parent of 4f490e0 (commit)
+=======
+﻿Log file open, 03/29/21 10:15:27
+LogInit: Display: Running engine for game: RenegadeOmenX
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.164823
+>>>>>>> parent of cf91645 (added ammo items and uses)
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -272,6 +280,7 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3035,6 +3044,8 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 >>>>>>> parent of cf91645 (added ammo items and uses)
 =======
 >>>>>>> parent of cf91645 (added ammo items and uses)
+=======
+>>>>>>> parent of cf91645 (added ammo items and uses)
 [2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
 [2021.03.29-14.15.27:293][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
@@ -4671,6 +4682,7 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.03.29-14.41.01:585][819]LogD3D11RHI: CleanupD3DDevice
 [2021.03.29-14.41.01:599][819]LogExit: Exiting.
 [2021.03.29-14.41.01:607][819]Log file closed, 03/29/21 10:41:01
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7806,3 +7818,5 @@ Please see Output Log for details.
 >>>>>>> parent of 22a065f (revert to normal)
 =======
 >>>>>>> parent of 4f490e0 (commit)
+=======
+>>>>>>> parent of cf91645 (added ammo items and uses)
