@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿Log file open, 03/31/21 18:34:46
 LogInit: Display: Running engine for game: RenegadeOmenX
 LogPlatformFile: Not using cached read wrapper
@@ -23,6 +24,13 @@ LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
 LogStats: Stats thread started at 0.178034
 >>>>>>> parent of 4f490e0 (commit)
+=======
+﻿Log file open, 03/29/21 10:15:27
+LogInit: Display: Running engine for game: RenegadeOmenX
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.164823
+>>>>>>> parent of cf91645 (added ammo items and uses)
 =======
 ﻿Log file open, 03/29/21 10:15:27
 LogInit: Display: Running engine for game: RenegadeOmenX
@@ -242,6 +250,7 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2995,6 +3004,8 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 >>>>>>> parent of cf91645 (added ammo items and uses)
 =======
 >>>>>>> parent of cf91645 (added ammo items and uses)
+=======
+>>>>>>> parent of cf91645 (added ammo items and uses)
 [2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2021.03.29-14.15.27:293][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
 [2021.03.29-14.15.27:293][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
@@ -4631,6 +4642,7 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.03.29-14.41.01:585][819]LogD3D11RHI: CleanupD3DDevice
 [2021.03.29-14.41.01:599][819]LogExit: Exiting.
 [2021.03.29-14.41.01:607][819]Log file closed, 03/29/21 10:41:01
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -7744,6 +7756,8 @@ Please see Output Log for details.
 [2021.03.31-00.26.45:233][148]LogExit: Exiting.
 [2021.03.31-00.26.45:275][148]Log file closed, 03/30/21 20:26:45
 >>>>>>> parent of 4f490e0 (commit)
+=======
+>>>>>>> parent of cf91645 (added ammo items and uses)
 =======
 >>>>>>> parent of cf91645 (added ammo items and uses)
 =======
