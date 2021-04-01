@@ -6,6 +6,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 22a065f (revert to normal)
 ﻿Log file open, 03/31/21 18:34:46
 LogInit: Display: Running engine for game: RenegadeOmenX
 LogPlatformFile: Not using cached read wrapper
@@ -18,6 +21,7 @@ LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
 LogStats: Stats thread started at 0.164823
 >>>>>>> parent of cf91645 (added ammo items and uses)
+<<<<<<< HEAD
 =======
 ﻿Log file open, 03/29/21 13:51:45
 LogInit: Display: Running engine for game: RenegadeOmenX
@@ -67,6 +71,8 @@ LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
 LogStats: Stats thread started at 0.164823
 >>>>>>> parent of cf91645 (added ammo items and uses)
+=======
+>>>>>>> parent of 22a065f (revert to normal)
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -208,7 +214,7 @@ LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
 LogInit: Compiled with Visual C++: 19.24.28315.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.25
-LogInit: Command Line:  -EpicPortal -epicusername=Smyjohnson -epicuserid=ba25ea716df54fb1b44e0ec246108bc9 -epiclocale=en
+LogInit: Command Line: 
 LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
 LogInit: Allocator: TBB
 LogInit: Installed Engine Build: 1
@@ -266,6 +272,9 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 22a065f (revert to normal)
 [2021.03.31-22.34.46:527][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2021.03.31-22.34.46:527][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
 [2021.03.31-22.34.46:527][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
@@ -4660,6 +4669,7 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> parent of cf91645 (added ammo items and uses)
+<<<<<<< HEAD
 =======
 [2021.03.29-17.51.45:414][  0]LogConfig: Setting CVar [[r.VSync:0]]
 [2021.03.29-17.51.45:414][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
@@ -7780,3 +7790,5 @@ Please see Output Log for details.
 >>>>>>> parent of cf91645 (added ammo items and uses)
 =======
 >>>>>>> parent of cf91645 (added ammo items and uses)
+=======
+>>>>>>> parent of 22a065f (revert to normal)
