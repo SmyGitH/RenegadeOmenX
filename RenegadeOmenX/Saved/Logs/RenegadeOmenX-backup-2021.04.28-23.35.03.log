@@ -1,0 +1,1532 @@
+﻿Log file open, 04/28/21 19:19:26
+LogInit: Display: Running engine for game: RenegadeOmenX
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.187683
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, GPU: Radeon Pro 555X
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.Mobile.VirtualTextures:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.VirtualTextures:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.VirtualTexturedLightmaps:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.VT.TileSize:128]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.VT.TileBorderSize:4]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.vt.FeedbackFactor:16]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.VT.EnableCompressZlib:1]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.VT.EnableCompressCrunch:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2021.04.28-23.19.27:135][  0]LogConfig: Setting CVar [[r.AnisotropicBRDF:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Bias:1.000000]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.UsePreExposure:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.EyeAdaptation.EditorOnly:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SSGI.Enable:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.VertexDeformationOutputsVelocity:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.Mobile.UseHWsRGBEncoding:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.MeshStreaming:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.RayTracing.UseTextureLod:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphere:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphereAffectsHeightFog:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SkinCache.DefaultBehavior:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableSpotlights:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.GPUSkin.Support16BitBoneIndex:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Setting CVar [[r.LightPropagationVolume:0]]
+[2021.04.28-23.19.27:136][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.04.28-23.19.27:136][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.04.28-23.19.27:137][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.04.28-23.19.27:137][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.04.28-23.19.27:140][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.28-23.19.27:140][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.28-23.19.27:141][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.28-23.19.27:141][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.04.28-23.19.27:141][  0]LogHAL: Display: Platform has ~ 16 GB [17066782720 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.04.28-23.19.27:141][  0]LogInit: Going up to parent DeviceProfile []
+[2021.04.28-23.19.27:141][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.28-23.19.27:141][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.28-23.19.27:142][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.04.28-23.19.27:143][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.04.28-23.19.27:143][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.04.28-23.19.27:143][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.04.28-23.19.27:143][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.04.28-23.19.27:143][  0]LogInit: Computer: DESKTOP-NTOTJRM
+[2021.04.28-23.19.27:143][  0]LogInit: User: smybr
+[2021.04.28-23.19.27:143][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.04.28-23.19.27:143][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.04.28-23.19.27:143][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.04.28-23.19.27:143][  0]LogMemory: Platform Memory Stats for Windows
+[2021.04.28-23.19.27:143][  0]LogMemory: Process Physical Memory: 117.26 MB used, 117.26 MB peak
+[2021.04.28-23.19.27:143][  0]LogMemory: Process Virtual Memory: 107.21 MB used, 107.21 MB peak
+[2021.04.28-23.19.27:143][  0]LogMemory: Physical Memory: 8771.61 MB used,  7504.55 MB free, 16276.15 MB total
+[2021.04.28-23.19.27:143][  0]LogMemory: Virtual Memory: 5176.62 MB used,  134212552.00 MB free, 134217728.00 MB total
+[2021.04.28-23.19.27:148][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.04.28-23.19.27:171][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.04.28-23.19.27:171][  0]LogInit: Using OS detected language (en-US).
+[2021.04.28-23.19.27:171][  0]LogInit: Using OS detected locale (en-US).
+[2021.04.28-23.19.27:176][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.04.28-23.19.27:350][  0]LogInit: Setting process to per monitor DPI aware
+[2021.04.28-23.19.27:394][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.04.28-23.19.27:394][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.04.28-23.19.27:529][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.28-23.19.27:529][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.04.28-23.19.27:529][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.04.28-23.19.27:529][  0]LogD3D11RHI: D3D11 adapters:
+[2021.04.28-23.19.27:608][  0]LogD3D11RHI:    0. 'Radeon Pro 555X' (Feature Level 11_0)
+[2021.04.28-23.19.27:608][  0]LogD3D11RHI:       4041/0/8138 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2021.04.28-23.19.27:610][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.04.28-23.19.27:610][  0]LogD3D11RHI:       0/0/8138 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.04.28-23.19.27:610][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.04.28-23.19.27:619][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.04.28-23.19.27:619][  0]LogD3D11RHI:     GPU DeviceId: 0x67ef (for the marketing name, search the web for "GPU Device Id")
+[2021.04.28-23.19.27:620][  0]LogWindows: EnumDisplayDevices:
+[2021.04.28-23.19.27:620][  0]LogWindows:    0. 'Radeon Pro 555X' (P:1 D:1)
+[2021.04.28-23.19.27:620][  0]LogWindows:    1. 'Radeon Pro 555X' (P:0 D:0)
+[2021.04.28-23.19.27:620][  0]LogWindows:    2. 'Radeon Pro 555X' (P:0 D:0)
+[2021.04.28-23.19.27:621][  0]LogWindows:    3. 'Radeon Pro 555X' (P:0 D:0)
+[2021.04.28-23.19.27:621][  0]LogWindows:    4. 'Radeon Pro 555X' (P:0 D:0)
+[2021.04.28-23.19.27:621][  0]LogWindows:    5. 'Radeon Pro 555X' (P:0 D:0)
+[2021.04.28-23.19.27:621][  0]LogWindows:    6. 'Radeon Pro 555X' (P:0 D:0)
+[2021.04.28-23.19.27:622][  0]LogWindows: DebugString: FoundDriverCount:7 
+[2021.04.28-23.19.27:622][  0]LogD3D11RHI:     Adapter Name: Radeon Pro 555X
+[2021.04.28-23.19.27:622][  0]LogD3D11RHI:   Driver Version: Adrenalin 19.30.01.33 (internal:26.20.13001.33012, unified:26.20.13001.33012)
+[2021.04.28-23.19.27:622][  0]LogD3D11RHI:      Driver Date: 11-21-2019
+[2021.04.28-23.19.27:622][  0]LogRHI: Texture pool is 2404 MB (70% of 3434 MB)
+[2021.04.28-23.19.27:710][  0]LogD3D11RHI: RHI does not have support for 64 bit atomics
+[2021.04.28-23.19.27:710][  0]LogD3D11RHI: Async texture creation enabled
+[2021.04.28-23.19.27:710][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.04.28-23.19.27:727][  0]LogD3D11RHI: GPU Timing Frequency: 25.000000 (Debug: 2 1)
+[2021.04.28-23.19.28:014][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.04.28-23.19.28:039][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.04.28-23.19.28:065][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.04.28-23.19.28:065][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.04.28-23.19.28:076][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.04.28-23.19.28:086][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.04.28-23.19.28:096][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.04.28-23.19.28:107][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.04.28-23.19.28:118][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.04.28-23.19.28:129][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.04.28-23.19.28:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.04.28-23.19.28:173][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.04.28-23.19.28:173][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.04.28-23.19.28:191][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.04.28-23.19.28:191][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.04.28-23.19.28:201][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.04.28-23.19.28:212][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.04.28-23.19.28:221][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.04.28-23.19.28:231][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.04.28-23.19.28:231][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.04.28-23.19.28:237][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.04.28-23.19.28:287][  0]LogShaderCompilers: Guid format shader working directory is -28 characters bigger than the processId version (../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Intermediate/Shaders/WorkingDirectory/15804/).
+[2021.04.28-23.19.28:287][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/smybr/AppData/Local/Temp/UnrealShaderWorkingDir/9ADEA5CD40E34AF4097C6BA290CFE261/'.
+[2021.04.28-23.19.28:288][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.04.28-23.19.28:288][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.04.28-23.19.28:288][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.04.28-23.19.29:003][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.04.28-23.19.29:093][  0]LogDerivedDataCache: Loaded boot cache 0.09s 76MB C:/Users/smybr/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.28-23.19.29:093][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/smybr/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.04.28-23.19.29:093][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.04.28-23.19.29:093][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.04.28-23.19.29:093][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.28-23.19.29:093][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.04.28-23.19.29:104][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.04.28-23.19.29:104][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.28-23.19.29:104][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.04.28-23.19.29:105][  0]LogDerivedDataCache: Using Local data cache path C:/Users/smybr/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.04.28-23.19.29:105][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.04.28-23.19.29:105][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.04.28-23.19.29:153][  0]LogSlate: Using FreeType 2.10.0
+[2021.04.28-23.19.29:154][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.04.28-23.19.29:181][  0]LogAssetRegistry: FAssetRegistry took 0.0029 seconds to start up
+[2021.04.28-23.19.29:394][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.28-23.19.29:494][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.04.28-23.19.29:494][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.04.28-23.19.29:494][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.04.28-23.19.29:494][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.04.28-23.19.29:494][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.04.28-23.19.29:507][  0]LogNetVersion: RenegadeOmenX 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4142527166)
+[2021.04.28-23.19.29:947][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (000002530C005380), frame # 0
+[2021.04.28-23.19.29:947][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002530BF3BB00), frame # 0
+[2021.04.28-23.19.29:949][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002530BFCC800), frame # 0
+[2021.04.28-23.19.30:002][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.047356 seconds
+[2021.04.28-23.19.30:009][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.04.28-23.19.30:009][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.04.28-23.19.30:009][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.04.28-23.19.30:290][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.04.28-23.19.30:294][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.04.28-23.19.30:359][  0]SourceControl: Source control is disabled
+[2021.04.28-23.19.30:359][  0]SourceControl: Source control is disabled
+[2021.04.28-23.19.30:362][  0]SourceControl: Source control is disabled
+[2021.04.28-23.19.30:364][  0]SourceControl: Source control is disabled
+[2021.04.28-23.19.30:369][  0]SourceControl: Source control is disabled
+[2021.04.28-23.19.30:571][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.04.28-23.19.30:587][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.28-23.19.30:587][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.28-23.19.30:629][  0]LogOcInput: OculusInput pre-init called
+[2021.04.28-23.19.30:638][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.04.28-23.19.30:638][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.04.28-23.19.30:689][  0]LogEngine: Initializing Engine...
+[2021.04.28-23.19.30:690][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.28-23.19.30:690][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.04.28-23.19.30:691][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.04.28-23.19.30:844][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.04.28-23.19.30:855][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.04.28-23.19.30:855][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025311057C00), frame # 0
+[2021.04.28-23.19.30:855][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000253110ADD00), frame # 0
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.28-23.19.30:873][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.28-23.19.30:873][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.28-23.19.30:873][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.28-23.19.30:888][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.28-23.19.30:888][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.04.28-23.19.30:960][  0]LogAudioMixer: Display: Using Audio Device Speakers (Apple Audio Device)
+[2021.04.28-23.19.30:964][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.28-23.19.30:966][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.28-23.19.30:966][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.28-23.19.30:967][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.28-23.19.30:968][  0]LogInit: FAudioDevice initialized.
+[2021.04.28-23.19.30:968][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.04.28-23.19.31:024][  0]LogDerivedDataCache: Saved boot cache 0.06s 76MB C:/Users/smybr/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.28-23.19.31:024][  0]LogInit: Texture streaming: Enabled
+[2021.04.28-23.19.31:039][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.04.28-23.19.31:040][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.04.28-23.19.31:057][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.04.28-23.19.31:109][  0]LogInit: Transaction tracking system initialized
+[2021.04.28-23.19.31:130][  0]BlueprintLog: New page: Editor Load
+[2021.04.28-23.19.31:186][  0]LocalizationService: Localization service is disabled
+[2021.04.28-23.19.31:317][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.04.28-23.19.31:318][  0]LogCook: Display: Mobile HDR setting 1
+[2021.04.28-23.19.31:438][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/' took 0.06s
+[2021.04.28-23.19.31:652][  0]SourceControl: Source control is disabled
+[2021.04.28-23.19.31:652][  0]LogUnrealEdMisc: Loading editor; pre map load, took 6.161
+[2021.04.28-23.19.31:652][  0]Cmd: MAP LOAD FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Main_Menu.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.04.28-23.19.31:652][  0]LightingResults: New page: Lighting Build
+[2021.04.28-23.19.31:653][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.04.28-23.19.31:653][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.19.31:653][  0]MapCheck: New page: Map Check
+[2021.04.28-23.19.31:653][  0]LightingResults: New page: Lighting Build
+[2021.04.28-23.19.31:664][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025311057C00), frame # 0
+[2021.04.28-23.19.31:664][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000253110ADD00), frame # 0
+[2021.04.28-23.19.31:666][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.43ms
+[2021.04.28-23.19.31:736][  0]LogAIModule: Creating AISystem for world Main_Menu
+[2021.04.28-23.19.31:736][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025312AF1400), frame # 0
+[2021.04.28-23.19.31:736][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000253130CC2C0), frame # 0
+[2021.04.28-23.19.31:737][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.04.28-23.19.31:747][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
+[2021.04.28-23.19.31:748][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.04.28-23.19.31:748][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.158ms to complete.
+[2021.04.28-23.19.31:748][  0]LogFileHelpers: Loading map 'Main_Menu' took 0.097
+[2021.04.28-23.19.31:750][  0]LogUnrealEdMisc: Total Editor Startup Time, took 6.260
+[2021.04.28-23.19.31:905][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.19.31:913][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.19.31:920][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.19.31:929][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.19.31:937][  0]LogCollectionManager: Loaded 0 collections in 0.001679 seconds
+[2021.04.28-23.19.31:950][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Collections/' took 0.00s
+[2021.04.28-23.19.31:950][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Developers/smybr/Collections/' took 0.00s
+[2021.04.28-23.19.31:950][  0]LogFileCache: Scanning file cache for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Collections/' took 0.00s
+[2021.04.28-23.19.31:950][  0]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 3427 classes and 821 folders.
+[2021.04.28-23.19.31:957][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.04.28-23.19.32:060][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.04.28-23.19.32:061][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 2 classes and 0 folders.
+[2021.04.28-23.19.32:144][  0]LogSlate: Took 0.000221 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.04.28-23.19.32:147][  0]LogSlate: Took 0.000143 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.04.28-23.19.32:150][  0]LogSlate: Took 0.000931 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.04.28-23.19.32:217][  0]LogRenderer: Reallocating scene render targets to support 708x404 Format 10 NumSamples 1 (Frame:1).
+[2021.04.28-23.19.32:332][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.04.28-23.19.32:332][  0]LogLoad: (Engine Initialization) Total time: 6.84 seconds
+[2021.04.28-23.19.32:332][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.04.28-23.19.32:397][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.04.28-23.19.32:447][  1]LogFileCache: Retrieving MD5 hashes for directory 'C:/Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/' took 0.10s
+[2021.04.28-23.19.32:459][  1]LogAssetRegistry: Asset discovery search completed in 3.2792 seconds
+[2021.04.28-23.19.32:463][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000003 seconds (updated 0 objects)
+[2021.04.28-23.19.33:369][ 90]LogSlate: Took 0.000734 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.04.28-23.19.37:353][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/FirstPersonBP/Blueprints/BP_GameMode_Base.BP_GameMode_Base
+[2021.04.28-23.19.37:568][212]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 125 classes and 0 folders.
+[2021.04.28-23.19.38:556][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
+[2021.04.28-23.19.39:003][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Guns/Gun_AK.Gun_AK
+[2021.04.28-23.19.39:421][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Guns/Gun_Parent.Gun_Parent
+[2021.04.28-23.19.39:853][212]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/AmmoUI/Ammo_IconCounter_Widget.Ammo_IconCounter_Widget
+[2021.04.28-23.19.40:305][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Guns/Gun_Shotgun.Gun_Shotgun
+[2021.04.28-23.19.40:905][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Guns/Gun_Pistol.Gun_Pistol
+[2021.04.28-23.19.41:320][212]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Guns/Gun_Glauncher.Gun_Glauncher
+[2021.04.28-23.19.41:770][212]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerBar.PlayerBar
+[2021.04.28-23.19.42:610][212]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.19.42:611][212]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.19.42:637][212]LogSlate: Took 0.000199 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.04.28-23.19.54:692][910]LogSlate: Took 0.004235 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansFallback.ttf' (3848K)
+[2021.04.28-23.20.01:369][301]LogTexture: Display: Building textures: Weapon_Bar (BGRA8, 14X34)
+[2021.04.28-23.20.01:387][301]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.20.28:029][446]LogUObjectHash: Compacting FUObjectHashTables data took   7.83ms
+[2021.04.28-23.20.28:974][446]LogSlate: Window 'Delete Assets' being destroyed
+[2021.04.28-23.20.29:890][446]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2021.04.28-23.20.29:890][446]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.20.29:913][446]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2021.04.28-23.20.29:913][446]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.20.29:959][446]LogUObjectGlobals: Force Deleting 1 Package(s):
+	Asset Name: /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.20.32:950][446]LogUObjectHash: Compacting FUObjectHashTables data took   3.76ms
+[2021.04.28-23.20.33:010][446]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
+[2021.04.28-23.20.33:056][446]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2021.04.28-23.20.40:640][209]LogUObjectHash: Compacting FUObjectHashTables data took   4.83ms
+[2021.04.28-23.20.41:738][321]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.20.42:277][321]LogSlate: Took 0.000998 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.04.28-23.21.35:162][596]BlueprintLog: New page: Compile PlayerAmmoBar
+[2021.04.28-23.21.35:264][596]LogUObjectHash: Compacting FUObjectHashTables data took   4.22ms
+[2021.04.28-23.21.36:100][651]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBarEC8CBCAE4B14B30610A3A5915FB22902.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.21.36:134][651]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.21.36:134][651]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.21.39:717][910]LogSlate: Took 0.000803 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.04.28-23.22.23:365][724]BlueprintLog: New page: Compile FirstPersonCharacter
+[2021.04.28-23.22.23:635][724]LogUObjectHash: Compacting FUObjectHashTables data took   4.12ms
+[2021.04.28-23.22.23:640][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:640][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:640][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:641][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:641][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:641][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:641][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:641][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:647][724]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_1:PersistentLevel.DESTROYED_Gun_AK_C_CHILDACTOR_3.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2021.04.28-23.22.23:698][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:698][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:699][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:699][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:699][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:699][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:699][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:699][724]LogSkinnedMeshComp: Warning: GetSocketByName(GunOffset): No SkeletalMesh for Component(Arms) Actor(Gun_Parent_C_0)
+[2021.04.28-23.22.23:704][724]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_1:PersistentLevel.DESTROYED_Gun_AK_C_CHILDACTOR_7.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2021.04.28-23.22.24:193][727]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/FirstPersonCharacter3DDEA1D444507573D56B4F936C02FE00.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/FirstPersonCharacter.uasset'
+[2021.04.28-23.22.24:216][727]AssetCheck: New page: Asset Save: FirstPersonCharacter
+[2021.04.28-23.22.24:216][727]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/FirstPersonBP/Blueprints/FirstPersonCharacter.FirstPersonCharacter
+[2021.04.28-23.23.10:235][445]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerHealthBar.PlayerHealthBar
+[2021.04.28-23.23.57:717][151]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/UI.UI
+[2021.04.28-23.24.35:173][283]BlueprintLog: New page: Compile PlayerAmmoBar
+[2021.04.28-23.24.35:254][283]LogUObjectHash: Compacting FUObjectHashTables data took   5.53ms
+[2021.04.28-23.24.35:700][302]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBar5ABBF8BB46D5D36013A634BDFCB22453.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.24.35:723][302]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.24.35:723][302]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.25.32:389][642]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.28-23.25.33:511][716]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.28-23.25.50:087][958]BlueprintLog: New page: Compile PlayerAmmoBar
+[2021.04.28-23.25.50:168][958]LogUObjectHash: Compacting FUObjectHashTables data took   5.41ms
+[2021.04.28-23.25.50:701][975]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBarFBEABA1048A5D345C3B0E6B468B0A2A4.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.25.50:716][975]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.25.50:716][975]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.25.52:186][ 73]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.28-23.25.57:881][469]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.28-23.26.14:197][664]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.28-23.26.15:097][725]BlueprintLog: New page: Compile PlayerHealthBar
+[2021.04.28-23.26.15:216][725]LogUObjectHash: Compacting FUObjectHashTables data took   3.71ms
+[2021.04.28-23.26.15:711][746]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerHealthBar017FBDA9482230326AA907ADB5420B01.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerHealthBar.uasset'
+[2021.04.28-23.26.15:728][746]AssetCheck: New page: Asset Save: PlayerHealthBar
+[2021.04.28-23.26.15:728][746]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerHealthBar.PlayerHealthBar
+[2021.04.28-23.28.10:552][405]BlueprintLog: New page: Compile PlayerBar
+[2021.04.28-23.28.10:729][405]LogUObjectHash: Compacting FUObjectHashTables data took   4.55ms
+[2021.04.28-23.28.11:227][425]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerBar8BCA3E834AD8389DC2E98FAE58E353E9.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerBar.uasset'
+[2021.04.28-23.28.11:255][425]AssetCheck: New page: Asset Save: PlayerBar
+[2021.04.28-23.28.11:255][425]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerBar.PlayerBar
+[2021.04.28-23.28.15:960][763]BlueprintLog: New page: Compile PlayerAmmoBar
+[2021.04.28-23.28.16:351][763]LogUObjectHash: Compacting FUObjectHashTables data took   5.65ms
+[2021.04.28-23.28.16:813][788]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBarE1DB587B4838F6512863508477A308B7.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.28.16:832][788]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.28.16:832][788]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.29.29:777][ 72]BlueprintLog: New page: Compile UI
+[2021.04.28-23.29.29:873][ 72]LogUObjectHash: Compacting FUObjectHashTables data took   5.97ms
+[2021.04.28-23.29.30:296][ 94]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/UIA4AE9AA343B7C7D773B154BE1D5B15F2.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/UI.uasset'
+[2021.04.28-23.29.30:316][ 94]AssetCheck: New page: Asset Save: UI
+[2021.04.28-23.29.30:316][ 94]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/UI.UI
+[2021.04.28-23.29.33:738][389]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2021.04.28-23.29.38:001][654]BlueprintLog: New page: Compile UI
+[2021.04.28-23.29.38:152][654]LogUObjectHash: Compacting FUObjectHashTables data took   5.66ms
+[2021.04.28-23.29.38:581][672]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/UI146EFDCD474665C2498735A952CFFA8D.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/UI.uasset'
+[2021.04.28-23.29.38:606][672]AssetCheck: New page: Asset Save: UI
+[2021.04.28-23.29.38:606][672]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/UI.UI
+[2021.04.28-23.29.39:696][744]LogUObjectHash: Compacting FUObjectHashTables data took   7.33ms
+[2021.04.28-23.29.47:064][239]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.28-23.29.51:678][553]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.28-23.29.52:797][626]BlueprintLog: New page: Compile PlayerAmmoBar
+[2021.04.28-23.29.53:136][626]LogUObjectHash: Compacting FUObjectHashTables data took   4.81ms
+[2021.04.28-23.29.53:410][627]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBar6CBAAD70446B1AACAE4559B0607F6ABF.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.29.53:431][627]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.29.53:431][627]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.32.05:371][160]BlueprintLog: New page: Compile PlayerBar
+[2021.04.28-23.32.05:659][160]LogUObjectHash: Compacting FUObjectHashTables data took   6.77ms
+[2021.04.28-23.32.06:086][179]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerBarAD3D12604BC2BFC2F5F92DB9FF147199.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerBar.uasset'
+[2021.04.28-23.32.06:107][179]AssetCheck: New page: Asset Save: PlayerBar
+[2021.04.28-23.32.06:108][179]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerBar.PlayerBar
+[2021.04.28-23.32.10:395][543]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2021.04.28-23.32.15:017][800]LogAssetEditorSubsystem: Opening Asset editor for World /Game/Levels/Survival_World.Survival_World
+[2021.04.28-23.32.15:081][800]LogUObjectHash: Compacting FUObjectHashTables data took   4.48ms
+[2021.04.28-23.32.15:083][800]Cmd: MAP LOAD FILE="../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.04.28-23.32.15:084][800]LightingResults: New page: Lighting Build
+[2021.04.28-23.32.15:084][800]LogEditorTransaction: Non zero active count in UTransBuffer::Reset
+ActiveCount : 2
+SessionName : 
+Reason      : Loading map: Survival_World.umap...
+
+Purging the undo buffer...
+
+[2021.04.28-23.32.15:097][800]LoadErrors: New page: Loading map: Survival_World.umap
+[2021.04.28-23.32.15:100][800]LogWorld: UWorld::CleanupWorld for Main_Menu, bSessionEnded=true, bCleanupResources=true
+[2021.04.28-23.32.15:100][800]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.32.15:100][800]MapCheck: New page: Map Check
+[2021.04.28-23.32.15:100][800]LightingResults: New page: Lighting Build
+[2021.04.28-23.32.15:157][800]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025312AF1400), frame # 50800
+[2021.04.28-23.32.15:157][800]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000253130CC2C0), frame # 50800
+[2021.04.28-23.32.15:168][800]LogUObjectHash: Compacting FUObjectHashTables data took   5.55ms
+[2021.04.28-23.32.15:508][800]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.04.28-23.32.15:508][800]LogAIModule: Creating AISystem for world Survival_World
+[2021.04.28-23.32.15:508][800]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025403AE0E00), frame # 50800
+[2021.04.28-23.32.15:508][800]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000253EE34FD80), frame # 50800
+[2021.04.28-23.32.15:510][800]LogNavigation: Warning: Recreating dtNavMesh instance due to saved navmesh origin (X=-15345.449 Y=0.002 Z=0.010, usually the RecastNavMesh location) not being aligned with tile size (988 uu) 
+[2021.04.28-23.32.15:638][800]LogUObjectHash: Compacting FUObjectHashTables data took   3.59ms
+[2021.04.28-23.32.15:680][800]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.04.28-23.32.15:680][800]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.225ms to complete.
+[2021.04.28-23.32.15:680][800]LogFileHelpers: Loading map 'Survival_World' took 0.598
+[2021.04.28-23.32.17:771][929]LogUObjectHash: Compacting FUObjectHashTables data took   3.17ms
+[2021.04.28-23.32.24:355][237]LogUObjectHash: Compacting FUObjectHashTables data took   3.09ms
+[2021.04.28-23.32.24:540][237]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Survival_World38E18071449320D6ABA363A681142602.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World.umap'
+[2021.04.28-23.32.24:712][237]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/Survival_World_BuiltDataE24F4D9B4EA6FBB03149088F8D0B9887.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World_BuiltData.uasset'
+[2021.04.28-23.32.24:738][237]AssetCheck: New page: Asset Save: multiple assets
+[2021.04.28-23.32.24:739][237]LogContentValidation: Display: Validating World /Game/Levels/Survival_World.Survival_World
+[2021.04.28-23.32.24:739][237]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Survival_World_BuiltData.Survival_World_BuiltData
+[2021.04.28-23.32.25:647][304]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2021.04.28-23.32.26:371][348]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2021.04.28-23.32.26:394][348]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.28-23.32.26:394][348]PIE: New page: PIE session: Survival_World (Apr 28, 2021, 3:32:26 PM)
+[2021.04.28-23.32.26:396][348]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.04.28-23.32.26:397][348]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.04.28-23.32.26:397][348]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Survival_World
+[2021.04.28-23.32.26:454][348]LogPlayLevel: PIE: StaticDuplicateObject took: (0.058440s)
+[2021.04.28-23.32.26:457][348]LogAIModule: Creating AISystem for world Survival_World
+[2021.04.28-23.32.26:457][348]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025434CDA600), frame # 51348
+[2021.04.28-23.32.26:458][348]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000254093CA200), frame # 51348
+[2021.04.28-23.32.26:458][348]LogPlayLevel: PIE: World Init took: (0.003948s)
+[2021.04.28-23.32.26:459][348]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Survival_World.Survival_World to /Game/Levels/UEDPIE_0_Survival_World.Survival_World (0.062903s)
+[2021.04.28-23.32.26:518][348]LogUObjectHash: Compacting FUObjectHashTables data took   4.05ms
+[2021.04.28-23.32.26:521][348]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.28-23.32.26:522][348]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.28-23.32.26:522][348]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.28-23.32.26:522][348]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.28-23.32.26:522][348]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.28-23.32.26:522][348]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.28-23.32.26:522][348]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.28-23.32.26:522][348]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.28-23.32.26:522][348]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.28-23.32.26:522][348]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.28-23.32.26:529][348]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.28-23.32.26:529][348]LogAudioMixer: Display: 1: FrontRight
+[2021.04.28-23.32.26:556][348]LogAudioMixer: Display: Using Audio Device Speakers (Apple Audio Device)
+[2021.04.28-23.32.26:557][348]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.28-23.32.26:557][348]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.28-23.32.26:557][348]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.28-23.32.26:557][348]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.28-23.32.26:574][348]LogInit: FAudioDevice initialized.
+[2021.04.28-23.32.26:624][348]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.32.26:625][348]LogLoad: Game class is 'BP_GameMode_Base_C'
+[2021.04.28-23.32.26:647][348]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Survival_World.Survival_World up for play (max tick rate 0) at 2021.04.28-19.32.26
+[2021.04.28-23.32.26:651][348]LogWorld: Bringing up level for play took: 0.024526
+[2021.04.28-23.32.26:651][348]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.04.28-23.32.26:671][348]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2021.04.28-23.32.26:686][348]PIE: Server logged in
+[2021.04.28-23.32.26:689][348]PIE: Play in editor total start time 0.295 seconds.
+[2021.04.28-23.32.26:794][349]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
+[2021.04.28-23.32.27:757][358]Cmd: RebuildNavigation
+[2021.04.28-23.32.27:757][358]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.04.28-23.32.27:757][358]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.04.28-23.32.27:757][358]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.04.28-23.32.27:757][358]LogNavigationDataBuild: Display: UNavigationSystemV1::Build total execution time: 0.00s
+[2021.04.28-23.32.27:758][358]Command not recognized:  RebuildNavigation
+[2021.04.28-23.32.33:371][559]LogPlayerController: Error: InputMode:UIOnly - Attempting to focus Non-Focusable widget SObjectWidget [Widget.cpp(799)]!
+[2021.04.28-23.32.47:842][142]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.32.47:842][142]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Survival_World
+[2021.04.28-23.32.47:842][142]LogSlate: Window 'RenegadeOmenX Preview [NetMode: Standalone] (64-bit/Windows) ' being destroyed
+[2021.04.28-23.32.47:853][142]LogWorld: UWorld::CleanupWorld for Survival_World, bSessionEnded=true, bCleanupResources=true
+[2021.04.28-23.32.47:858][142]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.32.47:866][142]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.28-23.32.47:878][142]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.32.47:995][142]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000254093CA200), frame # 52142
+[2021.04.28-23.32.47:995][142]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025434CDA600), frame # 52142
+[2021.04.28-23.32.48:017][142]LogUObjectHash: Compacting FUObjectHashTables data took   7.06ms
+[2021.04.28-23.32.48:073][143]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.04.28-23.33.20:438][661]BlueprintLog: New page: Compile PlayerAmmoBar
+[2021.04.28-23.33.20:571][661]LogUObjectHash: Compacting FUObjectHashTables data took   6.16ms
+[2021.04.28-23.33.20:886][662]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBarD06C56D8453EDF85CE620D894F5FE331.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.33.20:908][662]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.33.20:908][662]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.33.21:235][676]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBarAEB0474C4314B2F2E40D83ADE528985F.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.33.21:259][676]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.33.21:259][676]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.33.23:116][770]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2021.04.28-23.33.23:156][770]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.28-23.33.23:156][770]PIE: New page: PIE session: Survival_World (Apr 28, 2021, 3:33:23 PM)
+[2021.04.28-23.33.23:156][770]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Survival_World
+[2021.04.28-23.33.23:251][770]LogPlayLevel: PIE: StaticDuplicateObject took: (0.095138s)
+[2021.04.28-23.33.23:252][770]LogAIModule: Creating AISystem for world Survival_World
+[2021.04.28-23.33.23:252][770]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000253B7261200), frame # 53770
+[2021.04.28-23.33.23:252][770]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000254060AE5C0), frame # 53770
+[2021.04.28-23.33.23:253][770]LogPlayLevel: PIE: World Init took: (0.002035s)
+[2021.04.28-23.33.23:253][770]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Survival_World.Survival_World to /Game/Levels/UEDPIE_0_Survival_World.Survival_World (0.097431s)
+[2021.04.28-23.33.23:336][770]LogUObjectHash: Compacting FUObjectHashTables data took   6.55ms
+[2021.04.28-23.33.23:340][770]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.28-23.33.23:340][770]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.28-23.33.23:340][770]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.28-23.33.23:341][770]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.28-23.33.23:341][770]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.28-23.33.23:341][770]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.28-23.33.23:341][770]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.28-23.33.23:341][770]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.28-23.33.23:342][770]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.28-23.33.23:342][770]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.28-23.33.23:352][770]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.28-23.33.23:352][770]LogAudioMixer: Display: 1: FrontRight
+[2021.04.28-23.33.23:381][770]LogAudioMixer: Display: Using Audio Device Speakers (Apple Audio Device)
+[2021.04.28-23.33.23:381][770]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.28-23.33.23:381][770]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.28-23.33.23:381][770]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.28-23.33.23:382][770]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.28-23.33.23:399][770]LogInit: FAudioDevice initialized.
+[2021.04.28-23.33.23:457][770]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.33.23:457][770]LogLoad: Game class is 'BP_GameMode_Base_C'
+[2021.04.28-23.33.23:478][770]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Survival_World.Survival_World up for play (max tick rate 0) at 2021.04.28-19.33.23
+[2021.04.28-23.33.23:478][770]LogWorld: Bringing up level for play took: 0.019828
+[2021.04.28-23.33.23:478][770]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2021.04.28-23.33.23:493][770]PIE: Server logged in
+[2021.04.28-23.33.23:496][770]PIE: Play in editor total start time 0.342 seconds.
+[2021.04.28-23.33.23:989][782]Cmd: RebuildNavigation
+[2021.04.28-23.33.23:989][782]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.04.28-23.33.23:989][782]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.04.28-23.33.23:989][782]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.04.28-23.33.23:989][782]LogNavigationDataBuild: Display: UNavigationSystemV1::Build total execution time: 0.00s
+[2021.04.28-23.33.23:989][782]Command not recognized:  RebuildNavigation
+[2021.04.28-23.33.37:146][248]LogPlayerController: Error: InputMode:UIOnly - Attempting to focus Non-Focusable widget SObjectWidget [Widget.cpp(799)]!
+[2021.04.28-23.33.38:342][297]LogBlueprintUserMessages: [FirstPersonCharacter_C_0] Hello
+[2021.04.28-23.33.38:359][297]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:374][298]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:399][299]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:423][300]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:446][301]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:472][302]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:499][303]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:520][304]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:544][305]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:569][306]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:594][307]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:620][308]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:644][309]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:669][310]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:694][311]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:718][312]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:743][313]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:767][314]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:800][315]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:823][316]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:847][317]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:873][318]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:898][319]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:925][320]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:948][321]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:972][322]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.38:995][323]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:019][324]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:044][325]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:069][326]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:094][327]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:119][328]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:144][329]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:168][330]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:192][331]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:217][332]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:254][333]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:282][334]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:310][335]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:331][336]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:358][337]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:384][338]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:411][339]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:436][340]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:462][341]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:485][342]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:510][343]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:535][344]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:569][345]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:592][346]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:617][347]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:641][348]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:664][349]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:688][350]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:711][351]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:737][352]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:768][353]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:785][354]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:810][355]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:840][356]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:861][357]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:886][358]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:912][359]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:938][360]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:962][361]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.39:987][362]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:013][363]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:038][364]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:069][365]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:091][366]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:114][367]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:140][368]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:165][369]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:188][370]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:212][371]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:237][372]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:263][373]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:291][374]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:314][375]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:339][376]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:363][377]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:387][378]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:411][379]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:436][380]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:465][381]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:486][382]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:512][383]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:536][384]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:562][385]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:590][386]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:611][387]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:637][388]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:662][389]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:687][390]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:715][391]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:751][392]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:778][393]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:799][394]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:823][395]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:847][396]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:872][397]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:896][398]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:921][399]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:946][400]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.40:981][401]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:010][402]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:027][403]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:052][404]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:077][405]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:103][406]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:133][407]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:155][408]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:179][409]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:204][410]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:228][411]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:260][412]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:279][413]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:304][414]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:330][415]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:356][416]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:381][417]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:409][418]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:429][419]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:454][420]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:479][421]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:505][422]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:533][423]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:555][424]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:580][425]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:605][426]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:629][427]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:654][428]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:686][429]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:704][430]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:729][431]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:755][432]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:779][433]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:805][434]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:830][435]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:851][436]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:877][437]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:902][438]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:927][439]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:957][440]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.41:979][441]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:004][442]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:028][443]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:054][444]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:084][445]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:102][446]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:127][447]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:153][448]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:177][449]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:202][450]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:229][451]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:251][452]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:275][453]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:301][454]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:329][455]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:353][456]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:380][457]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:400][458]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:426][459]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:452][460]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:479][461]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:508][462]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:529][463]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:552][464]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:579][465]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:607][466]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:635][467]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:657][468]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:681][469]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:708][470]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:732][471]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:764][472]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:787][473]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:810][474]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:836][475]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:862][476]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:892][477]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:915][478]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:940][479]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:965][480]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.42:991][481]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:015][482]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:042][483]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:071][484]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:095][485]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:122][486]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:147][487]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:175][488]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:199][489]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:227][490]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:250][491]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:276][492]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:302][493]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:331][494]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:353][495]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:380][496]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:407][497]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:429][498]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:455][499]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:481][500]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:505][501]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:530][502]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:554][503]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:581][504]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:602][505]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:627][506]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:653][507]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:677][508]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:702][509]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:727][510]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:754][511]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:776][512]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:800][513]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:824][514]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:849][515]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:874][516]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:903][517]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:923][518]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:946][519]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:971][520]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.43:995][521]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:021][522]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:044][523]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:069][524]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:096][525]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:118][526]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:142][527]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:167][528]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:191][529]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:216][530]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:241][531]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:269][532]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:289][533]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:315][534]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:338][535]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:365][536]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:389][537]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:417][538]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:440][539]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:463][540]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:487][541]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:511][542]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:536][543]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:560][544]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:597][545]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:613][546]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:640][547]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:663][548]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:687][549]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:714][550]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:743][551]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:768][552]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:793][553]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:819][554]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:846][555]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:872][556]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:901][557]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:923][558]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:952][559]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:974][560]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.44:998][561]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:025][562]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:048][563]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:080][564]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:102][565]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:127][566]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:161][567]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:182][568]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:208][569]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:232][570]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:258][571]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:278][572]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:307][573]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:329][574]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:355][575]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:379][576]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:408][577]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:430][578]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:455][579]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:479][580]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:504][581]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:528][582]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:555][583]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:579][584]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:614][585]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:630][586]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:656][587]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:680][588]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:704][589]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:730][590]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:754][591]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:782][592]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:803][593]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:829][594]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:854][595]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:879][596]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:905][597]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:928][598]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:956][599]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.45:977][600]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:000][601]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:025][602]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:051][603]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:076][604]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:102][605]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:131][606]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:154][607]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:178][608]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:203][609]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:227][610]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:252][611]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:279][612]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:300][613]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:326][614]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:352][615]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:375][616]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:400][617]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:425][618]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:453][619]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:475][620]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:500][621]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:525][622]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:551][623]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:576][624]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:601][625]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:633][626]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:648][627]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:674][628]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:698][629]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:724][630]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:748][631]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:775][632]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:801][633]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:822][634]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:847][635]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:871][636]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:895][637]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:920][638]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:945][639]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:974][640]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.46:995][641]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:019][642]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:046][643]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:070][644]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:095][645]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:126][646]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:159][647]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:175][648]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:199][649]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:224][650]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:249][651]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:275][652]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:302][653]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:325][654]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:349][655]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:373][656]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:396][657]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:420][658]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:445][659]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:472][660]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:493][661]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:517][662]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:542][663]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:566][664]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:590][665]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:614][666]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:640][667]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:663][668]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:690][669]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:711][670]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:736][671]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:759][672]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:784][673]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:812][674]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:834][675]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:859][676]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:883][677]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:908][678]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:929][679]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:954][680]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.47:978][681]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.48:003][682]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.48:028][683]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.48:052][684]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.48:076][685]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.48:100][686]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.48:124][687]LogScript: Warning: Script Msg: Divide by zero: Divide_IntInt
+[2021.04.28-23.33.48:186][688]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.33.48:186][688]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Survival_World
+[2021.04.28-23.33.48:187][688]LogSlate: Window 'RenegadeOmenX Preview [NetMode: Standalone] (64-bit/Windows) ' being destroyed
+[2021.04.28-23.33.48:202][688]LogWorld: UWorld::CleanupWorld for Survival_World, bSessionEnded=true, bCleanupResources=true
+[2021.04.28-23.33.48:207][688]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.33.48:215][688]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.28-23.33.48:223][688]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.33.48:321][688]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000254060AE5C0), frame # 54688
+[2021.04.28-23.33.48:321][688]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000253B7261200), frame # 54688
+[2021.04.28-23.33.48:332][688]LogUObjectHash: Compacting FUObjectHashTables data took   7.72ms
+[2021.04.28-23.33.48:398][689]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2021.04.28-23.34.09:279][651]BlueprintLog: New page: Compile PlayerAmmoBar
+[2021.04.28-23.34.09:395][651]LogUObjectHash: Compacting FUObjectHashTables data took   4.89ms
+[2021.04.28-23.34.09:808][663]LogSavePackage: Moving '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Saved/PlayerAmmoBarCB9D869342797F2792834190D01D41F1.tmp' to '../../../../../../Users/smybr/Documents/Co-Op/RenegadeOmenX/RenegadeOmenX/Content/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.uasset'
+[2021.04.28-23.34.09:843][663]AssetCheck: New page: Asset Save: PlayerAmmoBar
+[2021.04.28-23.34.09:843][663]LogContentValidation: Display: Validating WidgetBlueprint /Game/Blueprints/FirstPersonBP/Blueprints/HUD/PlayerStatsUI/PlayerAmmoBar.PlayerAmmoBar
+[2021.04.28-23.34.10:893][717]LogTemp: Repeating last play command: New Editor Window (PIE)
+[2021.04.28-23.34.10:916][717]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.28-23.34.10:916][717]PIE: New page: PIE session: Survival_World (Apr 28, 2021, 3:34:10 PM)
+[2021.04.28-23.34.10:916][717]LogPlayLevel: Creating play world package: /Game/Levels/UEDPIE_0_Survival_World
+[2021.04.28-23.34.10:974][717]LogPlayLevel: PIE: StaticDuplicateObject took: (0.057274s)
+[2021.04.28-23.34.10:976][717]LogAIModule: Creating AISystem for world Survival_World
+[2021.04.28-23.34.10:977][717]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002543338DA00), frame # 55717
+[2021.04.28-23.34.10:977][717]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000253C3507240), frame # 55717
+[2021.04.28-23.34.10:978][717]LogPlayLevel: PIE: World Init took: (0.003590s)
+[2021.04.28-23.34.10:978][717]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Levels/Survival_World.Survival_World to /Game/Levels/UEDPIE_0_Survival_World.Survival_World (0.061136s)
+[2021.04.28-23.34.11:041][717]LogUObjectHash: Compacting FUObjectHashTables data took   4.38ms
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.28-23.34.11:043][717]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.28-23.34.11:043][717]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.28-23.34.11:043][717]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.28-23.34.11:047][717]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.28-23.34.11:047][717]LogAudioMixer: Display: 1: FrontRight
+[2021.04.28-23.34.11:062][717]LogAudioMixer: Display: Using Audio Device Speakers (Apple Audio Device)
+[2021.04.28-23.34.11:062][717]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.28-23.34.11:063][717]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.28-23.34.11:063][717]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.28-23.34.11:063][717]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.28-23.34.11:074][717]LogInit: FAudioDevice initialized.
+[2021.04.28-23.34.11:105][717]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.34.11:105][717]LogLoad: Game class is 'BP_GameMode_Base_C'
+[2021.04.28-23.34.11:121][717]LogWorld: Bringing World /Game/Levels/UEDPIE_0_Survival_World.Survival_World up for play (max tick rate 60) at 2021.04.28-19.34.11
+[2021.04.28-23.34.11:122][717]LogWorld: Bringing up level for play took: 0.015326
+[2021.04.28-23.34.11:122][717]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2021.04.28-23.34.11:132][717]PIE: Server logged in
+[2021.04.28-23.34.11:134][717]PIE: Play in editor total start time 0.218 seconds.
+[2021.04.28-23.34.11:656][730]Cmd: RebuildNavigation
+[2021.04.28-23.34.11:656][730]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.04.28-23.34.11:656][730]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.04.28-23.34.11:656][730]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.04.28-23.34.11:656][730]LogNavigationDataBuild: Display: UNavigationSystemV1::Build total execution time: 0.00s
+[2021.04.28-23.34.11:656][730]Command not recognized:  RebuildNavigation
+[2021.04.28-23.34.23:285][171]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.28-23.34.23:285][171]LogWorld: BeginTearingDown for /Game/Levels/UEDPIE_0_Survival_World
+[2021.04.28-23.34.23:286][171]LogSlate: Window 'RenegadeOmenX Preview [NetMode: Standalone] (64-bit/Windows) ' being destroyed
+[2021.04.28-23.34.23:301][171]LogWorld: UWorld::CleanupWorld for Survival_World, bSessionEnded=true, bCleanupResources=true
+[2021.04.28-23.34.23:305][171]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.34.23:314][171]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.28-23.34.23:324][171]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.28-23.34.23:428][171]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000253C3507240), frame # 56171
+[2021.04.28-23.34.23:428][171]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002543338DA00), frame # 56171
+[2021.04.28-23.34.23:437][171]LogUObjectHash: Compacting FUObjectHashTables data took   5.04ms
+[2021.04.28-23.34.23:491][172]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2021.04.28-23.35.00:053][908]BlueprintLog: New page: Compile Gun_AK
+[2021.04.28-23.35.00:188][908]LogUObjectHash: Compacting FUObjectHashTables data took   5.51ms
+[2021.04.28-23.35.00:199][908]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_1:PersistentLevel.DESTROYED_Gun_AK_C_CHILDACTOR_31.DefaultSceneRoot) Trying to register component with IsPendingKill() == true. Aborting.
+[2021.04.28-23.35.03:337][908]LogWindows: Error: === Critical error: ===
+[2021.04.28-23.35.03:337][908]LogWindows: Error: 
+[2021.04.28-23.35.03:337][908]LogWindows: Error: Fatal error!
+[2021.04.28-23.35.03:337][908]LogWindows: Error: 
+[2021.04.28-23.35.03:337][908]LogWindows: Error: Unhandled Exception: EXCEPTION_ACCESS_VIOLATION reading address 0xffffffff
+[2021.04.28-23.35.03:337][908]LogWindows: Error: 
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fffa8721e7f UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fffa883aa6b UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fffa2e59812 UE4Editor-PropertyEditor.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fffa2e590f6 UE4Editor-PropertyEditor.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fff8417905b UE4Editor-Sequencer.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fff8412055e UE4Editor-Sequencer.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fffa89f85aa UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fff5af27b27 UE4Editor-Engine.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fffa89f7bb1 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.04.28-23.35.03:337][908]LogWindows: Error: [Callstack] 0x00007fff59c1b651 UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa1a2bf86 UE4Editor-Kismet.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa1a11b6f UE4Editor-Kismet.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fff5ae6d600 UE4Editor-Engine.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa18f6fcd UE4Editor-Kismet.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa18f68a1 UE4Editor-Kismet.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fff59c6b1de UE4Editor-UnrealEd.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa19f6b20 UE4Editor-Kismet.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa1a1255e UE4Editor-Kismet.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4a2f238 UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4b1b0a9 UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4afae07 UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4b9207e UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4bab27e UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa49f2dc8 UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4a769cf UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4a5f4b2 UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffa4a52392 UE4Editor-Slate.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffbc7b7f88 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffbc7a5c87 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffbc7ba619 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffbc7a17d0 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffe803e858 USER32.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffe803e299 USER32.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffbc7bbb34 UE4Editor-ApplicationCore.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007ff6333868c4 UE4Editor.exe!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007ff63339ba7c UE4Editor.exe!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007ff63339bb5a UE4Editor.exe!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007ff6333ae31d UE4Editor.exe!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007ff6333b145a UE4Editor.exe!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffe9647034 KERNEL32.DLL!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: [Callstack] 0x00007fffe98e2651 ntdll.dll!UnknownFunction []
+[2021.04.28-23.35.03:338][908]LogWindows: Error: 
+[2021.04.28-23.35.03:348][908]LogExit: Executing StaticShutdownAfterError
+[2021.04.28-23.35.03:356][908]LogWindows: FPlatformMisc::RequestExit(1)
+[2021.04.28-23.35.03:356][908]LogCore: Engine exit requested (reason: Win RequestExit)
+[2021.04.28-23.35.03:375][908]Log file closed, 04/28/21 19:35:03
