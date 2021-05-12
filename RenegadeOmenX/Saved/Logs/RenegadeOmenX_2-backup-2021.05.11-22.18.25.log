@@ -1,0 +1,943 @@
+﻿Log file open, 05/11/21 18:16:39
+LogInit: Display: Running engine for game: RenegadeOmenX
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.210737
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin RemoteSession
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaIOFramework
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogRemoteSession: No channels specified. Defaulting to Input and Framebuffer.
+LogRemoteSession: Will request channel FRemoteSessionInputChannel in mode Read.
+LogRemoteSession: Will request channel FRemoteSessionFrameBufferChannel_DEPRECATED in mode Write.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz, GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line:  /Game/Levels/Main_Menu -game -PIEVIACONSOLE -Multiprocess GameUserSettingsINI=C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/PIEGameUserSettings0.ini -MultiprocessSaveConfig -MultiprocessOSS -messaging -SessionName="Play in Standalone Game" -featureleveles31 -faketouches -MultiprocessSaveConfig -windowed -ResX=1280 -ResY=720
+LogInit: Base Directory: D:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.Mobile.DisableVertexFog:1]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxMobileCascades:2]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.MobileMSAA:1]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.Mobile.UseLegacyShadingModel:0]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.Mobile.AllowDitheredLODTransition:0]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.Mobile.AllowSoftwareOcclusion:0]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.Mobile.VirtualTextures:0]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.DiscardUnusedQuality:0]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.AllowOcclusionQueries:1]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForLights:0.030000]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForDepthPrepass:0.030000]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.MinScreenRadiusForCSMDepth:0.010000]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.PrecomputedVisibilityWarning:0]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[r.TextureStreaming:1]]
+[2021.05.11-22.16.40:235][  0]LogConfig: Setting CVar [[Compat.UseDXT5NormalMaps:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VirtualTextures:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VirtualTexturedLightmaps:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VT.TileSize:128]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VT.TileBorderSize:4]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.vt.FeedbackFactor:16]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VT.EnableCompressZlib:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VT.EnableCompressCrunch:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.ClearCoatNormal:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.AnisotropicBRDF:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.ReflectionCaptureResolution:128]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.ReflectionEnvironmentLightmapMixBasedOnRoughness:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.ForwardShading:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VertexFoggingForOpaque:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.AllowStaticLighting:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.NormalMapsForStaticLighting:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.GenerateMeshDistanceFields:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.EightBit:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.GenerateLandscapeGIData:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DistanceFieldBuild.Compress:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.TessellationAdaptivePixelsPerTriangle:48.000000]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.TranslucentSortPolicy:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.CustomDepth:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.CustomDepthTemporalAAJitter:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.PostProcessing.PropagateAlpha:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.Bloom:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Method:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.Bias:1.000000]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AutoExposure.ExtendDefaultLuminanceRange:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.UsePreExposure:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.EyeAdaptation.EditorOnly:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.MotionBlur:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.LensFlare:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.TemporalAA.Upsampling:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SSGI.Enable:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AntiAliasing:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.LightUnits:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DefaultBackBufferPixelFormat:4]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.Shadow.UnbuiltPreviewInGame:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.StencilForLODDither:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.EarlyZPass:3]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.EarlyZPassOnlyMaterialMasking:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.DBuffer:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.ClearSceneMethod:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.BasePassOutputsVelocity:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.VertexDeformationOutputsVelocity:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SelectiveBasePassOutputs:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeX:1024]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[fx.GPUSimulationTextureSizeY:1024]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.AllowGlobalClipPlane:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.GBufferFormat:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.MorphTarget.Mode:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[vr.InstancedStereo:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.MobileHDR:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[vr.MobileMultiView:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.Mobile.UseHWsRGBEncoding:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[vr.RoundRobinOcclusion:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[vr.ODSCapture:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.MeshStreaming:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.WireframeCullThreshold:5.000000]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.RayTracing.UseTextureLod:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportStationarySkylight:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportLowQualityLightmaps:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportPointLightWholeSceneShadows:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportAtmosphericFog:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphere:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportSkyAtmosphereAffectsHeightFog:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SkinCache.DefaultBehavior:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SkinCache.SceneMemoryLimitInMB:128.000000]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.Mobile.EnableStaticAndCSMShadowReceivers:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableLightCSMShaderCulling:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.Mobile.AllowDistanceFieldShadows:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.Mobile.AllowMovableDirectionalLights:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.MobileNumDynamicPointLights:4]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.MobileDynamicPointLightsUseStaticBranch:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.Mobile.EnableMovableSpotlights:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.GPUSkin.Support16BitBoneIndex:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.GPUSkin.Limit2BoneInfluences:0]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportDepthOnlyIndexBuffers:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportReversedIndexBuffers:1]]
+[2021.05.11-22.16.40:236][  0]LogConfig: Setting CVar [[r.SupportMaterialLayers:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[r.LightPropagationVolume:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.05.11-22.16.40:237][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.05.11-22.16.40:237][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.05.11-22.16.40:237][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.05.11-22.16.40:240][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.05.11-22.16.40:240][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.05.11-22.16.40:241][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.05.11-22.16.40:242][  0]LogInit: Selected Device Profile: [Windows]
+[2021.05.11-22.16.40:242][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.05.11-22.16.40:242][  0]LogHAL: Display: Platform has ~ 16 GB [17142636544 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.05.11-22.16.40:242][  0]LogInit: Going up to parent DeviceProfile []
+[2021.05.11-22.16.40:242][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.05.11-22.16.40:242][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.05.11-22.16.40:243][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Scalability.ini]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.05.11-22.16.40:244][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.05.11-22.16.40:245][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.05.11-22.16.40:245][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.05.11-22.16.40:245][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.05.11-22.16.40:245][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Config/Windows/Engine.ini]
+[2021.05.11-22.16.40:245][  0]LogInit: Computer: DESKTOP-1K1QJAD
+[2021.05.11-22.16.40:245][  0]LogInit: User: Brendon
+[2021.05.11-22.16.40:245][  0]LogInit: CPU Page size=4096, Cores=4
+[2021.05.11-22.16.40:245][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.05.11-22.16.40:245][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2021.05.11-22.16.40:245][  0]LogMemory: Platform Memory Stats for Windows
+[2021.05.11-22.16.40:245][  0]LogMemory: Process Physical Memory: 117.18 MB used, 117.19 MB peak
+[2021.05.11-22.16.40:245][  0]LogMemory: Process Virtual Memory: 118.39 MB used, 118.39 MB peak
+[2021.05.11-22.16.40:245][  0]LogMemory: Physical Memory: 6204.29 MB used,  10144.20 MB free, 16348.49 MB total
+[2021.05.11-22.16.40:246][  0]LogMemory: Virtual Memory: 5168.66 MB used,  134212560.00 MB free, 134217728.00 MB total
+[2021.05.11-22.16.40:250][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.05.11-22.16.40:282][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.05.11-22.16.40:282][  0]LogInit: Using OS detected language (en-US).
+[2021.05.11-22.16.40:282][  0]LogInit: Using OS detected locale (en-CA).
+[2021.05.11-22.16.40:284][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.05.11-22.16.40:598][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.05.11-22.16.40:598][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.05.11-22.16.40:614][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.05.11-22.16.40:614][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.05.11-22.16.40:614][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.05.11-22.16.40:614][  0]LogD3D11RHI: D3D11 adapters:
+[2021.05.11-22.16.40:704][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2021.05.11-22.16.40:704][  0]LogD3D11RHI:       6052/0/8174 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.05.11-22.16.40:706][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.05.11-22.16.40:706][  0]LogD3D11RHI:       0/0/8174 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.05.11-22.16.40:706][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.05.11-22.16.40:711][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.05.11-22.16.40:711][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2021.05.11-22.16.40:711][  0]LogWindows: EnumDisplayDevices:
+[2021.05.11-22.16.40:711][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2021.05.11-22.16.40:711][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.05.11-22.16.40:711][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.05.11-22.16.40:712][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.05.11-22.16.40:712][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.05.11-22.16.40:712][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2021.05.11-22.16.40:712][  0]LogD3D11RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2021.05.11-22.16.40:712][  0]LogD3D11RHI:      Driver Date: 9-30-2020
+[2021.05.11-22.16.40:712][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2021.05.11-22.16.40:776][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.05.11-22.16.40:776][  0]LogD3D11RHI: Async texture creation enabled
+[2021.05.11-22.16.40:776][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.05.11-22.16.40:778][  0]LogD3D11RHI: HDR output is supported on display 0 (NvId: 0x80061087).
+[2021.05.11-22.16.40:795][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.05.11-22.16.41:109][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.05.11-22.16.41:114][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.05.11-22.16.41:127][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.05.11-22.16.41:135][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.05.11-22.16.41:135][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.05.11-22.16.41:141][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.05.11-22.16.41:189][  0]LogShaderCompilers: Guid format shader working directory is -29 characters bigger than the processId version (C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Intermediate/Shaders/WorkingDirectory/11532/).
+[2021.05.11-22.16.41:190][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Brendon/AppData/Local/Temp/UnrealShaderWorkingDir/6B9DEBEE4F553264307CCD86B8057EF6/'.
+[2021.05.11-22.16.41:190][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.05.11-22.16.41:190][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.05.11-22.16.41:190][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.05.11-22.16.41:835][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.05.11-22.16.41:915][  0]LogDerivedDataCache: Loaded boot cache 0.08s 76MB C:/Users/Brendon/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.05.11-22.16.41:915][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Brendon/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.05.11-22.16.41:915][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.05.11-22.16.41:915][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.05.11-22.16.41:915][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.05.11-22.16.41:915][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.05.11-22.16.41:924][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.05.11-22.16.41:925][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.05.11-22.16.41:925][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.05.11-22.16.41:926][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Brendon/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.05.11-22.16.41:926][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.05.11-22.16.41:926][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.05.11-22.16.42:134][  0]LogSlate: Using FreeType 2.10.0
+[2021.05.11-22.16.42:134][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.05.11-22.16.42:210][  0]LogInit: Using OS detected language (en-US).
+[2021.05.11-22.16.42:210][  0]LogInit: Using OS detected locale (en-CA).
+[2021.05.11-22.16.42:210][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2021.05.11-22.16.42:210][  0]LogTextLocalizationManager: No localization for 'en-CA' exists, so 'en' will be used for the locale.
+[2021.05.11-22.16.42:210][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2021.05.11-22.16.42:210][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2021.05.11-22.16.42:213][  0]LogTextLocalizationManager: Compacting localization data took   0.00ms
+[2021.05.11-22.16.42:216][  0]LogAssetRegistry: FAssetRegistry took 0.0027 seconds to start up
+[2021.05.11-22.16.42:378][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000905 seconds
+[2021.05.11-22.16.42:418][  0]LogInit: Selected Device Profile: [Windows]
+[2021.05.11-22.16.42:546][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.05.11-22.16.42:546][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.05.11-22.16.42:546][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.05.11-22.16.42:546][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.05.11-22.16.42:547][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.05.11-22.16.42:587][  0]LogNetVersion: RenegadeOmenX 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4142527166)
+[2021.05.11-22.16.43:131][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (00000161AEF4C1C0), frame # 0
+[2021.05.11-22.16.43:131][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000161AEE6B600), frame # 0
+[2021.05.11-22.16.43:132][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000161AEE57C00), frame # 0
+[2021.05.11-22.16.43:224][  0]LogCollectionManager: Loaded 0 collections in 0.001123 seconds
+[2021.05.11-22.16.43:226][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Saved/Collections/' took 0.00s
+[2021.05.11-22.16.43:226][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Content/Developers/Brendon/Collections/' took 0.00s
+[2021.05.11-22.16.43:226][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Content/Collections/' took 0.00s
+[2021.05.11-22.16.43:226][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000005 seconds (updated 0 objects)
+[2021.05.11-22.16.43:282][  0]LogMoviePlayer: Initializing movie player
+[2021.05.11-22.16.43:472][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.05.11-22.16.43:475][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.05.11-22.16.43:489][  0]LogMaterial: Display: Missing cached shader map for material DefaultMaterial, compiling. 
+[2021.05.11-22.16.43:666][  0]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 315
+[2021.05.11-22.16.43:666][  0]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 305
+[2021.05.11-22.16.43:666][  0]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 295
+[2021.05.11-22.16.43:666][  0]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 285
+[2021.05.11-22.16.43:666][  0]LogShaderCompilers: Display: Worker (5/5): shaders left to compile 275
+[2021.05.11-22.16.43:666][  0]SourceControl: Source control is disabled
+[2021.05.11-22.16.43:666][  0]SourceControl: Source control is disabled
+[2021.05.11-22.16.43:672][  0]SourceControl: Source control is disabled
+[2021.05.11-22.16.43:687][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
+[2021.05.11-22.16.43:688][  0]LogVSAccessor: Display: Unable to create Visual Studio setup instance: 80040154
+[2021.05.11-22.16.43:729][  0]LogMaterial: Display: Missing cached shader map for material M_VolumeRenderSphereTracePP, compiling. 
+[2021.05.11-22.16.43:809][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.05.11-22.16.43:829][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.11-22.16.43:829][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.05.11-22.16.43:869][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_WhiteMaterial, compiling. 
+[2021.05.11-22.16.43:887][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_ChromaKey, compiling. 
+[2021.05.11-22.16.43:903][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_ChromaKey_Lit, compiling. 
+[2021.05.11-22.16.43:924][  0]LogMaterial: Display: Missing cached shader map for material OculusMR_OpaqueColoredMaterial, compiling. 
+[2021.05.11-22.16.43:927][  0]LogOcInput: OculusInput pre-init called
+[2021.05.11-22.16.43:952][  0]LogUObjectArray: 19108 objects as part of root set at end of initial load.
+[2021.05.11-22.16.43:952][  0]LogUObjectAllocator: 5026688 out of 0 bytes used by permanent object pool.
+[2021.05.11-22.16.43:952][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.05.11-22.16.43:969][  0]LogMaterial: Display: Missing cached shader map for material HighResScreenshot, compiling. 
+[2021.05.11-22.16.43:974][  0]LogMaterial: Display: Missing cached shader map for material HighResScreenshotMask, compiling. 
+[2021.05.11-22.16.43:982][  0]LogMaterial: Display: Missing cached shader map for material HighResScreenshotCaptureRegion, compiling. 
+[2021.05.11-22.16.44:014][  0]LogEngine: Initializing Engine...
+[2021.05.11-22.16.44:015][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.05.11-22.16.44:016][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.05.11-22.16.44:017][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.05.11-22.16.44:022][  0]LogMaterial: Display: Missing cached shader map for material LevelColorationLitMaterial, compiling. Is special engine material.
+[2021.05.11-22.16.44:334][  0]LogMaterial: Display: Missing cached shader map for material LevelColorationUnlitMaterial, compiling. Is special engine material.
+[2021.05.11-22.16.44:387][  0]LogMaterial: Display: Missing cached shader map for material MAT_LevelColorationLitLightmapUV, compiling. Is special engine material.
+[2021.05.11-22.16.44:725][  0]LogMaterial: Display: Missing cached shader map for material ShadedLevelColorationLitMaterial, compiling. Is special engine material.
+[2021.05.11-22.16.44:995][  0]LogMaterial: Display: Missing cached shader map for material ShadedLevelColorationUnlitMateri, compiling. Is special engine material.
+[2021.05.11-22.16.45:032][  0]LogMaterial: Display: Missing cached shader map for material VertexColorMaterial, compiling. 
+[2021.05.11-22.16.45:096][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_ColorOnly, compiling. 
+[2021.05.11-22.16.45:103][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_AlphaAsColor, compiling. 
+[2021.05.11-22.16.45:109][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_RedOnly, compiling. 
+[2021.05.11-22.16.45:114][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_GreenOnly, compiling. 
+[2021.05.11-22.16.45:119][  0]LogMaterial: Display: Missing cached shader map for material VertexColorViewMode_BlueOnly, compiling. 
+[2021.05.11-22.16.45:124][  0]LogMaterial: Display: Missing cached shader map for material RemoveSurfaceMaterial, compiling. 
+[2021.05.11-22.16.45:126][  0]LogMaterial: Display: Missing cached shader map for material DebugMeshMaterial, compiling. 
+[2021.05.11-22.16.45:131][  0]LogMaterial: Display: Missing cached shader map for material EmissiveMeshMaterial, compiling. 
+[2021.05.11-22.16.45:135][  0]LogMaterial: Display: Missing cached shader map for material M_InvalidLightmapSettings, compiling. 
+[2021.05.11-22.16.45:152][  0]LogMaterial: Display: Missing cached shader map for material GizmoMaterial, compiling. 
+[2021.05.11-22.16.45:155][  0]LogMaterial: Display: Missing cached shader map for material PhAT_JointLimitMaterial, compiling. 
+[2021.05.11-22.16.45:208][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.05.11-22.16.45:212][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.11-22.16.45:212][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.11-22.16.45:212][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.11-22.16.45:212][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.11-22.16.45:212][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.11-22.16.45:212][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.11-22.16.45:213][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.11-22.16.45:213][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.11-22.16.45:213][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.11-22.16.45:213][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.11-22.16.45:221][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.11-22.16.45:221][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.05.11-22.16.45:242][  0]LogAudioMixer: Display: Using Audio Device DELL S3220DGF (NVIDIA High Definition Audio)
+[2021.05.11-22.16.45:249][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.11-22.16.45:250][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.11-22.16.45:250][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.11-22.16.45:251][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.11-22.16.45:252][  0]LogInit: FAudioDevice initialized.
+[2021.05.11-22.16.45:253][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.05.11-22.16.45:253][  0]LogInit: Texture streaming: Enabled
+[2021.05.11-22.16.45:254][  0]LogMaterial: Display: Missing cached shader map for material BaseColor, compiling. 
+[2021.05.11-22.16.45:256][  0]LogMaterial: Display: Missing cached shader map for material CustomDepth, compiling. 
+[2021.05.11-22.16.45:267][  0]LogMaterial: Display: Missing cached shader map for material CustomStencil, compiling. 
+[2021.05.11-22.16.45:269][  0]LogMaterial: Display: Missing cached shader map for material FinalImage, compiling. 
+[2021.05.11-22.16.45:271][  0]LogMaterial: Display: Missing cached shader map for material LightingModel, compiling. 
+[2021.05.11-22.16.45:273][  0]LogMaterial: Display: Missing cached shader map for material MaterialAO, compiling. 
+[2021.05.11-22.16.45:276][  0]LogMaterial: Display: Missing cached shader map for material Metallic, compiling. 
+[2021.05.11-22.16.45:280][  0]LogMaterial: Display: Missing cached shader map for material Opacity, compiling. 
+[2021.05.11-22.16.45:284][  0]LogMaterial: Display: Missing cached shader map for material Roughness, compiling. 
+[2021.05.11-22.16.45:287][  0]LogMaterial: Display: Missing cached shader map for material SceneColor, compiling. 
+[2021.05.11-22.16.45:289][  0]LogMaterial: Display: Missing cached shader map for material SceneDepth, compiling. 
+[2021.05.11-22.16.45:296][  0]LogMaterial: Display: Missing cached shader map for material SeparateTranslucencyRGB, compiling. 
+[2021.05.11-22.16.45:299][  0]LogMaterial: Display: Missing cached shader map for material SeparateTranslucencyA, compiling. 
+[2021.05.11-22.16.45:302][  0]LogMaterial: Display: Missing cached shader map for material Specular, compiling. 
+[2021.05.11-22.16.45:306][  0]LogMaterial: Display: Missing cached shader map for material SubsurfaceColor, compiling. 
+[2021.05.11-22.16.45:310][  0]LogMaterial: Display: Missing cached shader map for material WorldNormal, compiling. 
+[2021.05.11-22.16.45:314][  0]LogMaterial: Display: Missing cached shader map for material AmbientOcclusion, compiling. 
+[2021.05.11-22.16.45:319][  0]LogMaterial: Display: Missing cached shader map for material CustomDepthWorldUnits, compiling. 
+[2021.05.11-22.16.45:321][  0]LogMaterial: Display: Missing cached shader map for material SceneDepthWorldUnits, compiling. 
+[2021.05.11-22.16.45:324][  0]LogMaterial: Display: Missing cached shader map for material Velocity, compiling. 
+[2021.05.11-22.16.45:328][  0]LogMaterial: Display: Missing cached shader map for material PreTonemapHDRColor, compiling. 
+[2021.05.11-22.16.45:332][  0]LogMaterial: Display: Missing cached shader map for material PostTonemapHDRColor, compiling. 
+[2021.05.11-22.16.46:386][  0]LogMaterial: Display: Missing cached shader map for material m_flare_01, compiling. 
+[2021.05.11-22.16.46:396][  0]LogMaterial: Display: Missing cached shader map for material M_radial_ramp, compiling. 
+[2021.05.11-22.16.46:405][  0]LogMaterial: Display: Missing cached shader map for material M_explosion_subUV, compiling. 
+[2021.05.11-22.16.46:421][  0]LogMaterial: Display: Missing cached shader map for material M_Burst, compiling. 
+[2021.05.11-22.16.46:435][  0]LogMaterial: Display: Missing cached shader map for material M_smoke_subUV, compiling. 
+[2021.05.11-22.16.46:479][  0]LogMaterial: Display: Missing cached shader map for material M_Metal_Steel, compiling. 
+[2021.05.11-22.16.46:506][  0]LogMaterial: Display: Missing cached shader map for material LaserPointerMaterial, compiling. 
+[2021.05.11-22.16.46:513][  0]LogMaterial: Display: Missing cached shader map for material M_master_Fire_Gun, compiling. 
+[2021.05.11-22.16.46:566][  0]LogMaterial: Display: Missing cached shader map for material M_Lensflare_01, compiling. 
+[2021.05.11-22.16.46:575][  0]LogMaterial: Display: Missing cached shader map for material M_LaserPointer-Core, compiling. 
+[2021.05.11-22.16.46:597][  0]LogMaterial: Display: Missing cached shader map for material redDot_Mat, compiling. 
+[2021.05.11-22.16.46:634][  0]LogMaterial: Display: Missing cached shader map for material sniper1Color_Mat, compiling. 
+[2021.05.11-22.16.46:741][  0]LogMaterial: Display: Missing cached shader map for material Minimap2_Mat, compiling. 
+[2021.05.11-22.16.46:868][  0]LogMaterial: Display: Missing cached shader map for material EmissiveTexturedMaterial, compiling. 
+[2021.05.11-22.16.46:875][  0]LogMaterial: Display: Missing cached shader map for material BaseMaterial, compiling. 
+[2021.05.11-22.16.46:924][  0]LogMaterial: Display: Missing cached shader map for material ak74Color_Mat, compiling. 
+[2021.05.11-22.16.46:964][  0]LogMaterial: Display: Missing cached shader map for material grenadelauncherColor_Mat, compiling. 
+[2021.05.11-22.16.47:006][  0]LogMaterial: Display: Missing cached shader map for material blackpantherColor_Mat, compiling. 
+[2021.05.11-22.16.47:047][  0]LogMaterial: Display: Missing cached shader map for material shotgunColor_Mat, compiling. 
+[2021.05.11-22.16.47:085][  0]LogMaterial: Display: Missing cached shader map for material armNormal_Mat, compiling. 
+[2021.05.11-22.16.47:122][  0]LogMaterial: Display: Missing cached shader map for material Zombie_01_Jill_specular_Mat, compiling. 
+[2021.05.11-22.16.47:160][  0]LogMaterial: Display: Missing cached shader map for material Zombie_01_Jill_diffuse_Mat, compiling. 
+[2021.05.11-22.16.47:240][  0]LogMaterial: Display: Missing cached shader map for material TopTexture_Semi_Automatic, compiling. 
+[2021.05.11-22.16.47:256][  0]LogMaterial: Display: Missing cached shader map for material BodyTexture_Semi_Automatic, compiling. 
+[2021.05.11-22.16.47:300][  0]LogMaterial: Display: Missing cached shader map for material Black_Texture_ShotGun, compiling. 
+[2021.05.11-22.16.47:315][  0]LogMaterial: Display: Missing cached shader map for material TopTexture_ShotGun, compiling. 
+[2021.05.11-22.16.47:330][  0]LogMaterial: Display: Missing cached shader map for material BodyTexture_ShotGun, compiling. 
+[2021.05.11-22.16.47:369][  0]LogMaterial: Display: Missing cached shader map for material TopTexture_GrenadeLauncher, compiling. 
+[2021.05.11-22.16.47:382][  0]LogMaterial: Display: Missing cached shader map for material BodyTexture_GrenadeLauncher, compiling. 
+[2021.05.11-22.16.47:422][  0]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.05.11-22.16.47:438][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.11-22.16.47:439][  0]LogInit: Display: Game Engine Initialized.
+[2021.05.11-22.16.47:439][  0]LogNiagaraEditor: Warning: GEditor isn't valid! Particle reset commands will not work for Niagara components!
+[2021.05.11-22.16.47:491][  0]LogInit: Display: Starting Game.
+[2021.05.11-22.16.47:491][  0]LogNet: Browse: /Game/Levels/Main_Menu?Name=Player
+[2021.05.11-22.16.47:491][  0]LogLoad: LoadMap: /Game/Levels/Main_Menu?Name=Player
+[2021.05.11-22.16.47:491][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2021.05.11-22.16.47:493][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-22.16.47:493][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-22.16.47:527][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2021.05.11-22.16.47:599][  0]LogMaterial: Display: Missing cached shader map for material DefaultSpriteMaterial, compiling. 
+[2021.05.11-22.16.47:616][  0]LogAIModule: Creating AISystem for world Main_Menu
+[2021.05.11-22.16.47:616][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000161AB7FC800), frame # 0
+[2021.05.11-22.16.47:616][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000161A7DD0400), frame # 0
+[2021.05.11-22.16.47:616][  0]LogLoad: Game class is 'NewGameMode_C'
+[2021.05.11-22.16.47:617][  0]LogWorld: Bringing World /Game/Levels/Main_Menu.Main_Menu up for play (max tick rate 0) at 2021.05.11-18.16.47
+[2021.05.11-22.16.47:618][  0]LogWorld: Bringing up level for play took: 0.000907
+[2021.05.11-22.16.47:618][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2021.05.11-22.16.47:659][  0]LogPlayerController: Error: InputMode:UIOnly - Attempting to focus Non-Focusable widget SObjectWidget [Widget.cpp(799)]!
+[2021.05.11-22.16.47:660][  0]LogLoad: Took 0.168627 seconds to LoadMap(/Game/Levels/Main_Menu)
+[2021.05.11-22.16.47:678][  0]LogSlate: Took 0.000445 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.05.11-22.16.47:705][  0]LogRenderer: Reallocating scene render targets to support 1280x720 Format 10 NumSamples 1 (Frame:1).
+[2021.05.11-22.16.47:706][  0]LogBackChannel: Listening on FBackChannelConnection Client Socket (localport: 2049)
+[2021.05.11-22.16.47:706][  0]LogRemoteSession: Started listening on port 2049
+[2021.05.11-22.16.47:706][  0]LogLoad: (Engine Initialization) Total time: 9.96 seconds
+[2021.05.11-22.16.47:706][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.05.11-22.16.47:710][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.05.11-22.16.47:718][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-22.16.47:754][  1]LogSlate: Took 0.000347 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.05.11-22.16.53:048][940]LogBackChannel: Found connection on FBackChannelConnection Client Socket
+[2021.05.11-22.16.53:048][940]LogBackChannel: Set send buffer to 2097152 bytes for RemoteConnection
+[2021.05.11-22.16.53:049][940]LogBackChannel: Set receive buffer to 2097152 bytes for RemoteConnection
+[2021.05.11-22.16.53:050][940]LogBackChannel: Accepted connection on FBackChannelConnection Client Socket
+[2021.05.11-22.16.53:055][942]LogRemoteSession: FRemoteSessionRole: Binding endpoints and creating channels
+[2021.05.11-22.16.53:055][942]LogRemoteSession: Created Channel FRemoteSessionInputChannel with mode 0
+[2021.05.11-22.16.53:060][942]LogRemoteSession: Created Channel FRemoteSessionFrameBufferChannel_DEPRECATED with mode 1
+[2021.05.11-22.16.53:133][955]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 5327
+[2021.05.11-22.16.54:350][139]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 5317
+[2021.05.11-22.16.56:273][426]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 5307
+[2021.05.11-22.16.56:619][477]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 5297
+[2021.05.11-22.17.03:076][479]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 5287
+[2021.05.11-22.17.03:241][506]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 5277
+[2021.05.11-22.17.03:645][533]LogPackageName: SearchForPackageOnDisk took   0.214s to resolve Survival_World.umap.
+[2021.05.11-22.17.03:857][534]LogPackageName: SearchForPackageOnDisk took   0.211s to resolve Survival_World.umap.
+[2021.05.11-22.17.03:857][534]LogNet: Browse: /Game/Levels/Survival_World
+[2021.05.11-22.17.03:858][534]LogLoad: LoadMap: /Game/Levels/Survival_World
+[2021.05.11-22.17.03:858][534]LogWorld: BeginTearingDown for /Game/Levels/Main_Menu
+[2021.05.11-22.17.03:859][534]LogWorld: UWorld::CleanupWorld for Main_Menu, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-22.17.03:859][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.11-22.17.03:895][534]LogAudio: Display: Waited 35.410698 ms for audio thread.
+[2021.05.11-22.17.03:897][534]LogAudio: Display: Waited 37.815899 ms for audio thread.
+[2021.05.11-22.17.03:908][534]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000161A7DD0400), frame # 4534
+[2021.05.11-22.17.03:909][534]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000161AB7FC800), frame # 4534
+[2021.05.11-22.17.03:911][534]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2021.05.11-22.17.04:075][534]LogUObjectGlobals: Warning: Failed to load '/Game/Levels/Survival_World_BuiltData': Can't find file.
+[2021.05.11-22.17.04:076][534]LogUObjectGlobals: Warning: Failed to load '/Game/Levels/Survival_World_BuiltData': Can't find file.
+[2021.05.11-22.17.04:399][534]LogUObjectGlobals: Warning: While loading 'C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World.umap' failed to load '/Game/Levels/Survival_World_BuiltData': Can't find file.
+[2021.05.11-22.17.04:400][534]LogUObjectGlobals: Warning: While loading 'C:/Users/Brendon/OneDrive/Documents/Co-op/GitHub/RenegadeOmenX/RenegadeOmenX/Content/Levels/Survival_World.umap' failed to load '/Game/Levels/Survival_World_BuiltData': Can't find file.
+[2021.05.11-22.17.04:777][534]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 5267
+[2021.05.11-22.17.04:777][534]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 5257
+[2021.05.11-22.17.05:284][534]LogMaterial: Display: Missing cached shader map for material M_MarbleBase, compiling. 
+[2021.05.11-22.17.05:335][534]LogMaterial: Display: Missing cached shader map for material M_AlphaBase, compiling. 
+[2021.05.11-22.17.05:498][534]LogMaterial: Display: Missing cached shader map for material M_LeavesRustle, compiling. 
+[2021.05.11-22.17.05:528][534]LogMaterial: Display: Missing cached shader map for material Zombie_02_PoliceGuy_Glass_Hair_Material_, compiling. 
+[2021.05.11-22.17.05:566][534]LogMaterial: Display: Missing cached shader map for material Zombie_02_PoliceGuy_Body_Material_, compiling. 
+[2021.05.11-22.17.05:604][534]LogMaterial: Display: Missing cached shader map for material TopBullet_Texture, compiling. 
+[2021.05.11-22.17.05:618][534]LogMaterial: Display: Missing cached shader map for material BodyBullet_Texture, compiling. 
+[2021.05.11-22.17.05:633][534]LogMaterial: Display: Missing cached shader map for material PickUp_Amo_Health_Diffuse, compiling. 
+[2021.05.11-22.17.05:648][534]LogMaterial: Display: Missing cached shader map for material PickUp_DuctTape_Diffuse, compiling. 
+[2021.05.11-22.17.05:663][534]LogMaterial: Display: Missing cached shader map for material Pickup_Rope, compiling. 
+[2021.05.11-22.17.05:678][534]LogMaterial: Display: Missing cached shader map for material PickUpGasoline, compiling. 
+[2021.05.11-22.17.05:692][534]LogMaterial: Display: Missing cached shader map for material SF_Crate02_Close_Diff_Mat, compiling. 
+[2021.05.11-22.17.05:707][534]LogMaterial: Display: Missing cached shader map for material FloorGrass, compiling. 
+[2021.05.11-22.17.05:721][534]LogMaterial: Display: Missing cached shader map for material Default_Material, compiling. 
+[2021.05.11-22.17.05:736][534]LogMaterial: Display: Missing cached shader map for material Roof, compiling. 
+[2021.05.11-22.17.05:750][534]LogMaterial: Display: Missing cached shader map for material MetalFloor, compiling. 
+[2021.05.11-22.17.05:766][534]LogMaterial: Display: Missing cached shader map for material Correspondence, compiling. 
+[2021.05.11-22.17.05:781][534]LogMaterial: Display: Missing cached shader map for material WoodNPaper, compiling. 
+[2021.05.11-22.17.05:797][534]LogMaterial: Display: Missing cached shader map for material ComputerNCam, compiling. 
+[2021.05.11-22.17.05:812][534]LogMaterial: Display: Missing cached shader map for material TreeMat, compiling. 
+[2021.05.11-22.17.05:828][534]LogMaterial: Display: Missing cached shader map for material GrassTransp, compiling. 
+[2021.05.11-22.17.05:844][534]LogMaterial: Display: Missing cached shader map for material TrashCanMat, compiling. 
+[2021.05.11-22.17.05:859][534]LogMaterial: Display: Missing cached shader map for material LightReflectd, compiling. 
+[2021.05.11-22.17.05:880][534]LogMaterial: Display: Missing cached shader map for material TvScreens, compiling. 
+[2021.05.11-22.17.05:895][534]LogMaterial: Display: Missing cached shader map for material TVsNshit, compiling. 
+[2021.05.11-22.17.05:911][534]LogMaterial: Display: Missing cached shader map for material ACUnitNSafe, compiling. 
+[2021.05.11-22.17.05:925][534]LogMaterial: Display: Missing cached shader map for material DoorsVents, compiling. 
+[2021.05.11-22.17.05:940][534]LogMaterial: Display: Missing cached shader map for material LightNTransparency, compiling. 
+[2021.05.11-22.17.05:954][534]LogMaterial: Display: Missing cached shader map for material PultNPeripherals, compiling. 
+[2021.05.11-22.17.05:972][534]LogMaterial: Display: Missing cached shader map for material M_Parallax_Base1, compiling. 
+[2021.05.11-22.17.06:073][534]LogMaterial: Display: Missing cached shader map for material Zombie_05_Brenda_diffuse_Mat, compiling. 
+[2021.05.11-22.17.06:142][534]LogMaterial: Display: Missing cached shader map for material Zombie_07_PunkSkull_Materials, compiling. 
+[2021.05.11-22.17.06:184][534]LogMaterial: Display: Missing cached shader map for material Zombie_03_Police_Guy_02_Diffuse_Mat, compiling. 
+[2021.05.11-22.17.06:223][534]LogAIModule: Creating AISystem for world Survival_World
+[2021.05.11-22.17.06:223][534]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000016208733E00), frame # 4534
+[2021.05.11-22.17.06:223][534]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000016207920CC0), frame # 4534
+[2021.05.11-22.17.06:224][534]LogLoad: Game class is 'BP_GameMode_Base_C'
+[2021.05.11-22.17.06:276][534]LogWorld: Bringing World /Game/Levels/Survival_World.Survival_World up for play (max tick rate 0) at 2021.05.11-18.17.06
+[2021.05.11-22.17.06:279][534]LogWorld: Bringing up level for play took: 0.053960
+[2021.05.11-22.17.06:279][534]LogNavigation: Warning: Recreating dtNavMesh instance due to saved navmesh origin (X=-23018.174 Y=0.003 Z=0.015, usually the RecastNavMesh location) not being aligned with tile size (988 uu) 
+[2021.05.11-22.17.06:400][534]LogLoad: Took 2.542880 seconds to LoadMap(/Game/Levels/Survival_World)
+[2021.05.11-22.17.06:797][565]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2021.05.11-22.17.06:797][565]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2021.05.11-22.17.06:797][565]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2021.05.11-22.17.06:797][565]LogNavigationDataBuild: Display:    Building NavData:  Name Default class /Script/NavigationSystem.RecastNavMesh agent radius 35.0.
+[2021.05.11-22.17.08:261][565]LogNavigationDataBuild: Display: UNavigationSystemV1::Build total execution time: 1.46s
+[2021.05.11-22.17.08:262][565]Command not recognized:  RebuildNavigation
+[2021.05.11-22.17.08:531][598]LogSlate: Error: SlateUser [2139030816] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.09:366][723]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6851
+[2021.05.11-22.17.09:725][777]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.10:364][871]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6841
+[2021.05.11-22.17.11:392][  5]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6831
+[2021.05.11-22.17.13:644][338]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6821
+[2021.05.11-22.17.15:220][568]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.15:409][598]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.15:583][625]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.16:520][760]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.16:809][802]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6811
+[2021.05.11-22.17.19:337][145]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.20:003][233]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.20:437][296]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6801
+[2021.05.11-22.17.20:493][305]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6791
+[2021.05.11-22.17.22:325][577]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6781
+[2021.05.11-22.17.22:909][667]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.24:741][960]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6771
+[2021.05.11-22.17.27:184][359]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6761
+[2021.05.11-22.17.27:246][370]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6751
+[2021.05.11-22.17.29:423][740]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.30:000][837]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6741
+[2021.05.11-22.17.30:800][971]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.31:818][145]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6731
+[2021.05.11-22.17.33:681][454]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6721
+[2021.05.11-22.17.34:964][675]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6711
+[2021.05.11-22.17.35:035][687]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6701
+[2021.05.11-22.17.36:601][949]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.38:086][196]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.39:320][413]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6691
+[2021.05.11-22.17.40:078][536]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6681
+[2021.05.11-22.17.41:483][771]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6671
+[2021.05.11-22.17.41:548][782]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6661
+[2021.05.11-22.17.46:337][573]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6651
+[2021.05.11-22.17.47:126][704]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6641
+[2021.05.11-22.17.48:101][867]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.48:375][916]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6631
+[2021.05.11-22.17.51:672][460]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.53:657][799]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6621
+[2021.05.11-22.17.55:361][ 94]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6611
+[2021.05.11-22.17.55:743][136]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6601
+[2021.05.11-22.17.55:785][145]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6591
+[2021.05.11-22.17.56:175][205]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6581
+[2021.05.11-22.17.57:765][470]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.58:863][653]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.17.58:965][669]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6571
+[2021.05.11-22.18.00:315][890]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6561
+[2021.05.11-22.18.01:938][163]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6551
+[2021.05.11-22.18.02:196][207]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6541
+[2021.05.11-22.18.04:055][513]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6531
+[2021.05.11-22.18.05:663][792]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6521
+[2021.05.11-22.18.08:005][177]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.18.08:177][205]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6511
+[2021.05.11-22.18.08:458][252]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6501
+[2021.05.11-22.18.10:185][549]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6491
+[2021.05.11-22.18.10:584][613]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6481
+[2021.05.11-22.18.14:707][298]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6471
+[2021.05.11-22.18.15:026][351]LogSlate: Error: SlateUser [0] notified of a touch starting for pointer [-92246016] without finding out it ever ended.
+[2021.05.11-22.18.15:079][360]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6461
+[2021.05.11-22.18.16:142][544]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6451
+[2021.05.11-22.18.16:698][636]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6441
+[2021.05.11-22.18.19:579][114]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6431
+[2021.05.11-22.18.21:476][423]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 6421
+[2021.05.11-22.18.21:901][487]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 6411
+[2021.05.11-22.18.22:480][576]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 6401
+[2021.05.11-22.18.25:454][ 36]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 6391
